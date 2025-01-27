@@ -2421,5 +2421,9 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		class TransportItems{};
 		hiddenSelectionsTextures[]= {"\1MR_Vehicles\Textures\Heli_Attack_01_UCN_CO.paa"};
 	};
-	
+	class O_Plane_CAS_02_dynamicLoadout_F;
+	class Victus_O_Plane_CAS_02_dynamicLoadout_F: O_Plane_CAS_02_dynamicLoadout_F
+	{
+		
+	};
 };
