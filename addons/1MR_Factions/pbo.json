@@ -6,5 +6,9 @@
         ]
     },
     "headers": [
+        {
+            "name": "prefix",
+            "value": "x\\7ef_tke_a3\\addons\\templates"
+        }
     ]
 }
