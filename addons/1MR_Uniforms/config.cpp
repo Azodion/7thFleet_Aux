@@ -154,9 +154,10 @@ class CfgUnitInsignia
 	};
 
 };
+
 class CfgVehicles
 {
-	
+	class Man;
 	class TKE_EVAPack;
 	class TKE_EVAPack7th: TKE_EVAPack
 	{
@@ -2327,7 +2328,7 @@ class TKE_Uniform124BStripe_BlackButtonUp: I_G_Story_Protagonist_F
 		displayName = "Rifleman";
 		backpack = "";
 	};
-	class 86CAB_Medic: TKE_Rogue_Uniform1MR_inf_B
+	class 86CAB_Medic: 86CAB_Rifleman
 	{
 		scope = 2;
 		scopecurator = 2;
@@ -2343,7 +2344,7 @@ class TKE_Uniform124BStripe_BlackButtonUp: I_G_Story_Protagonist_F
 		role = "CombatLifeSaver";
 		backpack = "";
 	};
-	class 86CAB_Engineer: TKE_Rogue_Uniform1MR_inf_B
+	class 86CAB_Engineer: 86CAB_Rifleman
 	{
 		scope = 2;
 		scopecurator = 2;
@@ -2359,7 +2360,6 @@ class TKE_Uniform124BStripe_BlackButtonUp: I_G_Story_Protagonist_F
 		role = "CombatEngineer";
 		backpack = "";
 	};
-	
 };
 
 class cfgWeapons
@@ -2376,6 +2376,7 @@ class cfgWeapons
 	class U_B_CTRG_1;
 	class ItemCore;
 	class ItemInfo;
+	class Eventhandlers;
 	class U_TKE_Uniform_base: U_B_CTRG_Soldier_F
 	{
 		class ItemInfo;
@@ -2966,7 +2967,7 @@ class cfgWeapons
     };
 
 
-class U_TKE_Uniform1MRType13: U_TKE_Uniform_base
+	class U_TKE_Uniform1MRType13: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3016,7 +3017,7 @@ class U_TKE_Uniform1MRType13: U_TKE_Uniform_base
     };
 
 
-class U_TKE_Uniform1MRCamo: U_TKE_Uniform_base
+	class U_TKE_Uniform1MRCamo: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3066,7 +3067,7 @@ class U_TKE_Uniform1MRCamo: U_TKE_Uniform_base
     };
 
 
-class U_TKE_Uniform1MRStripe: U_TKE_Uniform_base
+	class U_TKE_Uniform1MRStripe: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3114,7 +3115,7 @@ class U_TKE_Uniform1MRStripe: U_TKE_Uniform_base
 			mass = 80;
         };
     };
-class U_TKE_Uniform124GStripe: U_TKE_Uniform_base
+	class U_TKE_Uniform124GStripe: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3162,7 +3163,7 @@ class U_TKE_Uniform124GStripe: U_TKE_Uniform_base
 			mass = 80;
         };
     };
-class U_TKE_Uniform124WStripe: U_TKE_Uniform_base
+	class U_TKE_Uniform124WStripe: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3210,7 +3211,7 @@ class U_TKE_Uniform124WStripe: U_TKE_Uniform_base
 			mass = 80;
         };
     };
-class U_TKE_Uniform124BStripe: U_TKE_Uniform_base
+	class U_TKE_Uniform124BStripe: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3910,7 +3911,7 @@ class U_TKE_Uniform124BStripe: U_TKE_Uniform_base
 			mass = 80;
         };
     };
-class U_TKE_Uniform1MRType13_BlackButtonUp: U_I_G_Story_Protagonist_F
+	class U_TKE_Uniform1MRType13_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Marine Uniform (Type 13, Black Button Up)";
@@ -3964,7 +3965,7 @@ class U_TKE_Uniform1MRType13_BlackButtonUp: U_I_G_Story_Protagonist_F
 			mass = 80;
         };
     };
-class U_TKE_Uniform1MRCamo_BlackButtonUp: U_I_G_Story_Protagonist_F
+	class U_TKE_Uniform1MRCamo_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Marine Uniform (Camo, Black Button Up)";
@@ -4018,7 +4019,7 @@ class U_TKE_Uniform1MRCamo_BlackButtonUp: U_I_G_Story_Protagonist_F
 			mass = 80;
         };
     };
-class U_TKE_Uniform1MRStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
+	class U_TKE_Uniform1MRStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Marine Uniform (Stripe, Black Button Up)";
@@ -4074,7 +4075,7 @@ class U_TKE_Uniform1MRStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     };
 
 
-class U_TKE_Uniform124GStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
+	class U_TKE_Uniform124GStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Army Uniform (Woodland Stripe, Black Button Up)";
@@ -4128,7 +4129,7 @@ class U_TKE_Uniform124GStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
 			mass = 80;
         };
     };
-class U_TKE_Uniform124WStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
+	class U_TKE_Uniform124WStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Army Uniform (Snow Stripe, Black Button Up)";
@@ -4182,7 +4183,7 @@ class U_TKE_Uniform124WStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
 			mass = 80;
         };
     };
-class U_TKE_Uniform124BStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
+	class U_TKE_Uniform124BStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Army Uniform (Night Stripe, Black Button Up)";

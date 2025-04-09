@@ -10,7 +10,7 @@ class CfgPatches
 			"A3_Characters_F"
 		};
 		units[]={};
-		weapons[]={"7FW_WRS_Weapon_Sniper_Bolt","7FW_WRS_Weapon_Revolver","7FW_WRS_Weapon_Revolver_Black","7FW_WRS_Weapon_ShockGun","7FW_WRS_Weapon_ShockGun_Black","7FW_WRS_Weapon_ShotGun","7FW_WRS_Weapon_ShotGun_black","7FW_WRS_Weapon_LMG","WBK_SciFi_Pistol","WBK_SciFi_Pistol_black"};
+		weapons[]={"7th_Pointer_Attachment","7thFleet_SPNKr","7FW_WRS_Weapon_Sniper_Bolt","7FW_WRS_Weapon_Revolver","7FW_WRS_Weapon_Revolver_Black","7FW_WRS_Weapon_ShockGun","7FW_WRS_Weapon_ShockGun_Black","7FW_WRS_Weapon_ShotGun","7FW_WRS_Weapon_ShotGun_black","7FW_WRS_Weapon_LMG","WBK_SciFi_Pistol","WBK_SciFi_Pistol_black"};
 		magazines[]={};
 		ammo[]={};
 		requiredVersion=0.1;
@@ -25,8 +25,21 @@ class PointerSlot;
 class UnderBarrelSlot;
 class Single;
 class WeaponSlotsInfo;
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class ItemCore;
+class InventoryItem_Base_F;
+class InventoryFlashLightItem_Base_F;
 class CfgWeapons
 {
+	class TKE_UBGL_F;
 	class WRS_Weapon_Sniper_Bolt;
 	class 7FW_WRS_Weapon_Sniper_Bolt: WRS_Weapon_Sniper_Bolt
 	{
@@ -432,6 +445,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_UCNRifle2_co.paa","\TKE_Kuiper_Engagements\TKE_Weapons\data\TKE_UBGL_co.paa"};
 		pictureWire = "\7thFleetWeapons\WireWeaponIcons\carnivoreglicon.paa";
 		modes[] = {"Single","Burst","FullAuto","fullauto_medium","single_medium_optics1","single_far_optics2"};
+		magazines[] = {"TKE_35rnd_62x35_mag","TKE_35rnd_62x35_magTR","TKE_35rnd_62x35_magTG","TKE_35rnd_62x35_magTY"};
 		class Single: Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
@@ -456,6 +470,7 @@ class CfgWeapons
 			midRangeProbab = 0.7;
 			maxRange = 400;
 			maxRangeProbab = 0.3;
+			class TKE_UBGL_F{};
 		};
 		class Burst: Mode_Burst
 		{
@@ -1076,9 +1091,84 @@ class CfgWeapons
 			aiRateOfFireDistance = 700;
 		};
 	};
+	class kef_launch_MRAWS_black_F;
+	class 7thFleet_SPNKr: kef_launch_MRAWS_black_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ace_overpressure_angle = 20;
+		ace_overpressure_range = 5;
+		author = "Hophri";
+		displayName = "[7th Fleet] MAAWS Mk.5 Mod 2";
+		magazines[] = {"7thFleet_HEAT","7thFleet_HE","7thFleet_HEAT_G","7thFleet_HEAT_SALH","7thFleet_HEAT_SACLOS","7thFleet_Smoke_B","7thFleet_Smoke_G","7thFleet_Smoke_O","7thFleet_Smoke_P","7thFleet_Smoke_R","7thFleet_Smoke_W","7thFleet_Smoke_Y"};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\7thFleetWeapons\textures\7FW_SPNKr_co.paa","\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_CO.paa"};
+		recoil = "";
+		weaponLockDelay = 2;
+		weaponLockSystem = "2 + 16";
+		cmImmunity	= 0.25;
+		canLock = 2;
+		modes[] = {"Direct", "TopDown"};
+		lockAcquire = 0;
+		class Direct: Mode_SemiAuto
+		{
+			displayName = "Direct Seek";
+			recoil = "";
+			reloadtime = 1;
+			aiRateOfFire = 7.0;
+			aiRateOfFireDistance = 600;
+			minRange = 10;
+			minRangeProbab = 0.3;
+			midRange = 400;
+			midRangeProbab = 0.8;
+			maxRange = 600;
+			maxRangeProbab = 0.1;
+		};
+		class TopDown: Direct
+		{
+			displayName = "Top-Down Seek";
+			textureType = "topDown";
+			ace_missileGuidance_attackProfile = "JAV_TOP";
+		};
+		lockingTargetSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\locking_Titan",
+			0.31622776,
+			1
+		};
+		lockedTargetSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\locked_Titan",
+			0.31622776,
+			2.5
+		};
+		class OpticsModes
+		{
+			class optics
+			{
+				cameraDir = "look";
+				distanceZoomMax = 300;
+				distanceZoomMin = 300;
+				memoryPointCamera = "eye";
+				opticsDisablePeripherialVision = 1;
+				opticsFlare = 1;
+				opticsID = 1;
+				opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+				opticsZoomInit = 0.0875;
+				opticsZoomMax = 0.0875;
+				opticsZoomMin = 0.0875;
+				useModelOptics = 1;
+				visionMode[] = {"Normal","NVG","Ti"};
+			};
+		};
+	};
 };
 class CfgMagazines
 {
+	class MRAWS_HEAT_F;
+	class MRAWS_HE_F;
+	class Titan_AT;
 	class 20Rnd_556x45_UW_mag;
 	class TKE_SMGUDT_mag: 20Rnd_556x45_UW_mag
 	{
@@ -1135,5 +1225,294 @@ class CfgMagazines
 		tracersEvery = 1;
 		descriptionShort = "";
 		magazineGroup[] = {"TKE_Pistol_group"};
+	};
+
+	class 7thFleet_HEAT: MRAWS_HEAT_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_HEAT75_Ammo";
+		displayName = "[7th Fleet] HEAT (Un-Guided)";
+		count = 1;		
+		mass = 60;
+	};
+	class 7thFleet_HE: MRAWS_HE_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_HE_Ammo";
+		displayName = "[7th Fleet] HE (Un-Guided)";
+		count = 1;		
+		mass = 60;
+	};
+	class 7thFleet_HEAT_G: Titan_AT
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_HEAT_G_Ammo";
+		displayName = "[7th Fleet] HEAT (IR)";
+		count = 1;		
+		mass = 60;
+	};
+	class 7thFleet_HEAT_SALH: Titan_AT
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SALH_Ammo";
+		displayName = "[7th Fleet] HEAT (SALH)";
+		count = 1;		
+		mass = 60;
+	};
+	class 7thFleet_HEAT_SACLOS: Titan_AT
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SACLOS_Ammo";
+		displayName = "[7th Fleet] HEAT (SACLOS)";
+		count = 1;		
+		mass = 60;
+	};
+	class 7thFleet_Smoke_B: MRAWS_HE_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SMK_B";
+		displayName = "[7th Fleet] Smoke Blue";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_Smoke_G: MRAWS_HE_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SMK_G";
+		displayName = "[7th Fleet] Smoke Green";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_Smoke_O: MRAWS_HE_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SMK_O";
+		displayName = "[7th Fleet] Smoke Orange";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_Smoke_P: MRAWS_HE_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SMK_P";
+		displayName = "[7th Fleet] Smoke Purple";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_Smoke_R: MRAWS_HE_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SMK_R";
+		displayName = "[7th Fleet] Smoke Red";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_Smoke_W: MRAWS_HE_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SMK_W";
+		displayName = "[7th Fleet] Smoke White";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_Smoke_Y: MRAWS_HE_F
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		ammo = "7thFleet_SMK_Y";
+		displayName = "[7th Fleet] Smoke Yellow";
+		count = 1;		
+		mass = 40;
+	};
+};
+class CfgAmmo
+{
+	class Components;
+	class M_Titan_AT;
+	class 7thFleet_SACLOS_Ammo: M_Titan_AT
+	{
+		autoSeekTarget = 1;
+		airLock = 0;
+		irLock = 0;
+		laserLock = 0;
+		nvLock = 0;
+		lockType = 2;
+		canLock = 2;
+		hit = 500;
+		indirectHit = 40;
+		indirectHitRange = 4;
+		thrust = 100;
+		thrustTime = 2;
+		timeToLive = 30;
+		maxControlRange = 5000;
+		maxSpeed = 270;
+		missileManualControlCone = 60;
+		maneuvrability = 16;
+		flightProfiles[] = {"Direct"};
+		weaponType = "missileAT";
+		fuseDistance = 50;
+	};
+	class 7thFleet_HEAT_G_Ammo: M_Titan_AT
+	{
+		autoSeekTarget = 1;
+		airLock = 1;
+		irLock = 1;
+		laserLock = 1;
+		nvLock = 1;
+		weaponLockSystem = "1+2+4";
+		lockType = 0;
+		canLock = 2;
+		hit = 500;
+		indirectHit = 40;
+		indirectHitRange = 4;
+		trackLead = 1;
+		trackOversteer = 1;
+		thrust = 100;
+		thrustTime = 2;
+		timeToLive = 30;
+		maxControlRange = 5000;
+		maxSpeed = 270;
+		manualControl = 0;
+		missileLockMaxDistance = 1500;
+		missileManualControlCone = 60;
+		maneuvrability = 16;
+		flightProfiles[] = {"Direct","TopDown"};
+		weaponType = "missileAT";
+		fuseDistance = 50;
+	};
+	class 7thFleet_SALH_Ammo: M_Titan_AT
+	{
+		autoSeekTarget = 1;
+		airLock = 1;
+		irLock = 0;
+		laserLock = 1;
+		nvLock = 1;
+		weaponLockSystem = "4";
+		lockType = 0;
+		canLock = 2;
+		hit = 500;
+		indirectHit = 40;
+		indirectHitRange = 4;
+		trackLead = 1;
+		trackOversteer = 1;
+		thrust = 100;
+		thrustTime = 2;
+		timeToLive = 30;
+		maxControlRange = 5000;
+		maxSpeed = 270;
+		manualControl = 0;
+		missileLockMaxDistance = 1500;
+		missileManualControlCone = 60;
+		maneuvrability = 16;
+		flightProfiles[] = {"Direct","TopDown"};
+		weaponType = "missileAT";
+		fuseDistance = 50;
+	};
+
+	class R_MRAAWS_HE_F;
+	class 7thFleet_HE_Ammo: R_MRAAWS_HE_F
+	{
+		hit = 200;
+		indirectHit = 100;
+		indirectHitRange = 10;
+		explosive = 1;
+		weaponType = "rocket";
+		canLock = 0;
+	};
+
+	class R_MRAAWS_HEAT_F;
+	class 7thFleet_HEAT75_Ammo: R_MRAAWS_HEAT_F
+	{
+		hit = 500;
+		indirectHit = 100;
+		indirectHitRange = 2;
+		weaponType = "rocket";
+		canLock = 0;
+	};
+	class 7thFleet_SMK_B: R_MRAAWS_HEAT_F
+	{
+		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Blue";
+		hit = 0;
+		indirectHit = 0;
+		weaponLockSystem = 0;
+		weaponType = "special";
+		canLock = 0;
+	};
+	class 7thFleet_SMK_G: R_MRAAWS_HEAT_F
+	{
+		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Green";
+		hit = 0;
+		indirectHit = 0;
+		weaponLockSystem = 0;
+		weaponType = "special";
+		canLock = 0;
+	};
+	class 7thFleet_SMK_O: R_MRAAWS_HEAT_F
+	{
+		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Orange";
+		hit = 0;
+		indirectHit = 0;
+		weaponLockSystem = 0;
+		weaponType = "special";
+		canLock = 0;
+	};
+	class 7thFleet_SMK_P: R_MRAAWS_HEAT_F
+	{
+		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Purple";
+		hit = 0;
+		indirectHit = 0;
+		weaponLockSystem = 0;
+		weaponType = "special";
+		canLock = 0;
+	};
+	class 7thFleet_SMK_R: R_MRAAWS_HEAT_F
+	{
+		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Red";
+		hit = 0;
+		indirectHit = 0;
+		weaponLockSystem = 0;
+		weaponType = "special";
+		canLock = 0;
+	};
+	class 7thFleet_SMK_W: R_MRAAWS_HEAT_F
+	{
+		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_White";
+		hit = 0;
+		indirectHit = 0;
+		weaponLockSystem = 0;
+		weaponType = "special";
+		canLock = 0;
+	};
+	class 7thFleet_SMK_Y: R_MRAAWS_HEAT_F
+	{
+		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Yellow";
+		hit = 0;
+		indirectHit = 0;
+		weaponLockSystem = 0;
+		weaponType = "special";
+		canLock = 0;
 	};
 };

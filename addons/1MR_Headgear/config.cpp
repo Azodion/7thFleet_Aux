@@ -18,7 +18,12 @@ class CfgPatches
 		requiredAddons[] = {};
 	};
 };
-class cfgWeapons
+class CfgCoreData 
+{
+    textureTIConversion = "1MR_Headgear\BH.tga";
+    textureTIConversionDX11 = "1MR_Headgear\BH.png"
+};
+class CfgWeapons
 {
 	class ItemCore;
 	class ItemInfo;
@@ -14213,5 +14218,14 @@ class TKE_KMCHelmSOGW: 7thFleet_Helmet
                 };
             };
         };
+    };
+    class TKE_IntegratedNVGs;
+    class 7EF_TKE_IntegratedNVGs: TKE_IntegratedNVGs 
+    {
+        displayName = "[7th Fleet] Integrated NVG/TI";
+        ACE_nightvision_generation = 4;
+        ACE_nightvision_border = "\z\ace\addons\nightvision\data\nvg_mask_hexes_thin.paa";
+        ace_nightvision_colorPreset[] = {0, {0, 0, 0, 0}, {1.3, 1.2, 0, 0.9}, {6, 1, 1, 0}};
+        visionMode[] = {"Normal", "NVG", "TI"};
     };
 };

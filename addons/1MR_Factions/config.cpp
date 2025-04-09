@@ -10,9 +10,9 @@ class cfgPatches
   class 7thFleet
   {
     units[]={"7thFleet_Squad_Leader","7thFleet_Team_Leader","7thFleet_Trooper","7thFleet_Trooper_BPR","7thFleet_Trooper_Bullfrog","7thFleet_Trooper_AT","7thFleet_Heavy_Trooper_XLR","7thFleet_Trooper_Light","7thFleet_Soldier_Unarmed","7thFleet_Officer","7thFleet_Officer_Unarmed","7thFleet_OfficerMP","7thFleet_Marksman","7thFleet_AT_Specialist","7thFleet_AA_Specialist","7thFleet_Explosive_Specialist","7thFleet_UAV_Specialist","7thFleet_Combat_Medic","7thFleet_Engineer","7thFleet_Ammo_Bearer","7thFleet_Autorifleman","7thFleet_Recon_Team_Leader","7thFleet_Recon_Scout","7thFleet_Recon_Scout_AT","7thFleet_Recon_Marksman","7thFleet_Recon_Demo_Specialist","7thFleet_Recon_UAV_Specialist","7thFleet_Recon_Paramedic","7thFleet_Recon_Spotter","7thFleet_Recon_Sniper","7thFleet_UCIA_Agent","7thFleet_UCIA_Advisor","7thFleet_UCIA_Team_Leader","7thFleet_UCIA_Scout","7thFleet_UCIA_Scout_AT","7thFleet_UCIA_Marksman","7thFleet_UCIA_Demo_Specialist","7thFleet_UCIA_UAV_Specialist","7thFleet_UCIA_Paramedic","7thFleet_UCIA_Spotter","7thFleet_UCIA_Sniper","7thFleet_OfficerNavy","7thFleet_TrooperNavy","7thFleet_MedicNavy","7thFleet_Crewman","7thFleet_Pilot","7thFleet_Breacher","7thFleet_Trooper_ARG_88","7thFleet_Trooper_Light_AT","7thFleet_Marksman_ARG_88_M","7thFleet_Sniper","7thFleet_AWC_AA","7thFleet_AWC_IFV","7thFleet_AWC_AT","7thFleet_AWC_Recon","7thFleet_MBT_52","7thFleet_MSE_3","7thFleet_MSE_3_Unarmed","7thFleet_MRAP","7thFleet_MRAP_GMG","7thFleet_MRAP_HMG","7thFleet_X_32","7thFleet_X_32_Vehicle","7thFleet_UH_80","7thFleet_CH_67","7thFleet_AFV_MGS","7thFleet_MBT_100X","7thFleet_MBT_100","7thFleet_IFV_4","7thFleet_AAV_5","7thFleet_LSV","7thFleet_LSV_HMG","7thFleet_LSV_AT","7thFleet_HMG","7thFleet_HMG_high","7thFleet_GMG","7thFleet_GMG_high","7thFleet_HMG_A","7thFleet_GMG_A","7thFleet_static_AT","7thFleet_static_AA","B_KEF_UCP_Cop_Leader","B_KEF_UCP_Cop","B_KEF_UCP_Cop_Heavy","B_KEF_UCP_Cop_Light","B_KEF_UCP_Cop_Officer","B_KEF_UCP_Cop_Unarmed","B_KEF_UCP_MSE_3_Unarmed","B_KEF_UCP_LSV","7thFleet_truck_HULV","7thFleet_truck_HULV_C","7thFleet_truck_HULV_Ammo","7thFleet_truck_HULV_Fuel","7thFleet_truck_HULV_Repair","7thFleet_truck_HULV_Device","B_KEF_UCP_truck_HULV","B_KEF_UCP_truck_HULV_C"};
-    weapons[]={"7thFleet_TKE_UCNRifle2_optic_Arco_blk_F","7thFleet_TKE_UCNRifle_optic_Arco_blk_F","7thFleet_TKE_UCNRifle2_optic_ACO_grn","7thFleet_TKE_UCNRifle2_optic_ACO_grn_smg","7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg","7thFleet_TKE_UCNRifle_acc_pointer_IRoptic_SOS","7thFleet_TKE_UCNRifle2_optic_Aco","7thFleet_TKE_UCNRifle2_acc_pointer_IRoptic_Arco_blk_F","7thFleet_TKE_UCNRifle2_acc_pointer_IRoptic_Holosight_blk_F","7thFleet_TKE_MDDMR_acc_pointer_IRoptic_SOSbipod_01_F_blk","7thFleet_TKE_UCNRifle3_acc_pointer_IRoptic_Holosight_blk_F","7thFleet_TKE_MDLMG_optic_ACO_grnbipod_01_F_blk","7thFleet_TKE_UCNLMG_optic_Arco_blk_Fbipod_01_F_blk","7thFleet_TKE_UCNDMR_optic_SOSbipod_01_F_blk","7thFleet_TKE_UCNDMR_optic_DMSbipod_01_F_blk","7thFleet_TKE_UCNBPRifle_optic_Arco_blk_F","7thFleet_TKE_UCNBPRifle_optic_ACO_grn"};
+    weapons[]={"7EF_Painkiller","7thFleet_TKE_UCNRifle2_optic_Arco_blk_F","7thFleet_TKE_UCNRifle_optic_Arco_blk_F","7thFleet_TKE_UCNRifle2_optic_ACO_grn","7thFleet_TKE_UCNRifle2_optic_ACO_grn_smg","7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg","7thFleet_TKE_UCNRifle_acc_pointer_IRoptic_SOS","7thFleet_TKE_UCNRifle2_optic_Aco","7thFleet_TKE_UCNRifle2_acc_pointer_IRoptic_Arco_blk_F","7thFleet_TKE_UCNRifle2_acc_pointer_IRoptic_Holosight_blk_F","7thFleet_TKE_MDDMR_acc_pointer_IRoptic_SOSbipod_01_F_blk","7thFleet_TKE_UCNRifle3_acc_pointer_IRoptic_Holosight_blk_F","7thFleet_TKE_MDLMG_optic_ACO_grnbipod_01_F_blk","7thFleet_TKE_UCNLMG_optic_Arco_blk_Fbipod_01_F_blk","7thFleet_TKE_UCNDMR_optic_SOSbipod_01_F_blk","7thFleet_TKE_UCNDMR_optic_DMSbipod_01_F_blk","7thFleet_TKE_UCNBPRifle_optic_Arco_blk_F","7thFleet_TKE_UCNBPRifle_optic_ACO_grn"};
     requiredVersion=0.1;
-    requiredAddons[]={"A3_Weapons_F_Items","A3_Weapons_F","TKE_UCN","TKE_Weapons","A3_Weapons_F_Exp","TKE_Uniforms","A3_Characters_F","A3_Drones_F_Weapons_F_Gamma_Items","A3_Weapons_F_Acc","A3_Armor_F_Decade","A3_Armor_F_Decade_MBT_02","tke_dependency_fixes"};
+    requiredAddons[]={"ace_medical_status","ace_medical_damage","ace_apl","A3_Weapons_F_Items","A3_Weapons_F","TKE_UCN","TKE_Weapons","A3_Weapons_F_Exp","TKE_Uniforms","A3_Characters_F","A3_Drones_F_Weapons_F_Gamma_Items","A3_Weapons_F_Acc","A3_Armor_F_Decade","A3_Armor_F_Decade_MBT_02","tke_dependency_fixes"};
   };
 };
 
@@ -35,6 +35,48 @@ class cfgFactionClasses
 
 };
 
+class ACE_Medical_Treatment
+{
+	class Morphine;
+	class ACE_ItemCore;
+	class Medication
+	{
+		class 7EF_Painkiller: Morphine
+		{
+			painReduce=0.6;
+			hrIncreaseLow[]={0};
+			hrIncreaseNormal[]={0};
+			hrIncreaseHigh[]={0};
+			timeInSystem=300;
+			timeTillMaxEffect=0;
+			maxDose=10;
+			incompatibleMedication[]={};
+			viscosityChange=0;
+		};
+	};
+};
+class ACE_Medical_Treatment_Actions
+{
+	class Morphine;
+	class 7EF_Painkiller: Morphine
+	{
+		displayName="[7th Fleet] Painkiller Injector";
+		displayNameProgress="Injecting [7th Fleet] Painkillers";
+		allowedSelections[]=
+		{
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		};
+		items[]=
+		{
+			"7EF_Painkiller"
+		};
+		treatmentTime=1;
+	};
+};
+
 // class CBA_Extended_EventHandlers_base;
 
 class cfgWeapons
@@ -50,6 +92,8 @@ class cfgWeapons
   class TKE_UCNLMG;
   class TKE_UCNDMR;
   class TKE_UCNBPRifle;
+  class ACE_ItemCore;
+	class CBA_MiscItem_ItemInfo;
 
   class 7thFleet_TKE_UCNRifle2_optic_Arco_blk_F: TKE_UCNRifle2
   {
@@ -263,7 +307,6 @@ class cfgWeapons
       class LinkedItemsOptic
       {
         slot="CowsSlot";
-        // item="optic_Arco_blk_F";
         item="TKE_MRCOSight";
       };
 	  class LinkedItemsUnder
@@ -282,7 +325,6 @@ class cfgWeapons
       class LinkedItemsOptic
       {
         slot="CowsSlot";
-        // item="optic_SOS";
         item="TKE_ThermScope";
       };
       class LinkedItemsAcc
@@ -307,7 +349,6 @@ class cfgWeapons
       {
         slot="CowsSlot";
         item="optic_DMS";
-        // item="TKE_ThermScope";
       };
       class LinkedItemsAcc
       {
@@ -330,7 +371,6 @@ class cfgWeapons
       class LinkedItemsOptic
       {
         slot="CowsSlot";
-        // item="optic_Arco_blk_F";
         item="TKE_MRCOSight";
       };
       class LinkedItemsAcc
@@ -349,7 +389,6 @@ class cfgWeapons
       class LinkedItemsOptic
       {
         slot="CowsSlot";
-        // item="optic_ACO_grn";
         item="TKE_ReflexSight";
       };
       class LinkedItemsAcc
@@ -359,7 +398,19 @@ class cfgWeapons
       };
     };
   };
-
+  class 7EF_Painkiller: ACE_ItemCore
+	{
+		scope=2;
+		displayName="[7th Fleet] Painkiller Injector";
+		picture="\1MR_Factions\Textures\Painkiller.paa";
+		model="\z\ace\addons\medical_treatment\data\morphine.p3d";
+		descriptionShort="2x Dose for Severe Pain. 1x Dose for Pain. 10x Dose Max. 300sec in System.";
+		descriptionUse=" Painkiller Injector";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass=0.1;
+		};
+	};
 };
 
 class cfgVehicles

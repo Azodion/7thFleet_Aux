@@ -15,7 +15,8 @@ class CfgPatches
 		{
 			"EF_7th_Ammo",
 			"EF_7th_Medical",
-			"EF_7th_Explosive"
+			"EF_7th_Explosive",
+			"EF_7th_RRR"
 		};
 		requiredVersion=0.1;
 		weapons[]={};
@@ -84,7 +85,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\7thFleetAir\7thFleetCrates\Textures\7th_AmmoCrate_co.paa"
+			"\7thFleetProps\7thFleetCrates\Textures\7th_AmmoCrate_co.paa"
 		};
 		class TransportMagazines
 		{
@@ -250,7 +251,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\7thFleetAir\7thFleetCrates\Textures\7th_MedCrate_co.paa"
+			"\7thFleetProps\7thFleetCrates\Textures\7th_MedCrate_co.paa"
 		};
 		class TransportMagazines
 		{
@@ -391,7 +392,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\7thFleetAir\7thFleetCrates\Textures\7th_ExplosiveCrate_co.paa"
+			"\7thFleetProps\7thFleetCrates\Textures\7th_ExplosiveCrate_co.paa"
 		};
 		class TransportMagazines
 		{
@@ -456,6 +457,59 @@ class CfgVehicles
 				name="TKE_SMOKE_mag";
 				count=30;
 			};
+		};
+	};
+	class EF_7th_RRR: TKE_SupplyCrate
+	{
+		author="Hophri";
+		mapSize=1.25;
+		class SimpleObject
+		{
+			eden=1;
+			animate[]={};
+			hide[]={};
+			verticalOffset=0.382;
+			verticalOffsetWorld=0;
+			init="''";
+		};
+		
+		ace_rearm_defaultSupply = 999999999;
+		ace_refuel_fuelCargo = -10;
+		ace_repair_canRepair = 1;
+		ace_isRepairFacility = 1;
+		ace_refuel_hooks[] = {{0,0,0},{0,0,0}};
+		
+		ace_dragging_canDrag = 1;
+        ace_dragging_dragPosition[] = {0, 1.5, 0};
+        ace_dragging_dragDirection = 0;
+        ace_dragging_ignoreWeight = 1;
+
+        ace_dragging_canCarry = 1;
+        ace_dragging_carryPosition[] = {0, 1.5, 1};
+        ace_dragging_carryDirection = 90;
+        ace_dragging_ignoreWeightCarry = 1;
+		
+        ace_cargo_size = 0;
+        ace_cargo_canLoad = 0;
+        ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
+    
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="[7th Fleet] RRR Crate";
+		model="\TKE_Kuiper_Engagements\TKE_Props\TKE_SupplyCrate.p3d";
+		icon="\A3\Supplies_F_Exp\Ammoboxes\Data\UI\icon_equipment_box_ca.paa";
+		editorCategory="7FLT_Editor_Props";
+		editorSubcategory="7th_ResupplyCrates";
+		maximumLoad=0;
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\7thFleetProps\7thFleetCrates\Textures\7th_RRR_co.paa"
 		};
 	};
 };

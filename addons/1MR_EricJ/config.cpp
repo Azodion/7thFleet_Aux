@@ -6,6 +6,9 @@
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
+#define private 0
+#define protected 1
+#define public 2
 
 class CfgPatches
 {
@@ -46,79 +49,47 @@ class CfgFactionClasses
 		side = 1;
 	};
 };
-class CfgAmmo
+class Eventhandlers;
+class Components;
+class SensorsManagerComponent;
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeft
 {
-	class B_127x99_Ball_Tracer_Red;
-	class 7EF_B_127x99_HE_Tracer_Red: B_127x99_Ball_Tracer_Red
-	{
-		ACE_damageType = "explosive";
-		ace_frag_skip = 1;
-		allowAgainstInfantry = 1;
-		airLock = 1;
-		caliber = 2.0;
-		explosionEffects = "ExploAmmoExplosion";
-		explosionSoundEffect = "DefaultExplosion";
-		explosive = 0.4;
-		fuseDistance = 5;
-		hit = 50;
-		indirectHit = 15;
-		indirectHitRange = 2;
-		tracerScale = 1.2;
-		tracerStartTime = 0.01;
-		tracerEndTime = 30;
-		weaponType = "mGun";
-		weaponLockSystem = 1 + 8;
-	};
+	class Components;
 };
-class CfgMagazines
+class DefaultVehicleSystemsDisplayManagerRight
 {
-	class 500Rnd_127x99_mag_Tracer_Red;
-	class 2500Rnd_127x99_mag_Tracer_Red: 500Rnd_127x99_mag_Tracer_Red
-	{
-		count = 2500;
-		descriptionShort = "Caliber: 12.7x99mm Tracer - Red<br/>Rounds: 2500<br />Used in: Vehicles";
-		displayName = "2500Rnd Light HE 12.7mm HMG Tracer (Red) Mag";
-		tracersEvery = 1;
-		ammo = "7EF_B_127x99_HE_Tracer_Red";
-	};
+	class Components;
 };
-class CfgWeapons
+class VehicleSystemsDisplayManagerComponentLeft
 {
-	class MGunCore;
-	class ej_M134_minigun;
-	class 7EF_ej_M134_minigun: ej_M134_minigun
-	{
-		displayname = "2x GAU-21 12.7mm";
-		magazines[]=
-		{
-			"2500Rnd_127x99_mag_Tracer_Red"
-		};
-		magazineReloadTime=3;
-		dispersion = 0.003;
-		ballisticsComputer = 4 + 8;
-		canLock = 2;
-		weaponLockSystem = 8;
-	};
+	class Components;
+};
+class VehicleSystemsDisplayManagerComponentRight
+{
+	class Components;
 };
 class CfgVehicles
 {
-	class Eventhandlers;
-	class SensorTemplatePassiveRadar;
-	class SensorTemplateAntiRadiation;
-	class SensorTemplateActiveRadar;
-	class SensorTemplateIR;
-	class SensorTemplateVisual;
-	class SensorTemplateMan;
-	class SensorTemplateLaser;
-	class SensorTemplateNV;
-	class SensorTemplateDataLink;
-	class ej_AH96_NATO;
-	class ej_AH96_Victus: ej_AH96_NATO
+	class ej_AH96
+	{
+		class Components;
+	};
+	class ej_AH96_Victus: ej_AH96
 	{
 		author = "Frenchie";
 		DLC = "1st Marine Raiders Armory";
 		displayName = "AH-96 Coyote (6 Pylons)";
 		side = 1;
+		scope = 2;
 		faction = "274thTS";
 		crew = "33rdCAW_Pilot";
 		typicalCargo[] = {"33rdCAW_Pilot"};
@@ -127,7 +98,7 @@ class CfgVehicles
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
@@ -146,6 +117,63 @@ class CfgVehicles
 		textureList[] = {"Victus",1};
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
 		hiddenSelectionsTextures[] = {"\1MR_EricJ\Textures\ah96_body_Victus_co.paa","\1MR_EricJ\Textures\ah96_engines_Victus_co.paa","uh-60\data\blackductfans_co.paa","uh-60\data\SOAS_AAQ16_Flir_co.paa"};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				uiPicture = "\UH-60\Data\UI\Heli_attack_AH_96.paa";
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment = "7EF_Talon_4Rnd";
+						bay = 1;
+						hardpoints[] = {"7th_Hardpoints_Widowmaker","7th_Hardpoints_Talon"};
+						priority = 5;
+						turret[] = {0};
+						UIposition[] = {0.06,0.4};
+					};
+					class PylonLeft2: PylonLeft1
+					{
+						priority = 4;
+						UIposition[] = {0.08,0.35};
+					};
+					class PylonLeft3: PylonLeft1
+					{
+						priority = 3;
+						UIposition[] = {0.1,0.3};
+					};
+					class PylonRight1: PylonLeft1
+					{
+						mirroredMissilePos = 1;
+						UIposition[] = {0.59,0.4};
+					};
+					class PylonRight2: PylonLeft2
+					{
+						mirroredMissilePos = 2;
+						UIposition[] = {0.57,0.35};
+					};
+					class PylonRight3: PylonLeft3
+					{
+						mirroredMissilePos = 3;
+						UIposition[] = {0.55,0.3};
+					};
+					class pylonTip1
+					{
+						attachment = "7EF_StratosAA_1Rnd";
+						hardpoints[] = {"7th_Hardpoints_Stratos","7th_Hardpoints_Cryon"};
+						priority = 3;
+						turret[] = {};
+						UIposition[] = {0.04,0.25};
+					};
+					class pylonTip2: pylonTip1
+					{
+						mirroredMissilePos = 7;
+						UIposition[] = {0.625,0.25};
+					};
+				};
+			};
+		};
 	};
 	class ej_UH92; 
 	class ej_UH92_Victus: ej_UH92
@@ -171,7 +199,7 @@ class CfgVehicles
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
@@ -231,7 +259,7 @@ class CfgVehicles
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
@@ -259,28 +287,34 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\1MR_EricJ\Textures\uh60m_fuselage_VictusMEV_co.paa","\1MR_EricJ\Textures\uh60m_engine_VictusMEV_co.paa","\uh-60\data\blackductfans_co.paa"};
 	};
-	class ej_MH92DAP3;
-	class ej_MH92DAP3_Victus: ej_MH92DAP3
+	class ej_MH92DAP_base
+	{
+		class Components;
+	};
+	class ej_MH92DAP3_Victus: ej_MH92DAP_base
 	{
 		class EventHandlers: EventHandlers
 		{
 			init="[_this select 0] execVM '\1MR_Vehicles\Functions\MagLock.sqf';";
 		};
 		author = "Frenchie";
+		displayName = "MH-92F DAP (4 pylons)";
 		DLC = "1st Marine Raiders Armory";
 		side = 1;
+		scope = 2;
 		faction = "274thTS";
 		crew = "33rdCAW_Pilot";
 		typicalCargo[] = {"33rdCAW_Pilot"};
 		magazines[] = {
 			"240Rnd_CMFlare_Chaff_Magazine", 
 			"2500Rnd_127x99_mag_Tracer_Red",
-			"2500Rnd_127x99_mag_Tracer_Red"
+			"Laserbatteries"
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"7EF_ej_M134_minigun",
-			"EricJ_CMFlareLauncher",
+			"Laserdesignator_pilotCamera",
+			"7EF_M134_minigun",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
@@ -299,6 +333,260 @@ class CfgVehicles
 		textureList[] = {"Victus",1};
 		hiddenSelections[] = {"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[] = {"\1MR_EricJ\Textures\uh60m_fuselage_Victus_co.paa","\1MR_EricJ\Textures\uh60m_engine_Victus_co.paa","\uh-60\data\blackductfans_co.paa"};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				uiPicture = "\UH-60\Data\UI\Heli_Cherokee.paa";
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment = "7EF_Talon_4Rnd";
+						hardpoints[] = {"7th_Hardpoints_Guardian","7th_Hardpoints_Sabertooth","7th_Hardpoints_Widowmaker","7th_Hardpoints_Stratos","7th_Hardpoints_Cryon","7th_Hardpoints_Talon","7th_Hardpoints_Havoc"};
+						priority = 5;
+						turret[] = {};
+						UIposition[] = {0.06,0.4};
+					};
+					class PylonLeft2: PylonLeft1
+					{
+						hardpoints[] = {"7th_Hardpoints_Sabertooth","7th_Hardpoints_Widowmaker","7th_Hardpoints_Stratos","7th_Hardpoints_Cryon","7th_Hardpoints_Talon","7th_Hardpoints_Havoc"};
+						UIposition[] = {0.08,0.35};
+					};
+					class PylonRight3: PylonLeft2
+					{
+						mirroredMissilePos = 2;
+						UIposition[] = {0.57,0.35};
+					};
+					class PylonRight4: PylonLeft1
+					{
+						mirroredMissilePos = 1;
+						UIposition[] = {0.6,0.4};
+					};
+				};
+			};
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=100;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=100;
+							maxRange=5000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=360;
+						angleRangeVertical=120;
+						maxTrackableSpeed=500;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=100;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=100;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=20;
+						maxTrackableSpeed=100;
+						aimDown=1;
+						animDirection="pilotCameraRotY";
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+						class AirTarget
+						{
+							minRange=5000;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=5000;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=6000;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=0.1;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=13000;
+							maxRange=13000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=9000;
+							maxRange=9000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=6000;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=0.1;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=360;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={8000,2000,16000,6000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={8000,2000,16000,6000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportCountermeasuresComponent;
+		};
+		class pilotCamera
+		{
+			controllable = 1;
+			initElev = 15;
+			initTurn = 0;
+			maxElev = 90;
+			maxMouseXRotSpeed = 0.5;
+			maxMouseYRotSpeed = 0.5;
+			maxTurn = 360;
+			minTurn = -360;
+			maxXRotSpeed = 1;
+			maxYRotSpeed = 1;
+			minElev = -20;
+			pilotOpticsShowCursor = 1;
+			class OpticsIn
+			{
+				class Wide
+				{
+					directionStabilized = 1;
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					initAngleX = 0;
+					initAngleY = 0;
+					initFov = "(60 / 120)";
+					maxAngleX = 0;
+					maxAngleY = 0;
+					maxFov = "(60 / 120)";
+					minAngleX = 0;
+					minAngleY = 0;
+					minFov = "(60 / 120)";
+					opticsDisplayName = "WFOV";
+					opticsPPEffects[] = {};
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+				class Medium: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+					initFov = "(12 / 120)";
+					maxFov = "(12 / 120)";
+					minFov = "(12 / 120)";
+					opticsDisplayName = "MFOV";
+				};
+				class Narrow: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					initFov = "(4 / 120)";
+					maxFov = "(4 / 120)";
+					minFov = "(4 / 120)";
+					opticsDisplayName = "NFOV";
+				};
+				class VeryNarrow: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					initFov = "(2 / 120)";
+					maxFov = "(2 / 120)";
+					minFov = "(2 / 120)";
+					opticsDisplayName = "NFOV";
+				};
+			};
+		};
 	};
 	class ej_MH92;
 	class ej_MH92_Victus: ej_MH92
@@ -324,7 +612,7 @@ class CfgVehicles
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
@@ -370,33 +658,14 @@ class CfgVehicles
 		faction = "274thTS";
 		crew = "33rdCAW_Pilot";
 		typicalCargo[] = {"33rdCAW_Pilot"};
-		driverCanSee = 31;
-		incomingMissileDetectionSystem = 16;
 		magazines[] = {
+			"240Rnd_CMFlare_Chaff_Magazine",
 			"240Rnd_CMFlare_Chaff_Magazine"
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
-		};
-		class pilotCamera
-		{
-		
-			class OpticsIn
-			{
-			}
-		
-			minTurn		= -360;
-			maxTurn		=  360;
-			initTurn	=   0;
-			minElev		= -90;
-			maxElev		=  90;
-			initElev	=   0;
-			maxXRotSpeed = 0.5;
-			maxYRotSpeed = 0.5;
-			pilotOpticsShowCursor = 1;
-			controllable = 1;
 		};
 		class TransportMagazines{};
 		class TransportWeapons{};
@@ -411,12 +680,168 @@ class CfgVehicles
 				factions[] = {"274thTS"};
 			};
 		};
-		class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-		{
-		};
 		textureList[] = {"Victus",1};
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = {"\1MR_EricJ\Textures\ah6_merge1_Victus_co.paa","\uh-60\data\blackductfans_co.paa"};
+		incomingMissileDetectionSystem = 16;
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						aimDown = 30;
+						angleRangeHorizontal = 120;
+						angleRangeVertical = 90;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableSpeed = 300;
+						minSpeedThreshold = 0;
+						
+						class AirTarget
+						{
+							maxRange = 2000;
+							minRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 2000;
+							minRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+
+					class IRSensorComponent: SensorTemplateIR
+					{
+						aimdown = -0.25;
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						maxTrackableSpeed = 300;
+
+						class AirTarget
+						{
+							maxRange = 2000;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							maxRange = 2000;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+					};
+
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						aimdown = -0.25;
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						maxTrackableSpeed = 300;
+
+						class AirTarget
+						{
+							maxRange = 1500;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							maxRange = 1500;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+					};
+
+
+					class LaserSensorComponent;
+					class NVSensorComponent;
+					class PassiveRadarSensorComponent;
+				};
+			};
+			class TransportCountermeasuresComponent;
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+		};
 	};
 	class ej_ah15m;
 	class ej_ah15m_Victus: ej_ah15m
@@ -428,65 +853,16 @@ class CfgVehicles
 		faction = "274thTS";
 		crew = "33rdCAW_Pilot";
 		typicalCargo[] = {"33rdCAW_Pilot"};
-		driverCanSee = 31;
-		incomingMissileDetectionSystem = 16;
 		magazines[] = {
 			"240Rnd_CMFlare_Chaff_Magazine", 
-			"2500Rnd_127x99_mag_Tracer_Red",
 			"2500Rnd_127x99_mag_Tracer_Red"
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"7EF_ej_M134_minigun",
-			"EricJ_CMFlareLauncher",
+			"7EF_M134_minigun",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
-		class VisualSensorComponent: SensorTemplateVisual
-		{
-			class AirTarget
-			{
-				minRange=-1;
-				maxRange=-1;
-				objectDistanceLimitCoef=-1;
-				viewDistanceLimitCoef=-1;
-			};
-			class GroundTarget
-			{
-				minRange=5;
-				maxRange=3000;
-				objectDistanceLimitCoef=-1;
-				viewDistanceLimitCoef=-1;
-				typeRecognitionDistance = 3000;
-			};
-			allowsMarking= 1;
-			angleRangeHorizontal=26;
-			angleRangeVertical=20;
-			maxTrackableSpeed=1e10;
-			aimDown=1;
-			animDirection="pilotCameraRotY";
-		};
-		class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-		{
-		};
-		class pilotCamera
-		{
-		
-			class OpticsIn
-			{
-			}
-		
-			minTurn		= -360;
-			maxTurn		=  360;
-			initTurn	=   0;
-			minElev		= -90;
-			maxElev		=  90;
-			initElev	=   0;
-			maxXRotSpeed = 0.5;
-			maxYRotSpeed = 0.5;
-			pilotOpticsShowCursor = 1;
-			controllable = 1;
-		};
-		weaponLockSystem = "2+4";
 		class TransportMagazines{};
 		class TransportWeapons{};
 		class TransportItems{};
@@ -496,5337 +872,190 @@ class CfgVehicles
 			{
 				displayName = "Victus";
 				author = "Frenchie";
-				textures[] = {"\1MR_EricJ\Textures\ah6_merge1_Victus_co.paa","\uh-60\data\blackductfans_co.paa"};
+				textures[] = {"\1MR_EricJ\Textures\ah6_merge1_Victus_co.paa","\uh-60\data\dapductfans_co.paa"};
 				factions[] = {"274thTS"};
 			};
 		};
 		textureList[] = {"Victus",1};
 		hiddenSelections[] = {"camo","camo1"};
-		hiddenSelectionsTextures[] = {"\1MR_EricJ\Textures\ah6_merge1_Victus_co.paa","\uh-60\data\blackductfans_co.paa"};
-		class MFD
+		hiddenSelectionsTextures[] = {"\1MR_EricJ\Textures\ah6_merge1_Victus_co.paa","\uh-60\data\dapductfans_co.paa"};
+		incomingMissileDetectionSystem = 16;
+		class Components: Components
 		{
-			class AirplaneHUD
+			class SensorsManagerComponent
 			{
-				class Bones
+				class Components
 				{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						aimDown = 30;
+						angleRangeHorizontal = 120;
+						angleRangeVertical = 90;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableSpeed = 300;
+						minSpeedThreshold = 0;
+						
+						class AirTarget
+						{
+							maxRange = 2000;
+							minRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 2000;
+							minRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+
+					class IRSensorComponent: SensorTemplateIR
+					{
+						aimdown = -0.25;
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						maxTrackableSpeed = 300;
+
+						class AirTarget
+						{
+							maxRange = 2000;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							maxRange = 2000;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+					};
+
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						aimdown = -0.25;
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						maxTrackableSpeed = 300;
+
+						class AirTarget
+						{
+							maxRange = 1500;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							maxRange = 1500;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+					};
+
+
+					class LaserSensorComponent;
+					class NVSensorComponent;
+					class PassiveRadarSensorComponent;
 				};
-				class Draw
-				{
-				};
-				topLeft="HUD_top_left";
-				topRight="HUD_top_right";
-				bottomLeft="HUD_bottom_left";
-				borderLeft=0;
-				borderRight=0;
-				borderTop=0;
-				borderBottom=0;
-				color[]={0.15000001,1,0.15000001,1};
-				enableParallax=0;
-				helmetMountedDisplay=1;
-				helmetPosition[]={0,0,0};
-				helmetRight[]={0,0,0};
-				helmetDown[]={0,0,0};
 			};
-			class Kimi_HUD_1
+			class TransportCountermeasuresComponent;
+			class TransportPylonsComponent
 			{
-				topLeft="HUD_top_left";
-				topRight="HUD_top_right";
-				bottomLeft="HUD_bottom_left";
-				borderLeft=0;
-				borderRight=0;
-				borderTop=0;
-				borderBottom=0;
-				color[]={0.15000001,1,0.15000001,1};
-				enableParallax=0;
-				class Bones
+				uiPicture = "\A3\Air_F\Heli_Light_01\Data\UI\Heli_Light_01_3DEN_CA.paa";
+				class Presets;
+				class Pylons
 				{
-					class GunnerAim
+					class PylonLeft1
 					{
-						type="vector";
-						source="weapon";
-						pos0[]=
-						{
-							0.5,
-							"0.9 - 0.04 + 0.012"
-						};
-						pos10[]=
-						{
-							"0.5 + 0.0111",
-							"0.9 - 0.04 + 0.012 + 0.0133"
-						};
+						attachment = "7th_Widowmaker_12Rnd";
+						hardpoints[] = {"7th_Hardpoints_Sabertooth","7th_Hardpoints_Talon", "7th_Hardpoints_Stratos","7th_Hardpoints_Widowmaker"};
+						priority = 5;
+						UIposition[] = {0.06,0.4};
 					};
-					class Target
+					class PylonRight1: PylonLeft1
 					{
-						source="target";
-						type="vector";
-						pos0[]={0.5,0.5};
-						pos10[]={0.85000002,0.85000002};
-					};
-					class Velocity
-					{
-						type="vector";
-						source="velocity";
-						pos0[]={0.5,0.5};
-						pos10[]={0.64999998,0.64999998};
-					};
-					class Velocity_slip
-					{
-						type="vector";
-						source="velocity";
-						pos0[]={0.5,0.84500003};
-						pos10[]={0.52999997,0.84500003};
-					};
-					class VspeedBone
-					{
-						type="linear";
-						source="vspeed";
-						sourceScale=1.9685;
-						min=-20;
-						max=20;
-						minPos[]={0.93000001,0.2};
-						maxPos[]={0.93000001,0.80000001};
-					};
-					class RadarAltitudeBone
-					{
-						type="linear";
-						source="altitudeAGL";
-						sourceScale=3.2808399;
-						min=0;
-						max=200;
-						minPos[]={0.96499997,0.2};
-						maxPos[]={0.96499997,0.80000001};
-					};
-					class HorizonBankRot
-					{
-						type="rotational";
-						source="horizonBank";
-						center[]={0.5,0.5};
-						min=-3.1415999;
-						max=3.1415999;
-						minAngle=-180;
-						maxAngle=180;
-						aspectRatio=1;
-					};
-					class ForwardVec
-					{
-						type="vector";
-						source="forward";
-						pos0[]={0,0};
-						pos10[]={0.25,0.25};
-					};
-					class WeaponAim
-					{
-						type="vector";
-						source="weapon";
-						pos0[]={0.5,0.5};
-						pos10[]={0.75,0.75};
-					};
-					class Level0
-					{
-						type="horizon";
-						pos0[]={0.5,0.5};
-						pos10[]={0.77999997,0.77999997};
-						angle=0;
-					};
-					class LevelP5: Level0
-					{
-						angle=5;
-					};
-					class LevelM5: Level0
-					{
-						angle=-5;
-					};
-					class LevelP10: Level0
-					{
-						angle=10;
-					};
-					class LevelM10: Level0
-					{
-						angle=-10;
-					};
-					class LevelP15: Level0
-					{
-						angle=15;
-					};
-					class LevelM15: Level0
-					{
-						angle=-15;
-					};
-					class LevelP20: Level0
-					{
-						angle=20;
-					};
-					class LevelM20: Level0
-					{
-						angle=-20;
-					};
-					class LevelP25: Level0
-					{
-						angle=25;
-					};
-					class LevelM25: Level0
-					{
-						angle=-25;
-					};
-					class LevelP30: Level0
-					{
-						angle=30;
-					};
-					class LevelM30: Level0
-					{
-						angle=-30;
-					};
-					class LevelP35: Level0
-					{
-						angle=35;
-					};
-					class LevelM35: Level0
-					{
-						angle=-35;
-					};
-					class LevelP40: Level0
-					{
-						angle=40;
-					};
-					class LevelM40: Level0
-					{
-						angle=-40;
-					};
-					class LevelP45: Level0
-					{
-						angle=45;
-					};
-					class LevelM45: Level0
-					{
-						angle=-45;
-					};
-					class LevelP50: Level0
-					{
-						angle=50;
-					};
-					class LevelM50: Level0
-					{
-						angle=-50;
+						mirroredMissilePos = 1;
+						UIposition[] = {0.59,0.4};
 					};
 				};
-				class Draw
-				{
-					color[]={0.18000001,1,0.18000001};
-					alpha=1;
-					condition="on";
-					class Horizont
-					{
-						clipTL[]={0.15000001,0.15000001};
-						clipBR[]={0.85000002,0.85000002};
-						class Dimmed
-						{
-							class Level0
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"Level0",
-										{-0.41999999,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{-0.38,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{-0.37,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{-0.33000001,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{-0.31999999,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{-0.28,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{-0.27000001,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{-0.23,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{-0.22,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{-0.18000001,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{-0.17,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{-0.13,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{-0.12,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{-0.079999998,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{0.41999999,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{0.38,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{0.37,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{0.33000001,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{0.31999999,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{0.28,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{0.27000001,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{0.23,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{0.22,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{0.18000001,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{0.17,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{0.13,0},
-										1
-									},
-									{},
-									
-									{
-										"Level0",
-										{0.12,0},
-										1
-									},
-									
-									{
-										"Level0",
-										{0.079999998,0},
-										1
-									}
-								};
-							};
-						};
-					};
-					class HorizonBankRot
-					{
-						type="line";
-						width=3;
-						points[]=
-						{
-							
-							{
-								"HorizonBankRot",
-								{0,0.25},
-								1
-							},
-							
-							{
-								"HorizonBankRot",
-								{-0.0099999998,0.23},
-								1
-							},
-							
-							{
-								"HorizonBankRot",
-								{0.0099999998,0.23},
-								1
-							},
-							
-							{
-								"HorizonBankRot",
-								{0,0.25},
-								1
-							}
-						};
-					};
-					class Static_HAD_BOX
-					{
-						clipTL[]={0,1};
-						clipBR[]={1,0};
-						type="line";
-						width=5;
-						points[]=
-						{
-							
-							{
-								
-								{
-									"0.5-0.1",
-									"0.9-0.04"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									"0.5-0.1",
-									"0.9+0.04"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									"0.5+0.1",
-									"0.9+0.04"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									"0.5+0.1",
-									"0.9-0.04"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									"0.5-0.1",
-									"0.9-0.04"
-								},
-								1
-							},
-							{},
-							
-							{
-								
-								{
-									"0.5-0.1",
-									"0.9-0.04+0.012"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									"0.5-0.092",
-									"0.9-0.04+0.012"
-								},
-								1
-							},
-							{},
-							
-							{
-								
-								{
-									"0.5+0.1",
-									"0.9-0.04+0.012"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									"0.5+0.092",
-									"0.9-0.04+0.012"
-								},
-								1
-							},
-							{},
-							
-							{
-								
-								{
-									0.5,
-									"0.9-0.04"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									0.5,
-									"0.9-0.032"
-								},
-								1
-							},
-							{},
-							
-							{
-								
-								{
-									0.5,
-									"0.9+0.04"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									0.5,
-									"0.9+0.032"
-								},
-								1
-							},
-							{}
-						};
-					};
-					class Gunner_HAD
-					{
-						type="line";
-						width=6;
-						points[]=
-						{
-							
-							{
-								"GunnerAim",
-								{-0.015,-0.0080000004},
-								1
-							},
-							
-							{
-								"GunnerAim",
-								{-0.015,0.0080000004},
-								1
-							},
-							
-							{
-								"GunnerAim",
-								{0.015,0.0080000004},
-								1
-							},
-							
-							{
-								"GunnerAim",
-								{0.015,-0.0080000004},
-								1
-							},
-							
-							{
-								"GunnerAim",
-								{-0.015,-0.0080000004},
-								1
-							}
-						};
-					};
-					class Slip_ball_group
-					{
-						class Slip_bars
-						{
-							type="line";
-							width=4;
-							points[]=
-							{
-								
-								{
-									
-									{
-										"0.5-0.018",
-										"0.9-0.04"
-									},
-									1
-								},
-								
-								{
-									
-									{
-										"0.5-0.018",
-										"0.9-0.075"
-									},
-									1
-								},
-								{},
-								
-								{
-									
-									{
-										"0.5+0.018",
-										"0.9-0.04"
-									},
-									1
-								},
-								
-								{
-									
-									{
-										"0.5+0.018",
-										"0.9-0.075"
-									},
-									1
-								}
-							};
-						};
-						class Slip_ball
-						{
-							type="line";
-							width=6;
-							points[]=
-							{
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.75",
-										"-0.02 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.75",
-										"-0.01732 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.75",
-										"-0.0099999998 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.02 * 0.75",
-										"0 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.75",
-										"0.0099999998 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.75",
-										"0.01732 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.75",
-										"0.02 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.75",
-										"0.01732 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.75",
-										"0.0099999998 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.02 * 0.75",
-										"0 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.75",
-										"-0.0099999998 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.75",
-										"-0.01732 * 0.75"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.75",
-										"-0.02 * 0.75"
-									},
-									1
-								},
-								{},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.6",
-										"-0.02 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.6",
-										"-0.01732 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.6",
-										"-0.0099999998 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.02 * 0.6",
-										"0 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.6",
-										"0.0099999998 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.6",
-										"0.01732 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.6",
-										"0.02 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.6",
-										"0.01732 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.6",
-										"0.0099999998 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.02 * 0.6",
-										"0 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.6",
-										"-0.0099999998 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.6",
-										"-0.01732 * 0.6"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.6",
-										"-0.02 * 0.6"
-									},
-									1
-								},
-								{},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.5",
-										"-0.02 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.5",
-										"-0.01732 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.5",
-										"-0.0099999998 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.02 * 0.5",
-										"0 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.5",
-										"0.0099999998 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.5",
-										"0.01732 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.5",
-										"0.02 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.5",
-										"0.01732 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.5",
-										"0.0099999998 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.02 * 0.5",
-										"0 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.5",
-										"-0.0099999998 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.5",
-										"-0.01732 * 0.5"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.5",
-										"-0.02 * 0.5"
-									},
-									1
-								},
-								{},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.4",
-										"-0.02 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.4",
-										"-0.01732 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.4",
-										"-0.0099999998 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.02 * 0.4",
-										"0 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.4",
-										"0.0099999998 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.4",
-										"0.01732 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.4",
-										"0.02 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.4",
-										"0.01732 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.4",
-										"0.0099999998 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.02 * 0.4",
-										"0 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.4",
-										"-0.0099999998 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.4",
-										"-0.01732 * 0.4"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.4",
-										"-0.02 * 0.4"
-									},
-									1
-								},
-								{},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.30",
-										"-0.02 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.30",
-										"-0.01732 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.30",
-										"-0.0099999998 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.02 * 0.30",
-										"0 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.30",
-										"0.0099999998 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.30",
-										"0.01732 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.30",
-										"0.02 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.30",
-										"0.01732 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.30",
-										"0.0099999998 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.02 * 0.30",
-										"0 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.30",
-										"-0.0099999998 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.30",
-										"-0.01732 * 0.30"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.30",
-										"-0.02 * 0.30"
-									},
-									1
-								},
-								{},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.20",
-										"-0.02 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.20",
-										"-0.01732 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.20",
-										"-0.0099999998 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.02 * 0.20",
-										"0 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.20",
-										"0.0099999998 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.20",
-										"0.01732 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.20",
-										"0.02 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.20",
-										"0.01732 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.20",
-										"0.0099999998 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.02 * 0.20",
-										"0 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.20",
-										"-0.0099999998 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.20",
-										"-0.01732 * 0.20"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.20",
-										"-0.02 * 0.20"
-									},
-									1
-								},
-								{},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.1",
-										"-0.02 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.1",
-										"-0.01732 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.1",
-										"-0.0099999998 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.02 * 0.1",
-										"0 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.01732 * 0.1",
-										"0.0099999998 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0.0099999998 * 0.1",
-										"0.01732 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.1",
-										"0.02 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.1",
-										"0.01732 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.1",
-										"0.0099999998 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.02 * 0.1",
-										"0 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.01732 * 0.1",
-										"-0.0099999998 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"-0.0099999998 * 0.1",
-										"-0.01732 * 0.1"
-									},
-									1
-								},
-								
-								{
-									"Velocity_slip",
-									1,
-									
-									{
-										"0 * 0.1",
-										"-0.02 * 0.1"
-									},
-									1
-								}
-							};
-						};
-					};
-					class Centerline
-					{
-						type="line";
-						width=5;
-						points[]=
-						{
-							
-							{
-								{0.5,0.47999999},
-								1
-							},
-							
-							{
-								{0.5,0.44999999},
-								1
-							},
-							{},
-							
-							{
-								{0.5,0.51999998},
-								1
-							},
-							
-							{
-								{0.5,0.55000001},
-								1
-							},
-							{},
-							
-							{
-								{0.47999999,0.5},
-								1
-							},
-							
-							{
-								{0.44999999,0.5},
-								1
-							},
-							{},
-							
-							{
-								{0.51999998,0.5},
-								1
-							},
-							
-							{
-								{0.55000001,0.5},
-								1
-							},
-							{}
-						};
-					};
-					class WeaponName
-					{
-						type="text";
-						source="weapon";
-						sourceScale=1;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.61000001,0.86000001},
-							1
-						};
-						right[]=
-						{
-							{0.64999998,0.86000001},
-							1
-						};
-						down[]=
-						{
-							{0.61000001,0.89999998},
-							1
-						};
-					};
-					class WP
-					{
-						condition="wpvalid - autohover";
-						class WPdist
-						{
-							type="text";
-							source="wpdist";
-							sourceScale=0.001;
-							sourcePrecision=1;
-							align="left";
-							scale=1;
-							pos[]=
-							{
-								{0.235,0.77403802},
-								1
-							};
-							right[]=
-							{
-								{0.27500001,0.77403802},
-								1
-							};
-							down[]=
-							{
-								{0.235,0.80155998},
-								1
-							};
-						};
-						class WPIndex
-						{
-							type="text";
-							source="wpIndex";
-							sourceScale=1;
-							sourceLength=2;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.096000001,0.77600402},
-								1
-							};
-							right[]=
-							{
-								{0.126,0.77600402},
-								1
-							};
-							down[]=
-							{
-								{0.096000001,0.79959399},
-								1
-							};
-						};
-						class WPstatic
-						{
-							type="text";
-							source="static";
-							text="W";
-							scale=1;
-							sourceScale=1;
-							align="right";
-							pos[]=
-							{
-								{0.075000003,0.77499998},
-								1
-							};
-							right[]=
-							{
-								{0.105,0.77499998},
-								1
-							};
-							down[]=
-							{
-								{0.075000003,0.80000001},
-								1
-							};
-						};
-						class WPAuto
-						{
-							type="text";
-							source="static";
-							text="A";
-							scale=1;
-							sourceScale=1;
-							align="right";
-							pos[]=
-							{
-								
-								{
-									"0.075 +0.035",
-									0.80000001
-								},
-								1
-							};
-							right[]=
-							{
-								{0.14,0.80000001},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									"0.075 +0.035",
-									0.82499999
-								},
-								1
-							};
-						};
-						class WPKM
-						{
-							type="text";
-							source="static";
-							text="KM";
-							scale=1;
-							sourceScale=1;
-							align="right";
-							pos[]=
-							{
-								
-								{
-									"0.075 +0.16",
-									0.77499998
-								},
-								1
-							};
-							right[]=
-							{
-								{0.26499999,0.77499998},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									"0.075 +0.16",
-									0.80299997
-								},
-								1
-							};
-						};
-						class WPTime
-						{
-							type="text";
-							source="static";
-							text="-:--";
-							scale=1;
-							sourceScale=1;
-							align="right";
-							pos[]=
-							{
-								
-								{
-									"0.075 +0.11",
-									0.80000001
-								},
-								1
-							};
-							right[]=
-							{
-								{0.215,0.80000001},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									"0.075 +0.11",
-									0.82499999
-								},
-								1
-							};
-						};
-						class WP
-						{
-							width=2;
-							type="line";
-							points[]=
-							{
-								
-								{
-									"WPPoint",
-									1,
-									"LimitWaypoint",
-									1,
-									{-0.02,0.039999999},
-									1
-								},
-								
-								{
-									"WPPoint",
-									1,
-									"LimitWaypoint",
-									1,
-									{0,0.02},
-									1
-								},
-								
-								{
-									"WPPoint",
-									1,
-									"LimitWaypoint",
-									1,
-									{0.02,0.039999999},
-									1
-								},
-								{}
-							};
-						};
-					};
-					class Ammo_GUN
-					{
-						type="group";
-						condition="mgun";
-						class Ammo_count_GUN
-						{
-							type="text";
-							source="ammo";
-							sourceScale=1;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.61000001,0.88999999},
-								1
-							};
-							right[]=
-							{
-								{0.64999998,0.88999999},
-								1
-							};
-							down[]=
-							{
-								{0.61000001,0.93000001},
-								1
-							};
-						};
-					};
-					class Ammo_RKT
-					{
-						type="group";
-						condition="rocket";
-						class Ammo_count_RKT
-						{
-							type="text";
-							source="ammo";
-							sourceScale=1;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.61000001,0.88999999},
-								1
-							};
-							right[]=
-							{
-								{0.64999998,0.88999999},
-								1
-							};
-							down[]=
-							{
-								{0.61000001,0.93000001},
-								1
-							};
-						};
-					};
-					class Ammo_AGM
-					{
-						type="group";
-						condition="AAmissile";
-						class Ammo_count_AGM
-						{
-							type="text";
-							source="ammo";
-							sourceScale=1;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.61000001,0.88999999},
-								1
-							};
-							right[]=
-							{
-								{0.64999998,0.88999999},
-								1
-							};
-							down[]=
-							{
-								{0.61000001,0.93000001},
-								1
-							};
-						};
-					};
-					class Ammo_AAM
-					{
-						type="group";
-						condition="ATmissile";
-						class Ammo_count_AAM
-						{
-							type="text";
-							source="ammo";
-							sourceScale=1;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.61000001,0.88999999},
-								1
-							};
-							right[]=
-							{
-								{0.64999998,0.88999999},
-								1
-							};
-							down[]=
-							{
-								{0.61000001,0.93000001},
-								1
-							};
-						};
-					};
-					class LightsGroup
-					{
-						type="group";
-						condition="lights";
-						class LightsText
-						{
-							type="text";
-							source="static";
-							text="LIGHTS";
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.055"
-								},
-								1
-							};
-							right[]=
-							{
-								
-								{
-									0.07,
-									"0.53 + 0.055"
-								},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.095"
-								},
-								1
-							};
-						};
-					};
-					class CollisionLightsGroup
-					{
-						type="group";
-						condition="collisionlights";
-						class CollisionLightsText
-						{
-							type="text";
-							source="static";
-							text="A-COL";
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.105"
-								},
-								1
-							};
-							right[]=
-							{
-								
-								{
-									0.07,
-									"0.53 + 0.105"
-								},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									0.029999999,
-									"0.53 + 0.145"
-								},
-								1
-							};
-						};
-					};
-					class ATMissileTOFGroup
-					{
-						condition="ATmissile";
-						type="group";
-						class TOFtext
-						{
-							type="text";
-							align="right";
-							source="static";
-							text="TOF=";
-							scale=1;
-							pos[]=
-							{
-								{0.61000001,0.92000002},
-								1
-							};
-							right[]=
-							{
-								{0.64999998,0.92000002},
-								1
-							};
-							down[]=
-							{
-								{0.61000001,0.95999998},
-								1
-							};
-						};
-						class TOFnumber
-						{
-							type="text";
-							source="targetDist";
-							sourcescale=0.0024999999;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.69,0.92000002},
-								1
-							};
-							right[]=
-							{
-								{0.73000002,0.92000002},
-								1
-							};
-							down[]=
-							{
-								{0.69,0.95999998},
-								1
-							};
-						};
-					};
-					class LaserTOFGroup
-					{
-						condition="Bomb";
-						type="group";
-						class TOFtext
-						{
-							type="text";
-							align="right";
-							source="static";
-							text="TOF=";
-							scale=1;
-							pos[]=
-							{
-								{0.61000001,0.92000002},
-								1
-							};
-							right[]=
-							{
-								{0.64999998,0.92000002},
-								1
-							};
-							down[]=
-							{
-								{0.61000001,0.95999998},
-								1
-							};
-						};
-						class TOFnumber
-						{
-							type="text";
-							source="targetDist";
-							sourcescale=0.0024999999;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.69,0.92000002},
-								1
-							};
-							right[]=
-							{
-								{0.73000002,0.92000002},
-								1
-							};
-							down[]=
-							{
-								{0.69,0.95999998},
-								1
-							};
-						};
-					};
-					class RocketTOFGroup
-					{
-						condition="Rocket";
-						type="group";
-						class TOFtext
-						{
-							type="text";
-							align="right";
-							source="static";
-							text="TOF=";
-							scale=1;
-							pos[]=
-							{
-								{0.61000001,0.92000002},
-								1
-							};
-							right[]=
-							{
-								{0.64999998,0.92000002},
-								1
-							};
-							down[]=
-							{
-								{0.61000001,0.95999998},
-								1
-							};
-						};
-						class TOFnumber
-						{
-							type="text";
-							source="targetDist";
-							sourcescale=0.0024999999;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.69,0.92000002},
-								1
-							};
-							right[]=
-							{
-								{0.73000002,0.92000002},
-								1
-							};
-							down[]=
-							{
-								{0.69,0.95999998},
-								1
-							};
-						};
-					};
-					class RangeNumber
-					{
-						type="text";
-						source="targetDist";
-						sourceScale=1;
-						align="left";
-						scale=1;
-						pos[]=
-						{
-							{0.38999999,0.88999999},
-							1
-						};
-						right[]=
-						{
-							{0.43000001,0.88999999},
-							1
-						};
-						down[]=
-						{
-							{0.38999999,0.93000001},
-							1
-						};
-					};
-					class RangeText
-					{
-						type="text";
-						source="static";
-						text="RNG";
-						align="left";
-						scale=1;
-						pos[]=
-						{
-							{0.38999999,0.86000001},
-							1
-						};
-						right[]=
-						{
-							{0.43000001,0.86000001},
-							1
-						};
-						down[]=
-						{
-							{0.38999999,0.89999998},
-							1
-						};
-					};
-					class SpeedNumber
-					{
-						type="text";
-						align="right";
-						scale=1;
-						source="speed";
-						sourceScale=1.94384;
-						pos[]=
-						{
-							{0.029999999,0.47499999},
-							1
-						};
-						right[]=
-						{
-							{0.079999998,0.47499999},
-							1
-						};
-						down[]=
-						{
-							{0.029999999,0.52499998},
-							1
-						};
-					};
-					class TorqueNumber
-					{
-						condition="simulRTD";
-						class Torque_number
-						{
-							type="text";
-							align="left";
-							scale=1;
-							source="rtdRotorTorque";
-							sourceScale=290;
-							pos[]=
-							{
-								{0.064999998,0.175},
-								1
-							};
-							right[]=
-							{
-								{0.115,0.175},
-								1
-							};
-							down[]=
-							{
-								{0.064999998,0.22499999},
-								1
-							};
-						};
-						class Torquetext
-						{
-							type="text";
-							source="static";
-							text="%";
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.07,0.175},
-								1
-							};
-							right[]=
-							{
-								{0.12,0.175},
-								1
-							};
-							down[]=
-							{
-								{0.07,0.22499999},
-								1
-							};
-						};
-					};
-					class AltNumber: SpeedNumber
-					{
-						align="right";
-						source="altitudeAGL";
-						sourceScale=3.2808399;
-						pos[]=
-						{
-							{0.82999998,0.47499999},
-							1
-						};
-						right[]=
-						{
-							{0.88,0.47499999},
-							1
-						};
-						down[]=
-						{
-							{0.82999998,0.52499998},
-							1
-						};
-					};
-					class ASLNumber
-					{
-						type="text";
-						source="altitudeASL";
-						sourceScale=3.2808399;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.83499998,0.18000001},
-							1
-						};
-						right[]=
-						{
-							{0.875,0.18000001},
-							1
-						};
-						down[]=
-						{
-							{0.83499998,0.22},
-							1
-						};
-					};
-					class VspeedScalePosta
-					{
-						type="line";
-						width=5;
-						points[]=
-						{
-							
-							{
-								{0.98000002,0.2},
-								1
-							},
-							
-							{
-								{1,0.2},
-								1
-							},
-							{},
-							
-							{
-								{0.93000001,0.2},
-								1
-							},
-							
-							{
-								{0.94999999,0.2},
-								1
-							},
-							{},
-							
-							{
-								{0.98000002,0.34999999},
-								1
-							},
-							
-							{
-								{1,0.34999999},
-								1
-							},
-							{},
-							
-							{
-								{0.93000001,0.34999999},
-								1
-							},
-							
-							{
-								{0.94999999,0.34999999},
-								1
-							},
-							{},
-							
-							{
-								{0.94,0.38},
-								1
-							},
-							
-							{
-								{0.94999999,0.38},
-								1
-							},
-							{},
-							
-							{
-								{0.94,0.41},
-								1
-							},
-							
-							{
-								{0.94999999,0.41},
-								1
-							},
-							{},
-							
-							{
-								{0.94,0.44},
-								1
-							},
-							
-							{
-								{0.94999999,0.44},
-								1
-							},
-							{},
-							
-							{
-								{0.94,0.47},
-								1
-							},
-							
-							{
-								{0.94999999,0.47},
-								1
-							},
-							{},
-							
-							{
-								{0.98000002,0.5},
-								1
-							},
-							
-							{
-								{1,0.5},
-								1
-							},
-							{},
-							
-							{
-								{0.93000001,0.5},
-								1
-							},
-							
-							{
-								{0.94999999,0.5},
-								1
-							},
-							{},
-							
-							{
-								{0.94,0.52999997},
-								1
-							},
-							
-							{
-								{0.94999999,0.52999997},
-								1
-							},
-							{},
-							
-							{
-								{0.94,0.56},
-								1
-							},
-							
-							{
-								{0.94999999,0.56},
-								1
-							},
-							{},
-							
-							{
-								{0.94,0.58999997},
-								1
-							},
-							
-							{
-								{0.94999999,0.58999997},
-								1
-							},
-							{},
-							
-							{
-								{0.94,0.62},
-								1
-							},
-							
-							{
-								{0.94999999,0.62},
-								1
-							},
-							{},
-							
-							{
-								{0.98000002,0.64999998},
-								1
-							},
-							
-							{
-								{1,0.64999998},
-								1
-							},
-							{},
-							
-							{
-								{0.93000001,0.64999998},
-								1
-							},
-							
-							{
-								{0.94999999,0.64999998},
-								1
-							},
-							{},
-							
-							{
-								{0.99000001,0.68000001},
-								1
-							},
-							
-							{
-								{0.98000002,0.68000001},
-								1
-							},
-							{},
-							
-							{
-								{0.99000001,0.70999998},
-								1
-							},
-							
-							{
-								{0.98000002,0.70999998},
-								1
-							},
-							{},
-							
-							{
-								{0.99000001,0.74000001},
-								1
-							},
-							
-							{
-								{0.98000002,0.74000001},
-								1
-							},
-							{},
-							
-							{
-								{0.99000001,0.76999998},
-								1
-							},
-							
-							{
-								{0.98000002,0.76999998},
-								1
-							},
-							{},
-							
-							{
-								{0.98000002,0.80000001},
-								1
-							},
-							
-							{
-								{1,0.80000001},
-								1
-							},
-							{},
-							
-							{
-								{0.93000001,0.80000001},
-								1
-							},
-							
-							{
-								{0.94999999,0.80000001},
-								1
-							},
-							{}
-						};
-					};
-					class RadarAltitudeBand
-					{
-						clipTL[]={0,0.2};
-						clipBR[]={1,0.80000001};
-						hideValue=201;
-						class radarbanda
-						{
-							type="line";
-							width=17;
-							points[]=
-							{
-								
-								{
-									"RadarAltitudeBone",
-									{0,0},
-									1
-								},
-								
-								{
-									"RadarAltitudeBone",
-									{0,0.60000002},
-									1
-								}
-							};
-						};
-					};
-					class VspeedBand
-					{
-						type="line";
-						width=3;
-						points[]=
-						{
-							
-							{
-								"VspeedBone",
-								{-0.0099999998,0},
-								1
-							},
-							
-							{
-								"VspeedBone",
-								{-0.025,-0.015},
-								1
-							},
-							
-							{
-								"VspeedBone",
-								{-0.025,0.015},
-								1
-							},
-							
-							{
-								"VspeedBone",
-								{-0.0099999998,0},
-								1
-							},
-							{}
-						};
-					};
-					class HeadingNumber: SpeedNumber
-					{
-						source="heading";
-						sourceScale=1;
-						align="center";
-						pos[]=
-						{
-							{0.5,0.045000002},
-							1
-						};
-						right[]=
-						{
-							{0.56,0.045000002},
-							1
-						};
-						down[]=
-						{
-							
-							{
-								0.5,
-								"0.045 + 0.06"
-							},
-							1
-						};
-					};
-					class Center_box
-					{
-						type="line";
-						width=1.5;
-						points[]=
-						{
-							
-							{
-								
-								{
-									0.44999999,
-									"0.02 + 0.085 - 0.06"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									"0.45 + 0.10",
-									"0.02 + 0.085 - 0.06"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									"0.45 + 0.10",
-									"0.02 + 0.085"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									0.44999999,
-									"0.02 + 0.085"
-								},
-								1
-							},
-							
-							{
-								
-								{
-									0.44999999,
-									"0.02 + 0.085 - 0.06"
-								},
-								1
-							}
-						};
-					};
-					class HeadingArrow
-					{
-						type="line";
-						width=7;
-						points[]=
-						{
-							
-							{
-								
-								{
-									"0.5",
-									"0.128 + 0.03"
-								},
-								1
-							},
-							
-							{
-								{0.5,0.12800001},
-								1
-							}
-						};
-					};
-					class HeadingScale_LEFT
-					{
-						clipTL[]={0,0};
-						clipBR[]={0.44999999,1};
-						class Heading_group
-						{
-							type="scale";
-							horizontal=1;
-							source="heading";
-							sourceScale=1;
-							width=5;
-							top=0.12;
-							center=0.5;
-							bottom=0.88;
-							lineXleft="0.03 + 0.085";
-							lineYright="0.02 + 0.085";
-							lineXleftMajor="0.04 + 0.085";
-							lineYrightMajor="0.02 + 0.085";
-							majorLineEach=3;
-							numberEach=3;
-							step=10;
-							stepSize="0.05";
-							align="center";
-							scale=1;
-							pos[]=
-							{
-								0.12,
-								"0.0 + 0.065"
-							};
-							right[]=
-							{
-								0.16,
-								"0.0 + 0.065"
-							};
-							down[]=
-							{
-								0.12,
-								"0.04 + 0.065"
-							};
-						};
-					};
-					class HeadingScale_RIGHT
-					{
-						clipTL[]={0.55000001,0};
-						clipBR[]={1,1};
-						class Heading_group
-						{
-							type="scale";
-							horizontal=1;
-							source="heading";
-							sourceScale=1;
-							width=5;
-							top=0.12;
-							center=0.5;
-							bottom=0.88;
-							lineXleft="0.03 + 0.085";
-							lineYright="0.02 + 0.085";
-							lineXleftMajor="0.04 + 0.085";
-							lineYrightMajor="0.02 + 0.085";
-							majorLineEach=3;
-							numberEach=3;
-							step=10;
-							stepSize="0.05";
-							align="center";
-							scale=1;
-							pos[]=
-							{
-								0.12,
-								"0.0 + 0.065"
-							};
-							right[]=
-							{
-								0.16,
-								"0.0 + 0.065"
-							};
-							down[]=
-							{
-								0.12,
-								"0.04 + 0.065"
-							};
-						};
-					};
-					class HeadingScale_BOTTOM
-					{
-						clipTL[]=
-						{
-							0.44999999,
-							"0.02 + 0.085"
-						};
-						clipBR[]=
-						{
-							"0.45 + 0.10",
-							1
-						};
-						class Heading_group
-						{
-							type="scale";
-							horizontal=1;
-							source="heading";
-							sourceScale=1;
-							width=5;
-							top=0.12;
-							center=0.5;
-							bottom=0.88;
-							lineXleft="0.03 + 0.085";
-							lineYright="0.02 + 0.085";
-							lineXleftMajor="0.04 + 0.085";
-							lineYrightMajor="0.02 + 0.085";
-							majorLineEach=3;
-							numberEach=3;
-							step=10;
-							stepSize="0.05";
-							align="center";
-							scale=1;
-							pos[]=
-							{
-								0.12,
-								"0.0 + 0.065"
-							};
-							right[]=
-							{
-								0.16,
-								"0.0 + 0.065"
-							};
-							down[]=
-							{
-								0.12,
-								"0.04 + 0.065"
-							};
-						};
-					};
-					class Fuel_Text
-					{
-						type="text";
-						source="static";
-						text="Fuel";
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.029999999,0.89999998},
-							1
-						};
-						right[]=
-						{
-							{0.07,0.89999998},
-							1
-						};
-						down[]=
-						{
-							{0.029999999,0.94},
-							1
-						};
-					};
-					class Fuel_Number
-					{
-						type="text";
-						source="fuel";
-						sourceScale=100;
-						align="right";
-						scale=1;
-						pos[]=
-						{
-							{0.1,0.89999998},
-							1
-						};
-						right[]=
-						{
-							{0.14,0.89999998},
-							1
-						};
-						down[]=
-						{
-							{0.1,0.94},
-							1
-						};
-					};
-				};
-				helmetMountedDisplay=1;
-				helmetPosition[]={-0.039999999,0.039999999,0.1};
-				helmetRight[]={0.079999998,0,0};
-				helmetDown[]={0,-0.079999998,0};
 			};
-			class Kimi_HUD_2
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
 			{
-				topLeft="HUD_top_left";
-				topRight="HUD_top_right";
-				bottomLeft="HUD_bottom_left";
-				borderLeft=0;
-				borderRight=0;
-				borderTop=0;
-				borderBottom=0;
-				color[]={0.15000001,1,0.15000001,1};
-				enableParallax=0;
-				class Bones
+				class Components
 				{
-					class Velocity
+					class EmptyDisplay
 					{
-						type="vector";
-						source="velocity";
-						pos0[]={0.5,0.5};
-						pos10[]={0.75,0.75};
+						componentType="EmptyDisplayComponent";
 					};
-					class ForwardVec1
+					class MinimapDisplay
 					{
-						type="vector";
-						source="forward";
-						pos0[]={0,0};
-						pos10[]={0.25,0.25};
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
 					};
-					class ForwardVec
+					class UAVDisplay
 					{
-						type="vector";
-						source="forward";
-						pos0[]={0,0};
-						pos10[]={0.25299999,0.25299999};
+						componentType="UAVFeedDisplayComponent";
 					};
-					class WeaponAim
+					class VehicleDriverDisplay
 					{
-						type="vector";
-						source="weapon";
-						pos0[]={0.5,0.5};
-						pos10[]={0.75300002,0.75300002};
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
 					};
-					class WeaponAim1
+					class VehicleMissileDisplay
 					{
-						type="vector";
-						source="weapon";
-						pos0[]={0,0};
-						pos10[]={0.25299999,0.23};
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
 					};
-					class Target
+					class SensorDisplay
 					{
-						type="vector";
-						source="target";
-						pos0[]={0.5,0.5};
-						pos10[]={0.75300002,0.75300002};
-					};
-					class RadarContact
-					{
-						type="fixed";
-						pos[]={0,0};
-					};
-					class Limit0109
-					{
-						type="limit";
-						limits[]={0.1,0.1,0.89999998,0.89999998};
-					};
-					class LimitWaypoint
-					{
-						type="limit";
-						limits[]={0.2,0.1,0.80000001,0.1};
-					};
-					class WPPoint
-					{
-						type="vector";
-						source="WPPoint";
-						pos0[]={0.5,0.5};
-						pos10[]={0.73400003,0.73000002};
-					};
-					class WPPointToView: WPPoint
-					{
-						source="WPPointToView";
+						componentType="SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
 					};
 				};
-				class Draw
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
 				{
-					color[]={0.18000001,1,0.18000001};
-					alpha=1;
-					condition="on";
-					class PlaneMovementCrosshair
+					class EmptyDisplay
 					{
-						type="line";
-						width=7;
-						points[]=
-						{
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0,-0.02},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0.0099999998,-0.01732},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0.01732,-0.0099999998},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0.02,0},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0.01732,0.0099999998},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0.0099999998,0.01732},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0,0.02},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{-0.0099999998,0.01732},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{-0.01732,0.0099999998},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{-0.02,0},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{-0.01732,-0.0099999998},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{-0.0099999998,-0.01732},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0,-0.02},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0.039999999,0},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0.02,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{-0.039999999,0},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{-0.02,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0,-0.039999999},
-								1
-							},
-							
-							{
-								"ForwardVec1",
-								1,
-								"Velocity",
-								1,
-								{0,-0.02},
-								1
-							}
-						};
+						componentType="EmptyDisplayComponent";
 					};
-					class Gunner_AIM
+					class MinimapDisplay
 					{
-						type="group";
-						class Circle
-						{
-							type="line";
-							width=6;
-							points[]=
-							{
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,-0.015},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,-0.029999999},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,-0.032499999},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,-0.047499999},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,0.015},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,0.029999999},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,0.032499999},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,0.047499999},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.015,0},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.029999999,0},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.032499999,0},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.047499999,0},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.015,0},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.029999999,0},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.032499999,0},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.047499999,0},
-									1
-								}
-							};
-						};
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
 					};
-					class GunCross
+					class UAVDisplay
 					{
-						condition="mgun";
-						class Circle
-						{
-							type="line";
-							width=9;
-							points[]=
-							{
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,-0.050000001},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,-0.015},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,0.015},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,0.050000001},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.050000001,0},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.015,0},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.015,0},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.050000001,0},
-									1
-								},
-								{}
-							};
-						};
+						componentType="UAVFeedDisplayComponent";
 					};
-					class RocketCross
+					class VehicleDriverDisplay
 					{
-						condition="rocket";
-						width=6;
-						class Circle
-						{
-							type="line";
-							width=6;
-							points[]=
-							{
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.050000001,-0.079999998},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.050000001,-0.079999998},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,-0.079999998},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0,0.079999998},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.050000001,0.079999998},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.050000001,0.079999998},
-									1
-								},
-								{}
-							};
-						};
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
 					};
-					class AT_Aim
+					class VehicleMissileDisplay
 					{
-						condition="ATmissile";
-						width=2;
-						class Circle
-						{
-							type="line";
-							width=2;
-							points[]=
-							{
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.1,-0.1},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.1,-0.1},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{0.1,0.1},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.1,0.1},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									{-0.1,-0.1},
-									1
-								}
-							};
-						};
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
 					};
-					class AA_aim
+					class SensorDisplay
 					{
-						condition="AAmissile";
-						class Circle
-						{
-							type="line";
-							width=2.5;
-							points[]=
-							{
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0 / 4",
-										"-0.248559 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.0434 / 4",
-										"-0.244781 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.0855 / 4",
-										"-0.233571 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.125 / 4",
-										"-0.215252 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.1607 / 4",
-										"-0.190396 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.1915 / 4",
-										"-0.159774 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.2165 / 4",
-										"-0.12428 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.234925 / 4",
-										"-0.0850072 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.2462 / 4",
-										"-0.0431499 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.25 / 4",
-										"0 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.2462 / 4",
-										"0.0431499 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.234925 / 4",
-										"0.0850072 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.2165 / 4",
-										"0.12428 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.1915 / 4",
-										"0.159774 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.1607 / 4",
-										"0.190396 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.125 / 4",
-										"0.215252 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.0855 / 4",
-										"0.233571 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.0434 / 4",
-										"0.244781 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0 / 4",
-										"0.248559 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.0434 / 4",
-										"0.244781 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.0855 / 4",
-										"0.233571 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.125 / 4",
-										"0.215252 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.1607 / 4",
-										"0.190396 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.1915 / 4",
-										"0.159774 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.2165 / 4",
-										"0.12428 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.234925 / 4",
-										"0.0850072 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.2462 / 4",
-										"0.0431499 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.25 / 4",
-										"0 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.2462 / 4",
-										"-0.0431499 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.234925 / 4",
-										"-0.0850072 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.2165 / 4",
-										"-0.12428 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.1915 / 4",
-										"-0.159774 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.1607 / 4",
-										"-0.190396 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.125 / 4",
-										"-0.215252 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.0855 / 4",
-										"-0.233571 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.0434 / 4",
-										"-0.244781 / 4"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0 / 4",
-										"-0.248559 / 4"
-									},
-									1
-								},
-								{},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0 / 2",
-										"-0.248559 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.0434 / 2",
-										"-0.244781 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.0855 / 2",
-										"-0.233571 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.125 / 2",
-										"-0.215252 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.1607 / 2",
-										"-0.190396 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.1915 / 2",
-										"-0.159774 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.2165 / 2",
-										"-0.12428 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.234925 / 2",
-										"-0.0850072 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.2462 / 2",
-										"-0.0431499 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.25 / 2",
-										"0 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.2462 / 2",
-										"0.0431499 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.234925 / 2",
-										"0.0850072 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.2165 / 2",
-										"0.12428 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.1915 / 2",
-										"0.159774 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.1607 / 2",
-										"0.190396 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.125 / 2",
-										"0.215252 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.0855 / 2",
-										"0.233571 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0.0434 / 2",
-										"0.244781 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0 / 2",
-										"0.248559 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.0434 / 2",
-										"0.244781 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.0855 / 2",
-										"0.233571 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.125 / 2",
-										"0.215252 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.1607 / 2",
-										"0.190396 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.1915 / 2",
-										"0.159774 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.2165 / 2",
-										"0.12428 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.234925 / 2",
-										"0.0850072 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.2462 / 2",
-										"0.0431499 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.25 / 2",
-										"0 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.2462 / 2",
-										"-0.0431499 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.234925 / 2",
-										"-0.0850072 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.2165 / 2",
-										"-0.12428 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.1915 / 2",
-										"-0.159774 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.1607 / 2",
-										"-0.190396 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.125 / 2",
-										"-0.215252 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.0855 / 2",
-										"-0.233571 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"-0.0434 / 2",
-										"-0.244781 / 2"
-									},
-									1
-								},
-								
-								{
-									"ForwardVec",
-									1,
-									"WeaponAim",
-									1,
-									
-									{
-										"0 / 2",
-										"-0.248559 / 2"
-									},
-									1
-								}
-							};
-						};
-					};
-					class WP
-					{
-						condition="wpvalid - autohover";
-						class WPdist
-						{
-							type="text";
-							source="wpdist";
-							sourceScale=0.001;
-							sourcePrecision=1;
-							align="left";
-							scale=1;
-							pos[]=
-							{
-								{0.235,0.77403802},
-								1
-							};
-							right[]=
-							{
-								{0.27500001,0.77403802},
-								1
-							};
-							down[]=
-							{
-								{0.235,0.80155998},
-								1
-							};
-						};
-						class WPIndex
-						{
-							type="text";
-							source="wpIndex";
-							sourceScale=1;
-							sourceLength=2;
-							align="right";
-							scale=1;
-							pos[]=
-							{
-								{0.096000001,0.77600402},
-								1
-							};
-							right[]=
-							{
-								{0.126,0.77600402},
-								1
-							};
-							down[]=
-							{
-								{0.096000001,0.79959399},
-								1
-							};
-						};
-						class WPstatic
-						{
-							type="text";
-							source="static";
-							text="W";
-							scale=1;
-							sourceScale=1;
-							align="right";
-							pos[]=
-							{
-								{0.075000003,0.77499998},
-								1
-							};
-							right[]=
-							{
-								{0.105,0.77499998},
-								1
-							};
-							down[]=
-							{
-								{0.075000003,0.80000001},
-								1
-							};
-						};
-						class WPAuto
-						{
-							type="text";
-							source="static";
-							text="A";
-							scale=1;
-							sourceScale=1;
-							align="right";
-							pos[]=
-							{
-								
-								{
-									"0.075 +0.035",
-									0.80000001
-								},
-								1
-							};
-							right[]=
-							{
-								{0.14,0.80000001},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									"0.075 +0.035",
-									0.82499999
-								},
-								1
-							};
-						};
-						class WPKM
-						{
-							type="text";
-							source="static";
-							text="KM";
-							scale=1;
-							sourceScale=1;
-							align="right";
-							pos[]=
-							{
-								
-								{
-									"0.075 +0.16",
-									0.77499998
-								},
-								1
-							};
-							right[]=
-							{
-								{0.26499999,0.77499998},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									"0.075 +0.16",
-									0.80299997
-								},
-								1
-							};
-						};
-						class WPTime
-						{
-							type="text";
-							source="static";
-							text="-:--";
-							scale=1;
-							sourceScale=1;
-							align="right";
-							pos[]=
-							{
-								
-								{
-									"0.075 +0.11",
-									0.80000001
-								},
-								1
-							};
-							right[]=
-							{
-								{0.215,0.80000001},
-								1
-							};
-							down[]=
-							{
-								
-								{
-									"0.075 +0.11",
-									0.82499999
-								},
-								1
-							};
-						};
-						class WP
-						{
-							width=2;
-							type="line";
-							points[]=
-							{
-								
-								{
-									"WPPoint",
-									1,
-									"LimitWaypoint",
-									1,
-									{-0.02,0.039999999},
-									1
-								},
-								
-								{
-									"WPPoint",
-									1,
-									"LimitWaypoint",
-									1,
-									{0,0.02},
-									1
-								},
-								
-								{
-									"WPPoint",
-									1,
-									"LimitWaypoint",
-									1,
-									{0.02,0.039999999},
-									1
-								},
-								{}
-							};
-						};
-					};
-					class TargetACQ
-					{
-						type="line";
-						width=2;
-						points[]=
-						{
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.059999999},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.055},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.050000001},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.045000002},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.039999999},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.035},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.029999999},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.025},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.02},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.015},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.0099999998},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,-0.0049999999},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.059999999},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.055},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.050000001},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.045000002},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.039999999},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.035},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.029999999},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.025},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.02},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.015},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.0099999998},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0,0.0049999999},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.059999999,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.055,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.050000001,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.045000002,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.039999999,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.035,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.029999999,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.025,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.02,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.015,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.0099999998,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{-0.0049999999,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.059999999,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.055,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.050000001,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.045000002,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.039999999,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.035,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.029999999,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.025,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.02,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.015,0},
-								1
-							},
-							{},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.0099999998,0},
-								1
-							},
-							
-							{
-								"ForwardVec",
-								1,
-								"target",
-								{0.0049999999,0},
-								1
-							},
-							{}
-						};
+						componentType="SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
 					};
 				};
-				helmetMountedDisplay=1;
-				helmetPosition[]={-0.035,0.035,0.1};
-				helmetRight[]={0.07,0,0};
-				helmetDown[]={0,-0.07,0};
 			};
 		};
 	};

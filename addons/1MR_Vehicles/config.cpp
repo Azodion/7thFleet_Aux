@@ -6,13 +6,16 @@
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
+#define private 0
+#define protected 1
+#define public 2
 
 class CfgPatches
 {
 	class 1MR_Vehicles
 	{
-		units[] = {"qav_ripsaw_Mk44_7thFleet","Victus_Heli_Transport_03_F","Victus_Heli_Transport_03_unarmed_F","Victus_Heli_Transport_01_F","Victus_Heli_Light_01_dynamicLoadout_F","Victus_Heli_Light_01_F","Victus_Heli_Attack_01_F","B_Victus_Plane_Fighter_02_F","B_Victus_Plane_Fighter_02_Stealth_F","Y32C_Victus_Infantry","Y32C_Victus_Vehicle","UCN_1MR_LSV_01_unarmed_F","UCN_1MR_LSV_01_armed_F","UCN_1MR_LSV_01_AT_F","UCN_UCIA_LSV_01_unarmed_F","UCN_UCIA_LSV_01_armed_F","UCN_UCIA_LSV_01_AT_F","7thFleet_MRAP","7thFleet_MRAP_HMG","7thFleet_MRAP_GMG","7thMEF_APC_Tracked_02_base_F","7thMEF_APC_Tracked_02_medevac_F","7thMEF_APC_Tracked_02_AA_F","7thMEF_APC_Tracked_02_cannon_F","7thFleet_MBT_52","7thFleet_MSE_3","7thFleet_MSE_3_unarmed","Y32C_21stMAW_Infantry","Y32C_21stMAW_Vehicle","Y32C_UCIA_Infantry","Y32C_UCIA_Vehicle","B_33rdCAW_Plane_Fighter_02_F","B_33rdCAW_Plane_Fighter_02_Stealth_F","UCN_124_LSV_01_unarmed_F","UCN_124_LSV_01_armed_F","UCN_124_LSV_01_AT_F","124thESB_MRAP","124thESB_MRAP_HMG","124thESB_MRAP_GMG","124thESB_APC_Tracked_02_base_F","124thESB_APC_Tracked_02_medevac_F","124thESB_APC_Tracked_02_AA_F","124thESB_APC_Tracked_02_cannon_F","124thESB_MBT_52","124thESB_MSE_3","124thESB_MSE_3_unarmed","B_MBT_01_124cannon_F","B_MBT_01_124TUSK_F","B_MBT_01_124arty_F","B_MBT_01_124mlrs_F","33rdCAW_Pilot","21stMAW_Pilot"};
-		vehicles[] = {"qav_ripsaw_Mk44_7thFleet","B_Victus_Plane_Fighter_02_F","B_Victus_Plane_Fighter_02_Stealth_F","Y32C_Victus_Infantry","Y32C_Victus_Vehicle","UCN_1MR_LSV_01_unarmed_F","UCN_1MR_LSV_01_armed_F","UCN_1MR_LSV_01_AT_F","UCN_UCIA_LSV_01_unarmed_F","UCN_UCIA_LSV_01_armed_F","UCN_UCIA_LSV_01_AT_F","7thFleet_MRAP","7thFleet_MRAP_HMG","7thFleet_MRAP_GMG","7thMEF_APC_Tracked_02_base_F","7thMEF_APC_Tracked_02_medevac_F","7thMEF_APC_Tracked_02_AA_F","7thMEF_APC_Tracked_02_cannon_F","7thFleet_MBT_52","7thFleet_MSE_3","7thFleet_MSE_3_unarmed","Y32C_21stMAW_Infantry","Y32C_21stMAW_Vehicle","Y32C_UCIA_Infantry","Y32C_UCIA_Vehicle","B_33rdCAW_Plane_Fighter_02_F","B_33rdCAW_Plane_Fighter_02_Stealth_F","UCN_124_LSV_01_unarmed_F","UCN_124_LSV_01_armed_F","UCN_124_LSV_01_AT_F","124thESB_MRAP","124thESB_MRAP_HMG","124thESB_MRAP_GMG","124thESB_APC_Tracked_02_base_F","124thESB_APC_Tracked_02_medevac_F","124thESB_APC_Tracked_02_AA_F","124thESB_APC_Tracked_02_cannon_F","124thESB_MBT_52","124thESB_MSE_3","124thESB_MSE_3_unarmed","B_MBT_01_124cannon_F","B_MBT_01_124TUSK_F","B_MBT_01_124arty_F","B_MBT_01_124mlrs_F","33rdCAW_Pilot","21stMAW_Pilot"};
+		units[] = {"Victus_O_Plane_CAS_02_dynamicLoadout_F","qav_ripsaw_Mk44_7thFleet","Victus_Heli_Transport_03_F","Victus_Heli_Transport_03_unarmed_F","Victus_Heli_Transport_01_F","Victus_Heli_Light_01_dynamicLoadout_F","Victus_Heli_Light_01_F","Victus_Heli_Attack_01_F","B_Victus_Plane_Fighter_02_F","B_Victus_Plane_Fighter_02_Stealth_F","Y32C_Victus_Infantry","Y32C_Victus_Vehicle","UCN_1MR_LSV_01_unarmed_F","UCN_1MR_LSV_01_armed_F","UCN_1MR_LSV_01_AT_F","UCN_UCIA_LSV_01_unarmed_F","UCN_UCIA_LSV_01_armed_F","UCN_UCIA_LSV_01_AT_F","7thFleet_MRAP","7thFleet_MRAP_HMG","7thFleet_MRAP_GMG","7thMEF_APC_Tracked_02_base_F","7thMEF_APC_Tracked_02_medevac_F","7thMEF_APC_Tracked_02_AA_F","7thMEF_APC_Tracked_02_cannon_F","7thFleet_MBT_52","7thFleet_MSE_3","7thFleet_MSE_3_unarmed","X32C_Infantry_Base","Y32C_21stMAW_Vehicle","Y32C_UCIA_Infantry","Y32C_UCIA_Vehicle","B_33rdCAW_Plane_Fighter_02_F","B_33rdCAW_Plane_Fighter_02_Stealth_F","UCN_124_LSV_01_unarmed_F","UCN_124_LSV_01_armed_F","UCN_124_LSV_01_AT_F","124thESB_MRAP","124thESB_MRAP_HMG","124thESB_MRAP_GMG","124thESB_APC_Tracked_02_base_F","124thESB_APC_Tracked_02_medevac_F","124thESB_APC_Tracked_02_AA_F","124thESB_APC_Tracked_02_cannon_F","124thESB_MBT_52","124thESB_MSE_3","124thESB_MSE_3_unarmed","B_MBT_01_124cannon_F","B_MBT_01_124TUSK_F","B_MBT_01_124arty_F","B_MBT_01_124mlrs_F","33rdCAW_Pilot","21stMAW_Pilot"};
+		vehicles[] = {"Victus_O_Plane_CAS_02_dynamicLoadout_F","qav_ripsaw_Mk44_7thFleet","B_Victus_Plane_Fighter_02_F","B_Victus_Plane_Fighter_02_Stealth_F","Y32C_Victus_Infantry","Y32C_Victus_Vehicle","UCN_1MR_LSV_01_unarmed_F","UCN_1MR_LSV_01_armed_F","UCN_1MR_LSV_01_AT_F","UCN_UCIA_LSV_01_unarmed_F","UCN_UCIA_LSV_01_armed_F","UCN_UCIA_LSV_01_AT_F","7thFleet_MRAP","7thFleet_MRAP_HMG","7thFleet_MRAP_GMG","7thMEF_APC_Tracked_02_base_F","7thMEF_APC_Tracked_02_medevac_F","7thMEF_APC_Tracked_02_AA_F","7thMEF_APC_Tracked_02_cannon_F","7thFleet_MBT_52","7thFleet_MSE_3","7thFleet_MSE_3_unarmed","X32C_Infantry_Base","Y32C_21stMAW_Vehicle","Y32C_UCIA_Infantry","Y32C_UCIA_Vehicle","B_33rdCAW_Plane_Fighter_02_F","B_33rdCAW_Plane_Fighter_02_Stealth_F","UCN_124_LSV_01_unarmed_F","UCN_124_LSV_01_armed_F","UCN_124_LSV_01_AT_F","124thESB_MRAP","124thESB_MRAP_HMG","124thESB_MRAP_GMG","124thESB_APC_Tracked_02_base_F","124thESB_APC_Tracked_02_medevac_F","124thESB_APC_Tracked_02_AA_F","124thESB_APC_Tracked_02_cannon_F","124thESB_MBT_52","124thESB_MSE_3","124thESB_MSE_3_unarmed","B_MBT_01_124cannon_F","B_MBT_01_124TUSK_F","B_MBT_01_124arty_F","B_MBT_01_124mlrs_F","33rdCAW_Pilot","21stMAW_Pilot"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {};
@@ -32,7 +35,6 @@ class CfgEditorSubcategories
 		displayName="Signs";
 	};
 };
-
 class CfgFactionClasses
 {
 	class 7thFleet
@@ -60,54 +62,49 @@ class CfgFactionClasses
 		side = 1;
 	};
 };
-class CfgAmmo
+
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeft
 {
-	class Gatling_30mm_HE_Plane_CAS_01_F;
-	class 7EF_Gatling_30mm_HE_F: Gatling_30mm_HE_Plane_CAS_01_F
-	{
-		allowAgainstInfantry = 1;
-	};
+	class Components;
 };
-class CfgMagazines
+class DefaultVehicleSystemsDisplayManagerRight
 {
-	class 1000Rnd_Gatling_30mm_Plane_CAS_01_F;
-	class 800Rnd_Gatling_30mm_Plane_CAS_01_F: 1000Rnd_Gatling_30mm_Plane_CAS_01_F
-	{
-		count = 800;
-		descriptionShort = "30mm Combat Mix DU:HEI";
-		displayName = "30mm HEI";
-		displayNameShort = "30mm HEI";
-		tracersEvery = 1;
-		ammo = "7EF_Gatling_30mm_HE_F";
-	};
+	class Components;
 };
-class CfgWeapons
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
 {
-	class Gatling_30mm_Plane_CAS_01_F;
-	class 7EF_Gatling_30mm_Plane_CAS_01_F: Gatling_30mm_Plane_CAS_01_F
-	{
-		displayname = "30mm Rotary Cannon";
-		magazines[]=
-		{
-			"800Rnd_Gatling_30mm_Plane_CAS_01_F"
-		};
-		magazineReloadTime=8;
-		dispersion = 0.002;
-		ballisticsComputer = 4 + 8;
-		canLock = 2;
-	};
+	class components;
 };
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class VehicleSystemsDisplayManagerComponentLeft
+{
+	class Components;
+};
+class VehicleSystemsDisplayManagerComponentRight
+{
+	class Components;
+};
+class EventHandlers;
+class Components;
+class Turrets
+{
+	class MainTurret;
+};
+
 class CfgVehicles
 {
-	class SensorTemplatePassiveRadar;
-	class SensorTemplateAntiRadiation;
-	class SensorTemplateActiveRadar;
-	class SensorTemplateIR;
-	class SensorTemplateVisual;
-	class SensorTemplateMan;
-	class SensorTemplateLaser;
-	class SensorTemplateNV;
-	class SensorTemplateDataLink;
 	class Flag_White_F;
 	class TKE_Flag_86thCAB_1_F: Flag_White_F
 	{
@@ -304,10 +301,10 @@ class CfgVehicles
         respawnLinkedItems[] = {"TKE_UCNPilotHelm_UCIA","TKE_UCMCArmour1UCIA","ItemMap","ItemCompass","ItemWatch","ItemRadio","TKE_CombatGlassesNVG"};
 		backpack = "";
 	};
-class B_T_LSV_01_unarmed_F;
-class B_T_LSV_01_armed_F;
-class B_T_LSV_01_AT_F;
-class UCN_1MR_LSV_01_unarmed_F: B_T_LSV_01_unarmed_F
+	class B_T_LSV_01_unarmed_F;
+	class B_T_LSV_01_armed_F;
+	class B_T_LSV_01_AT_F;
+	class UCN_1MR_LSV_01_unarmed_F: B_T_LSV_01_unarmed_F
 	{
 		author = "Frenchie";
 		scope = 2;
@@ -613,7 +610,6 @@ class UCN_1MR_LSV_01_unarmed_F: B_T_LSV_01_unarmed_F
 		textureList[] = {"124",1};
 		hiddenSelectionsTextures[] = {"\1MR_Vehicles\Textures\LSV_01_124_CO.paa","\1MR_Vehicles\Textures\1MR_LSV_02_CO.paa","\1MR_Vehicles\Textures\1MR_LSV_03_CO.paa","\1MR_Vehicles\Textures\1MR_LSV_Adds_CO.paa"};
 	};
-	class O_APC_Tracked_02_base_F;
 	class O_APC_Tracked_02_cannon_F;
 	class 7thMEF_APC_Tracked_02_cannon_F: O_APC_Tracked_02_cannon_F
 	{
@@ -701,10 +697,17 @@ class UCN_1MR_LSV_01_unarmed_F: B_T_LSV_01_unarmed_F
 		textureList[] = {"124",1};
 		hiddenSelectionsTextures[] = {"\1MR_Vehicles\Textures\APC_Tracked_02_ext_01_124_armed_CO.paa","\1MR_Vehicles\Textures\APC_Tracked_02_ext_02_124_CO.paa","\1MR_Vehicles\Textures\RCWS30_124_CO.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
 	};
-	class O_APC_Tracked_02_AA_F;
+	class O_APC_Tracked_02_AA_F
+	{
+		class Turrets
+		{
+			class MainTurret;
+		};
+	};
 	class 7thMEF_APC_Tracked_02_AA_F: O_APC_Tracked_02_AA_F
 	{
 		author = "Frenchie";
+		armor = 630;
 		scope = 2;
 		scopecurator = 2;
 		scopearsenal = 2;
@@ -777,6 +780,14 @@ class UCN_1MR_LSV_01_unarmed_F: B_T_LSV_01_unarmed_F
 			{
 				magazine = "SmokeShellBlue";
 				count = 4;
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Green","7EF_AtlasAA_2Rnd","7EF_AtlasAA_2Rnd"};
+				weapons[] = {"7EF_35mm_AA_Weapon","7EF_Atlas_G2A_Weapon"};
 			};
 		};
 	};
@@ -1052,519 +1063,798 @@ class UCN_1MR_LSV_01_unarmed_F: B_T_LSV_01_unarmed_F
 	};
 	class I_MBT_03_cannon_F;
 	class 7thFleet_MBT_52: I_MBT_03_cannon_F
-  {
-    faction="7thFleet";
-    side=1;
-    displayName="MBT-52 Jaguar";
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_03_ext01_7MEF_co.paa","\1MR_Vehicles\Textures\mbt_03_ext02_7MEF_co.paa","\1MR_Vehicles\Textures\mbt_03_rcws_7MEF_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-	class TransportMagazines
 	{
-		class _xx_TKE_35rnd_62x35_mag
+		faction="7thFleet";
+		side=1;
+		displayName="MBT-52 Jaguar";
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_03_ext01_7MEF_co.paa","\1MR_Vehicles\Textures\mbt_03_ext02_7MEF_co.paa","\1MR_Vehicles\Textures\mbt_03_rcws_7MEF_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+		class TransportMagazines
 		{
-			magazine = "TKE_35rnd_62x35_mag";
-			count = 4;
+			class _xx_TKE_35rnd_62x35_mag
+			{
+				magazine = "TKE_35rnd_62x35_mag";
+				count = 4;
+			};
+			class _xx_TKE_SMOKE_mag
+			{
+				magazine = "TKE_SMOKE_mag";
+				count = 2;
+			};
+			class _xx_TKE_SMOKE_mag_blue
+			{
+				magazine = "TKE_SMOKE_mag_blue";
+				count = 2;
+			};
 		};
-		class _xx_TKE_SMOKE_mag
+		class TransportWeapons
 		{
-			magazine = "TKE_SMOKE_mag";
-			count = 2;
+			class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
+			{
+				weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
+				count = 2;
+			};
 		};
-		class _xx_TKE_SMOKE_mag_blue
+		class TransportItems
 		{
-			magazine = "TKE_SMOKE_mag_blue";
-			count = 2;
+			class _xx_FirstAidKit
+			{
+				name = "FirstAidKit";
+				count = 10;
+			};
+			class _xx_Toolkit
+			{
+				name = "Toolkit";
+				count = 1;
+			};
 		};
 	};
-	class TransportWeapons
+	class 124thESB_MBT_52: 7thFleet_MBT_52
 	{
-		class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
+		faction="124thESB";
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_03_ext01_124_co.paa","\1MR_Vehicles\Textures\mbt_03_ext02_124_co.paa","\1MR_Vehicles\Textures\mbt_03_rcws_124_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+	};
+	class B_MBT_01_cannon_F;
+	class B_MBT_01_124cannon_F: B_MBT_01_cannon_F
+	{
+		faction="124thESB";
+		side=1;
+		displayName="MBT-94 Lion";
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_01_body_124_co.paa","\1MR_Vehicles\Textures\mbt_01_tow_124_co.paa","\1MR_Vehicles\Textures\mbt_addons_124_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+		class TransportMagazines
 		{
-			weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
-			count = 2;
+			class _xx_TKE_35rnd_62x35_mag
+			{
+				magazine = "TKE_35rnd_62x35_mag";
+				count = 4;
+			};
+			class _xx_TKE_SMOKE_mag
+			{
+				magazine = "TKE_SMOKE_mag";
+				count = 2;
+			};
+			class _xx_TKE_SMOKE_mag_blue
+			{
+				magazine = "TKE_SMOKE_mag_blue";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
+			{
+				weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
+				count = 2;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name = "FirstAidKit";
+				count = 10;
+			};
+			class _xx_Toolkit
+			{
+				name = "Toolkit";
+				count = 1;
+			};
 		};
 	};
-	class TransportItems
+	class B_MBT_01_TUSK_F;
+	class B_MBT_01_124TUSK_F: B_MBT_01_TUSK_F 
 	{
-		class _xx_FirstAidKit
+		faction="124thESB";
+		side=1;
+		displayName="MBT-94 Lion (TUSK)";
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_01_body_124_co.paa","\1MR_Vehicles\Textures\mbt_01_tow_124_co.paa","\1MR_Vehicles\Textures\mbt_addons_124_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+		class TransportMagazines
 		{
-			name = "FirstAidKit";
-			count = 10;
+			class _xx_TKE_35rnd_62x35_mag
+			{
+				magazine = "TKE_35rnd_62x35_mag";
+				count = 4;
+			};
+			class _xx_TKE_SMOKE_mag
+			{
+				magazine = "TKE_SMOKE_mag";
+				count = 2;
+			};
+			class _xx_TKE_SMOKE_mag_blue
+			{
+				magazine = "TKE_SMOKE_mag_blue";
+				count = 2;
+			};
 		};
-		class _xx_Toolkit
+		class TransportWeapons
 		{
-			name = "Toolkit";
-			count = 1;
+			class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
+			{
+				weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
+				count = 2;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name = "FirstAidKit";
+				count = 10;
+			};
+			class _xx_Toolkit
+			{
+				name = "Toolkit";
+				count = 1;
+			};
 		};
 	};
-  };
-  class 124thESB_MBT_52: 7thFleet_MBT_52
-  {
-    faction="124thESB";
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_03_ext01_124_co.paa","\1MR_Vehicles\Textures\mbt_03_ext02_124_co.paa","\1MR_Vehicles\Textures\mbt_03_rcws_124_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-  };
-class B_MBT_01_cannon_F;
-class B_MBT_01_124cannon_F: B_MBT_01_cannon_F
-{
-	faction="124thESB";
-    side=1;
-    displayName="MBT-94 Lion";
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_01_body_124_co.paa","\1MR_Vehicles\Textures\mbt_01_tow_124_co.paa","\1MR_Vehicles\Textures\mbt_addons_124_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-	class TransportMagazines
+	class B_MBT_01_arty_F;
+	class B_MBT_01_124arty_F: B_MBT_01_arty_F
 	{
-		class _xx_TKE_35rnd_62x35_mag
+		faction="124thESB";
+		side=1;
+		displayName="M14 Elephant"; 
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_01_body_124_co.paa","\1MR_Vehicles\Textures\mbt_01_scorcher_124_co.paa","\1MR_Vehicles\Textures\mbt_addons_124_co.paa","\1MR_Vehicles\Textures\Turret_124.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+		class TransportMagazines
 		{
-			magazine = "TKE_35rnd_62x35_mag";
-			count = 4;
+			class _xx_TKE_35rnd_62x35_mag
+			{
+				magazine = "TKE_35rnd_62x35_mag";
+				count = 4;
+			};
+			class _xx_TKE_SMOKE_mag
+			{
+				magazine = "TKE_SMOKE_mag";
+				count = 2;
+			};
+			class _xx_TKE_SMOKE_mag_blue
+			{
+				magazine = "TKE_SMOKE_mag_blue";
+				count = 2;
+			};
 		};
-		class _xx_TKE_SMOKE_mag
+		class TransportWeapons
 		{
-			magazine = "TKE_SMOKE_mag";
-			count = 2;
+			class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
+			{
+				weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
+				count = 2;
+			};
 		};
-		class _xx_TKE_SMOKE_mag_blue
+		class TransportItems
 		{
-			magazine = "TKE_SMOKE_mag_blue";
-			count = 2;
+			class _xx_FirstAidKit
+			{
+				name = "FirstAidKit";
+				count = 10;
+			};
+			class _xx_Toolkit
+			{
+				name = "Toolkit";
+				count = 1;
+			};
 		};
 	};
-	class TransportWeapons
+	class B_MBT_01_mlrs_F;
+	class B_MBT_01_124mlrs_F: B_MBT_01_mlrs_F
 	{
-		class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
+		faction="124thESB";
+		side=1;
+		displayName="M15 Giraffe"; 
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_01_body_124_co.paa","\1MR_Vehicles\Textures\mbt_01_mlrs_124_co.paa","\1MR_Vehicles\Textures\mbt_addons_124_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+		class TransportMagazines
 		{
-			weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
-			count = 2;
+			class _xx_TKE_35rnd_62x35_mag
+			{
+				magazine = "TKE_35rnd_62x35_mag";
+				count = 4;
+			};
+			class _xx_TKE_SMOKE_mag
+			{
+				magazine = "TKE_SMOKE_mag";
+				count = 2;
+			};
+			class _xx_TKE_SMOKE_mag_blue
+			{
+				magazine = "TKE_SMOKE_mag_blue";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
+			{
+				weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
+				count = 2;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name = "FirstAidKit";
+				count = 10;
+			};
+			class _xx_Toolkit
+			{
+				name = "Toolkit";
+				count = 1;
+			};
 		};
 	};
-	class TransportItems
-	{
-		class _xx_FirstAidKit
-		{
-			name = "FirstAidKit";
-			count = 10;
-		};
-		class _xx_Toolkit
-		{
-			name = "Toolkit";
-			count = 1;
-		};
-	};
-};
-class B_MBT_01_TUSK_F;
-class B_MBT_01_124TUSK_F: B_MBT_01_TUSK_F 
-{
-	faction="124thESB";
-    side=1;
-    displayName="MBT-94 Lion (TUSK)";
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_01_body_124_co.paa","\1MR_Vehicles\Textures\mbt_01_tow_124_co.paa","\1MR_Vehicles\Textures\mbt_addons_124_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-	class TransportMagazines
-	{
-		class _xx_TKE_35rnd_62x35_mag
-		{
-			magazine = "TKE_35rnd_62x35_mag";
-			count = 4;
-		};
-		class _xx_TKE_SMOKE_mag
-		{
-			magazine = "TKE_SMOKE_mag";
-			count = 2;
-		};
-		class _xx_TKE_SMOKE_mag_blue
-		{
-			magazine = "TKE_SMOKE_mag_blue";
-			count = 2;
-		};
-	};
-	class TransportWeapons
-	{
-		class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
-		{
-			weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
-			count = 2;
-		};
-	};
-	class TransportItems
-	{
-		class _xx_FirstAidKit
-		{
-			name = "FirstAidKit";
-			count = 10;
-		};
-		class _xx_Toolkit
-		{
-			name = "Toolkit";
-			count = 1;
-		};
-	};
-};
-class B_MBT_01_arty_F;
-class B_MBT_01_124arty_F: B_MBT_01_arty_F
-{
-	faction="124thESB";
-    side=1;
-    displayName="M14 Elephant"; 
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_01_body_124_co.paa","\1MR_Vehicles\Textures\mbt_01_scorcher_124_co.paa","\1MR_Vehicles\Textures\mbt_addons_124_co.paa","\1MR_Vehicles\Textures\Turret_124.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-	class TransportMagazines
-	{
-		class _xx_TKE_35rnd_62x35_mag
-		{
-			magazine = "TKE_35rnd_62x35_mag";
-			count = 4;
-		};
-		class _xx_TKE_SMOKE_mag
-		{
-			magazine = "TKE_SMOKE_mag";
-			count = 2;
-		};
-		class _xx_TKE_SMOKE_mag_blue
-		{
-			magazine = "TKE_SMOKE_mag_blue";
-			count = 2;
-		};
-	};
-	class TransportWeapons
-	{
-		class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
-		{
-			weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
-			count = 2;
-		};
-	};
-	class TransportItems
-	{
-		class _xx_FirstAidKit
-		{
-			name = "FirstAidKit";
-			count = 10;
-		};
-		class _xx_Toolkit
-		{
-			name = "Toolkit";
-			count = 1;
-		};
-	};
-};
-class B_MBT_01_mlrs_F;
-class B_MBT_01_124mlrs_F: B_MBT_01_mlrs_F
-{
-	faction="124thESB";
-    side=1;
-    displayName="M15 Giraffe"; 
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\mbt_01_body_124_co.paa","\1MR_Vehicles\Textures\mbt_01_mlrs_124_co.paa","\1MR_Vehicles\Textures\mbt_addons_124_co.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-	class TransportMagazines
-	{
-		class _xx_TKE_35rnd_62x35_mag
-		{
-			magazine = "TKE_35rnd_62x35_mag";
-			count = 4;
-		};
-		class _xx_TKE_SMOKE_mag
-		{
-			magazine = "TKE_SMOKE_mag";
-			count = 2;
-		};
-		class _xx_TKE_SMOKE_mag_blue
-		{
-			magazine = "TKE_SMOKE_mag_blue";
-			count = 2;
-		};
-	};
-	class TransportWeapons
-	{
-		class _xx_7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg
-		{
-			weapon = "7thFleet_TKE_UCNRifle3_optic_ACO_grn_smg";
-			count = 2;
-		};
-	};
-	class TransportItems
-	{
-		class _xx_FirstAidKit
-		{
-			name = "FirstAidKit";
-			count = 10;
-		};
-		class _xx_Toolkit
-		{
-			name = "Toolkit";
-			count = 1;
-		};
-	};
-};
 	class O_APC_Wheeled_02_rcws_v2_F;
 	class 7thFleet_MSE_3: O_APC_Wheeled_02_rcws_v2_F
-  {
-    faction="7thFleet";
-    side=1;
-    displayName="MSE-3 Kangaroo";
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\APC_Wheeled_02_ext_01_7MEF_CO.paa","\1MR_Vehicles\Textures\APC_Wheeled_02_ext_02_7MEF_CO.paa","\1MR_Vehicles\Textures\turret_7MEF.paa","a3\armor_f\data\camonet_nato_green_co.paa","\1MR_Vehicles\Textures\cage_7MEF_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-	textureList[] = {"7MEF",1};
-	animationList[] = {"showBags",0,"showCanisters",1,"showTools",1,"showCamonetHull",0,"showSLATHull",0};
-	class TransportMagazines
 	{
-		class _xx_TKE_35rnd_62x35_mag
+		faction="7thFleet";
+		side=1;
+		displayName="MSE-3 Kangaroo";
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\APC_Wheeled_02_ext_01_7MEF_CO.paa","\1MR_Vehicles\Textures\APC_Wheeled_02_ext_02_7MEF_CO.paa","\1MR_Vehicles\Textures\turret_7MEF.paa","a3\armor_f\data\camonet_nato_green_co.paa","\1MR_Vehicles\Textures\cage_7MEF_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+		textureList[] = {"7MEF",1};
+		animationList[] = {"showBags",0,"showCanisters",1,"showTools",1,"showCamonetHull",0,"showSLATHull",0};
+		class TransportMagazines
 		{
-			magazine = "TKE_35rnd_62x35_mag";
-			count = 12;
+			class _xx_TKE_35rnd_62x35_mag
+			{
+				magazine = "TKE_35rnd_62x35_mag";
+				count = 12;
+			};
+			class _xx_TKE_FRAG_mag
+			{
+				magazine = "TKE_FRAG_mag";
+				count = 6;
+			};
+			class _xx_TKE_IMPACT_mag
+			{
+				magazine = "TKE_IMPACT_mag";
+				count = 6;
+			};
+			class _xx_TKE_SMOKE_mag
+			{
+				magazine = "TKE_SMOKE_mag";
+				count = 8;
+			};
+			class _xx_TKE_SMOKE_mag_blue
+			{
+				magazine = "TKE_SMOKE_mag_blue";
+				count = 8;
+			};
+			class _xx_TKE_SMOKE_mag_orange
+			{
+				magazine = "TKE_SMOKE_mag_orange";
+				count = 8;
+			};
+			class _xx_TKE_SMOKE_mag_yellow
+			{
+				magazine = "TKE_SMOKE_mag_yellow";
+				count = 8;
+			};
+			class _xx_TKE_SMOKE_mag_green
+			{
+				magazine = "TKE_SMOKE_mag_green";
+				count = 8;
+			};
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 5;
+			};
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 2;
+			};
+			class _xx_Titan_AT
+			{
+				magazine = "Titan_AT";
+				count = 2;
+			};
+			class _xx_Titan_AA
+			{
+				magazine = "Titan_AA";
+				count = 2;
+			};
 		};
-		class _xx_TKE_FRAG_mag
+		class TransportWeapons
 		{
-			magazine = "TKE_FRAG_mag";
-			count = 6;
+			class _xx_7thFleet_TKE_UCNRifle2_optic_ACO_grn
+			{
+				weapon = "7thFleet_TKE_UCNRifle2_optic_ACO_grn";
+				count = 2;
+			};
 		};
-		class _xx_TKE_IMPACT_mag
+		class TransportItems
 		{
-			magazine = "TKE_IMPACT_mag";
-			count = 6;
-		};
-		class _xx_TKE_SMOKE_mag
-		{
-			magazine = "TKE_SMOKE_mag";
-			count = 8;
-		};
-		class _xx_TKE_SMOKE_mag_blue
-		{
-			magazine = "TKE_SMOKE_mag_blue";
-			count = 8;
-		};
-		class _xx_TKE_SMOKE_mag_orange
-		{
-			magazine = "TKE_SMOKE_mag_orange";
-			count = 8;
-		};
-		class _xx_TKE_SMOKE_mag_yellow
-		{
-			magazine = "TKE_SMOKE_mag_yellow";
-			count = 8;
-		};
-		class _xx_TKE_SMOKE_mag_green
-		{
-			magazine = "TKE_SMOKE_mag_green";
-			count = 8;
-		};
-		class _xx_MRAWS_HEAT_F
-		{
-			magazine = "MRAWS_HEAT_F";
-			count = 5;
-		};
-		class _xx_MRAWS_HE_F
-		{
-			magazine = "MRAWS_HE_F";
-			count = 2;
-		};
-		class _xx_Titan_AT
-		{
-			magazine = "Titan_AT";
-			count = 2;
-		};
-		class _xx_Titan_AA
-		{
-			magazine = "Titan_AA";
-			count = 2;
+			class _xx_FirstAidKit
+			{
+				name = "FirstAidKit";
+				count = 10;
+			};
+			class _xx_Toolkit
+			{
+				name = "Toolkit";
+				count = 1;
+			};
 		};
 	};
-	class TransportWeapons
+	class 124thESB_MSE_3: 7thFleet_MSE_3
 	{
-		class _xx_7thFleet_TKE_UCNRifle2_optic_ACO_grn
-		{
-			weapon = "7thFleet_TKE_UCNRifle2_optic_ACO_grn";
-			count = 2;
-		};
+		faction="124thESB";
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\APC_Wheeled_02_ext_01_124_CO.paa","\1MR_Vehicles\Textures\APC_Wheeled_02_ext_02_124_CO.paa","\1MR_Vehicles\Textures\turret_124.paa","a3\armor_f\data\camonet_nato_green_co.paa","\1MR_Vehicles\Textures\cage_7MEF_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+		textureList[] = {"124",1};
 	};
-	class TransportItems
-	{
-		class _xx_FirstAidKit
-		{
-			name = "FirstAidKit";
-			count = 10;
-		};
-		class _xx_Toolkit
-		{
-			name = "Toolkit";
-			count = 1;
-		};
-	};
-  };
-  class 124thESB_MSE_3: 7thFleet_MSE_3
-  {
-    faction="124thESB";
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\APC_Wheeled_02_ext_01_124_CO.paa","\1MR_Vehicles\Textures\APC_Wheeled_02_ext_02_124_CO.paa","\1MR_Vehicles\Textures\turret_124.paa","a3\armor_f\data\camonet_nato_green_co.paa","\1MR_Vehicles\Textures\cage_7MEF_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-	textureList[] = {"124",1};
-  };
 	class KEF_APC_Wheeled_02_unarmed_F;
 	class 7thFleet_MSE_3_Unarmed: KEF_APC_Wheeled_02_unarmed_F
-  {
-    faction="7thFleet";
-    side=1;
-    displayName="MSE-3 Kangaroo (Unarmed)";
-    editorPreview = "\kef_meta\data\flag\icon_ucn.paa";
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\APC_Wheeled_02_ext_01_7MEF_CO.paa","\1MR_Vehicles\Textures\APC_Wheeled_02_ext_02_7MEF_CO.paa","\1MR_Vehicles\Textures\turret_7MEF.paa","a3\armor_f\data\camonet_nato_green_co.paa","\1MR_Vehicles\Textures\cage_7MEF_co.paa"};
-    crew="7thFleet_Trooper";
-    typicalCargo[]={"7thFleet_Trooper"};
-	textureList[] = {"7thMEF",1};
-	class TransportMagazines
 	{
-		class _xx_TKE_35rnd_62x35_mag
-		{
-			magazine = "TKE_35rnd_62x35_mag";
-			count = 12;
-		};
-		class _xx_TKE_FRAG_mag
-		{
-			magazine = "TKE_FRAG_mag";
-			count = 6;
-		};
-		class _xx_TKE_IMPACT_mag
-		{
-			magazine = "TKE_IMPACT_mag";
-			count = 6;
-		};
-		class _xx_TKE_SMOKE_mag
-		{
-			magazine = "TKE_SMOKE_mag";
-			count = 8;
-		};
-		class _xx_TKE_SMOKE_mag_blue
-		{
-			magazine = "TKE_SMOKE_mag_blue";
-			count = 8;
-		};
-		class _xx_TKE_SMOKE_mag_orange
-		{
-			magazine = "TKE_SMOKE_mag_orange";
-			count = 8;
-		};
-		class _xx_TKE_SMOKE_mag_yellow
-		{
-			magazine = "TKE_SMOKE_mag_yellow";
-			count = 8;
-		};
-		class _xx_TKE_SMOKE_mag_green
-		{
-			magazine = "TKE_SMOKE_mag_green";
-			count = 8;
-		};
-		class _xx_MRAWS_HEAT_F
-		{
-			magazine = "MRAWS_HEAT_F";
-			count = 5;
-		};
-		class _xx_MRAWS_HE_F
-		{
-			magazine = "MRAWS_HE_F";
-			count = 2;
-		};
-		class _xx_Titan_AT
-		{
-			magazine = "Titan_AT";
-			count = 2;
-		};
-		class _xx_Titan_AA
-		{
-			magazine = "Titan_AA";
-			count = 2;
-		};
-	};
-	class TransportWeapons
-	{
-		class _xx_7thFleet_TKE_UCNRifle2_optic_ACO_grn
-		{
-			weapon = "7thFleet_TKE_UCNRifle2_optic_ACO_grn";
-			count = 2;
-		};
-	};
-	class TransportItems
-	{
-		class _xx_FirstAidKit
-		{
-			name = "FirstAidKit";
-			count = 10;
-		};
-		class _xx_Toolkit
-		{
-			name = "Toolkit";
-			count = 1;
-		};
-	};
-  };
-class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
-  {
-    faction="124thESB";
-    hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\APC_Wheeled_02_ext_01_124_CO.paa","\1MR_Vehicles\Textures\APC_Wheeled_02_ext_02_124_CO.paa","\1MR_Vehicles\Textures\turret_124.paa","a3\armor_f\data\camonet_nato_green_co.paa","\1MR_Vehicles\Textures\cage_7MEF_co.paa"};
-    crew="7thFleet_Crewman";
-    typicalCargo[]={"7thFleet_Crewman"};
-	textureList[] = {"124",1};
-  };
-  class qav_ripsaw_Mk44;
-  class qav_ripsaw_Mk44_7thFleet: qav_ripsaw_Mk44
-	{
-		displayName = "MS4 Ripsaw";
-		author = "Frenchie";
-		side = 1;
-		scope = 2;
-		faction = "7thFleet";
-		crew = "B_UAV_AI";
-		model = "\QAV_ripsaw\QAV_ripsaw_mk44.p3d";
-		typicalCargo[] = {"B_UAV_AI"};
+		faction="7thFleet";
+		side=1;
+		displayName="MSE-3 Kangaroo (Unarmed)";
+		editorPreview = "\kef_meta\data\flag\icon_ucn.paa";
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\APC_Wheeled_02_ext_01_7MEF_CO.paa","\1MR_Vehicles\Textures\APC_Wheeled_02_ext_02_7MEF_CO.paa","\1MR_Vehicles\Textures\turret_7MEF.paa","a3\armor_f\data\camonet_nato_green_co.paa","\1MR_Vehicles\Textures\cage_7MEF_co.paa"};
+		crew="7thFleet_Trooper";
+		typicalCargo[]={"7thFleet_Trooper"};
 		textureList[] = {"7thMEF",1};
-		hiddenSelections[] = {"rshull","rshull2","rssusp","rsturret","rsturret2","rsacc1","rsacc2"};
-		hiddenSelectionsTextures[] = {"\1MR_Vehicles\Textures\rshull_7th_co.paa","\1MR_Vehicles\Textures\rshull2_7th_co.paa","\1MR_Vehicles\Textures\rssusp_7th_co.paa","\1MR_Vehicles\Textures\rsturret_7th_co.paa","\1MR_Vehicles\Textures\rsturret2_7th_co.paa","\1MR_Vehicles\Textures\rsacc1_7th_co.paa","\1MR_Vehicles\Textures\rsacc2_7th_co.paa"};
-		class TextureSources
+		class TransportMagazines
 		{
-			class 7thMEF
+			class _xx_TKE_35rnd_62x35_mag
 			{
-				displayName = "7thMEF";
-				author = "Frenchie";
-				textures[] = {"\1MR_Vehicles\Textures\rshull_7th_co.paa","\1MR_Vehicles\Textures\rshull2_7th_co.paa","\1MR_Vehicles\Textures\rssusp_7th_co.paa","\1MR_Vehicles\Textures\rsturret_7th_co.paa","\1MR_Vehicles\Textures\rsturret2_7th_co.paa","\1MR_Vehicles\Textures\rsacc1_7th_co.paa","\1MR_Vehicles\Textures\rsacc2_7th_co.paa"};
-				factions[] = {"1MR"};
+				magazine = "TKE_35rnd_62x35_mag";
+				count = 12;
 			};
-		};	
+			class _xx_TKE_FRAG_mag
+			{
+				magazine = "TKE_FRAG_mag";
+				count = 6;
+			};
+			class _xx_TKE_IMPACT_mag
+			{
+				magazine = "TKE_IMPACT_mag";
+				count = 6;
+			};
+			class _xx_TKE_SMOKE_mag
+			{
+				magazine = "TKE_SMOKE_mag";
+				count = 8;
+			};
+			class _xx_TKE_SMOKE_mag_blue
+			{
+				magazine = "TKE_SMOKE_mag_blue";
+				count = 8;
+			};
+			class _xx_TKE_SMOKE_mag_orange
+			{
+				magazine = "TKE_SMOKE_mag_orange";
+				count = 8;
+			};
+			class _xx_TKE_SMOKE_mag_yellow
+			{
+				magazine = "TKE_SMOKE_mag_yellow";
+				count = 8;
+			};
+			class _xx_TKE_SMOKE_mag_green
+			{
+				magazine = "TKE_SMOKE_mag_green";
+				count = 8;
+			};
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 5;
+			};
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 2;
+			};
+			class _xx_Titan_AT
+			{
+				magazine = "Titan_AT";
+				count = 2;
+			};
+			class _xx_Titan_AA
+			{
+				magazine = "Titan_AA";
+				count = 2;
+			};
+		};
+		class TransportWeapons
+		{
+			class _xx_7thFleet_TKE_UCNRifle2_optic_ACO_grn
+			{
+				weapon = "7thFleet_TKE_UCNRifle2_optic_ACO_grn";
+				count = 2;
+			};
+		};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name = "FirstAidKit";
+				count = 10;
+			};
+			class _xx_Toolkit
+			{
+				name = "Toolkit";
+				count = 1;
+			};
+		};
 	};
+	class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
+  	{
+		faction="124thESB";
+		hiddenSelectionsTextures[]={"\1MR_Vehicles\Textures\APC_Wheeled_02_ext_01_124_CO.paa","\1MR_Vehicles\Textures\APC_Wheeled_02_ext_02_124_CO.paa","\1MR_Vehicles\Textures\turret_124.paa","a3\armor_f\data\camonet_nato_green_co.paa","\1MR_Vehicles\Textures\cage_7MEF_co.paa"};
+		crew="7thFleet_Crewman";
+		typicalCargo[]={"7thFleet_Crewman"};
+		textureList[] = {"124",1};
+  	};
 
-	class O_T_VTOL_02_infantry_dynamicLoadout_F;
-	class Y32C_21stMAW_Infantry: O_T_VTOL_02_infantry_dynamicLoadout_F
+	class VTOL_02_infantry_dynamicLoadout_base_F;
+	class X32C_Infantry_Base: VTOL_02_infantry_dynamicLoadout_base_F
 	{
+		class EventHandlers
+		{
+			init="[_this select 0] execVM '\1MR_Vehicles\Functions\MagLock.sqf';";
+		};
 		author = "Frenchie";
 		DLC = "1st Marine Raiders Armory";
 		displayname = "X-32/I Drake";
 		side = 1;
+		scope = 0;
+		scopeCurator = 0;
 		faction = "7thFleet";
 		crew = "21stMAW_Pilot";
 		typicalCargo[] = {"21stMAW_Pilot"};
 		ace_cargo_loadmasterTurrets[] = {{1}};
         ace_cargo_space = 100;
         ace_cargo_hasCargo = 1;
-		slingLoadMaxCargoMass=15000;
-		liftForceCoef=1.35;
-		class ace_cargo {
-            class cargo {
-                class EF_7th_Ammo {
+		class ace_cargo 
+		{
+            class cargo 
+			{
+                class EF_7th_Ammo 
+				{
                     type = "EF_7th_Ammo";
                     amount = 3;
                 };
-				class EF_7th_Medical {
+				class EF_7th_Medical 
+				{
                     type = "EF_7th_Medical";
                     amount = 3;
                 };
-				class EF_7th_Explosive {
+				class EF_7th_Explosive 
+				{
                     type = "EF_7th_Explosive";
                     amount = 3;
                 };
+			};
+		};
+		radarType = 4;
+		incomingMissileDetectionSystem="8 + 16";
+		countermeasureActivationRadius = 16000;
+		nvScanner = 1;
+		nvTarget = 1;
+		radarTarget=1;
+		laserScanner = 1;
+		laserTarget = 1;
+		visualTarget=1;
+		radarTargetSize=1;
+		visualTargetSize=1.2;
+		irScanGround = 1;
+		irTarget = 1;
+		irTargetSize=1.2;
+		showAllTargets = 2;
+		airBrakeFrictionCoef = 15;
+		altFullForce = 10000;
+		altNoForce = 75000;
+		fuelCapacity = 4000;
+		maxGForce = 15;
+		maxSpeed = 900;
+		elevatorCoef[] = {1.0, 0.9, 0.75, 0.5};
+		thrustCoef[] = {1.7, 1.5, 1.1};
+		weaponLockSystem = "1+2+4+8";
+		magazines[] = {
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries"
+		};
+		weapons[] = {
+			"ej_master_arms_safe",
+			"Laserdesignator_pilotCamera",
+			"CMFlareLauncher",
+			"kuy_IR_Jammer_Weapon"
+		};
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=26;
+						maxTrackableSpeed=75;
+						animDirection="Cannon_rot";
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=26;
+						maxTrackableSpeed=75;
+						animDirection="Cannon_rot";
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=5000;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=4000;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						angleRangeHorizontal=120;
+						angleRangeVertical=80;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=0;
+						aimDown=40;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class CrewDisplay
+					{
+						componentType="CrewDisplayComponent";
+						resource="RscCustomInfoCrew";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class CrewDisplay
+					{
+						componentType="CrewDisplayComponent";
+						resource="RscCustomInfoCrew";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportCountermeasuresComponent;
+			class TransportPylonsComponent
+			{
+				uiPicture = "\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_3DEN_CA.paa";
+				class Pylons
+				{
+					class PylonRight1
+					{
+						attachment = "7EF_Talon_4Rnd";
+						hardpoints[] = {"7th_Hardpoints"};
+						priority = 5;
+						turret[] = {};
+						UIposition[] = {0.35,0.16};
+					};
+					class PylonRight2: PylonRight1
+					{
+						attachment = "7EF_Talon_4Rnd";
+						hardpoints[] = {"7th_Hardpoints"};
+						priority = 4;
+						UIposition[] = {0.33,0.21};
+					};
+					class PylonLeft1: PylonRight1
+					{
+						hardpoints[] = {"7th_Hardpoints","7th_Hardpoints_L"};
+						mirroredMissilePos = 2;
+						UIposition[] = {0.33,0.34};
+					};
+					class PylonLeft2: PylonRight2
+					{
+						hardpoints[] = {"7th_Hardpoints"};
+						mirroredMissilePos = 1;
+						UIposition[] = {0.35,0.39};
+					};
+				};
+			};
+		};
+		class pilotCamera
+		{
+			controllable = 1;
+			initElev = 15;
+			initTurn = 0;
+			maxElev = 90;
+			maxMouseXRotSpeed = 0.5;
+			maxMouseYRotSpeed = 0.5;
+			maxTurn = 360;
+			minTurn = -360;
+			maxXRotSpeed = 1;
+			maxYRotSpeed = 1;
+			minElev = -20;
+			pilotOpticsShowCursor = 1;
+			class OpticsIn
+			{
+				class Wide
+				{
+					directionStabilized = 1;
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					initAngleX = 0;
+					initAngleY = 0;
+					initFov = "(60 / 120)";
+					maxAngleX = 0;
+					maxAngleY = 0;
+					maxFov = "(60 / 120)";
+					minAngleX = 0;
+					minAngleY = 0;
+					minFov = "(60 / 120)";
+					opticsDisplayName = "WFOV";
+					opticsPPEffects[] = {};
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+				class Medium: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+					initFov = "(12 / 120)";
+					maxFov = "(12 / 120)";
+					minFov = "(12 / 120)";
+					opticsDisplayName = "MFOV";
+				};
+				class Narrow: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					initFov = "(4 / 120)";
+					maxFov = "(4 / 120)";
+					minFov = "(4 / 120)";
+					opticsDisplayName = "NFOV";
+				};
+				class VeryNarrow: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					initFov = "(2 / 120)";
+					maxFov = "(2 / 120)";
+					minFov = "(2 / 120)";
+					opticsDisplayName = "NFOV";
+				};
 			};
 		};
 		class TextureSources
@@ -1655,7 +1945,7 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 			};
 		};
 	};
-	class Y32C_Victus_Infantry: Y32C_21stMAW_Infantry
+	class Y32C_Victus_Infantry: X32C_Infantry_Base
 	{
 		author = "Frenchie";
 		DLC = "1st Marine Raiders Armory";
@@ -1666,7 +1956,7 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		typicalCargo[] = {"21stMAW_Pilot"};
 		textureList[] = {"274thTS",1};
 	};
-	class Y32C_UCIA_Infantry: O_T_VTOL_02_infantry_dynamicLoadout_F
+	class Y32C_UCIA_Infantry: X32C_Infantry_Base
 	{
 		author = "Frenchie";
 		DLC = "1st Marine Raiders Armory";
@@ -1754,13 +2044,16 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 			};
 		};
 	};
+
 	class O_T_VTOL_02_vehicle_dynamicLoadout_F;
-	class Y32C_21stMAW_Vehicle: O_T_VTOL_02_vehicle_dynamicLoadout_F
+	class X32C_Vehicle_Base: O_T_VTOL_02_vehicle_dynamicLoadout_F
 	{
 		author = "Frenchie";
 		DLC = "1st Marine Raiders Armory";
 		displayname = "X-32/V Drake";
 		side = 1;
+		scope = 0;
+		scopeCurator = 0;
 		faction = "7thFleet";
 		crew = "21stMAW_Pilot";
 		typicalCargo[] = {"21stMAW_Pilot"};
@@ -1783,6 +2076,194 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
                     type = "EF_7th_Explosive";
                     amount = 3;
                 };
+			};
+		};
+		incomingMissileDetectionSystem = 16;
+		showAllTargets = 2
+		showCrewAim = 0
+		airBrakeFrictionCoef = 15;
+		altFullForce = 10000;
+		altNoForce = 75000;
+		maxSpeed = 900;
+		thrustCoef[] = {1.7, 1.5, 1.3, 1.1, 1.1, 1.1, 0.6};
+		magazines[] = {
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries"
+		};
+		weapons[] = {
+			"ej_master_arms_safe",
+			"Laserdesignator_pilotCamera",
+			"CMFlareLauncher",
+			"kuy_IR_Jammer_Weapon"
+		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				uiPicture = "\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_3DEN_CA.paa";
+				class Presets{};
+				class Pylons
+				{
+					class PylonRight1
+					{
+						attachment = "7EF_Talon_4Rnd";
+						hardpoints[] = {"7th_Hardpoints"};
+						priority = 5;
+						turret[] = {};
+						UIposition[] = {0.35,0.16};
+					};
+					class PylonRight2: PylonRight1
+					{
+						attachment = "7EF_Talon_4Rnd";
+						hardpoints[] = {"7th_Hardpoints"};
+						priority = 4;
+						UIposition[] = {0.33,0.21};
+					};
+					class PylonLeft1: PylonRight1
+					{
+						hardpoints[] = {"7th_Hardpoints","7EF_Hardpoints_L"};
+						mirroredMissilePos = 2;
+						UIposition[] = {0.33,0.34};
+					};
+					class PylonLeft2: PylonRight2
+					{
+						hardpoints[] = {"7th_Hardpoints"};
+						mirroredMissilePos = 1;
+						UIposition[] = {0.35,0.39};
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportCountermeasuresComponent;
+		};
+		class pilotCamera
+		{
+			controllable = 1;
+			initElev = 15;
+			initTurn = 0;
+			maxElev = 90;
+			maxMouseXRotSpeed = 0.5;
+			maxMouseYRotSpeed = 0.5;
+			maxTurn = 360;
+			maxXRotSpeed = 1;
+			maxYRotSpeed = 1;
+			minElev = -20;
+			minTurn = -360;
+			pilotOpticsShowCursor = 1;
+			class OpticsIn
+			{
+				class Wide
+				{
+					directionStabilized = 1;
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					initAngleX = 0;
+					initAngleY = 0;
+					initFov = "(60 / 120)";
+					maxAngleX = 0;
+					maxAngleY = 0;
+					maxFov = "(60 / 120)";
+					minAngleX = 0;
+					minAngleY = 0;
+					minFov = "(60 / 120)";
+					opticsDisplayName = "WFOV";
+					opticsPPEffects[] = {};
+					thermalMode[] = {0,1};
+					visionMode[] = {"Normal","NVG","Ti"};
+				};
+				class Medium: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+					initFov = "(12 / 120)";
+					maxFov = "(12 / 120)";
+					minFov = "(12 / 120)";
+					opticsDisplayName = "MFOV";
+				};
+				class Narrow: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					initFov = "(4 / 120)";
+					maxFov = "(4 / 120)";
+					minFov = "(4 / 120)";
+					opticsDisplayName = "NFOV";
+				};
+				class VeryNarrow: Wide
+				{
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					initFov = "(2 / 120)";
+					maxFov = "(2 / 120)";
+					minFov = "(2 / 120)";
+					opticsDisplayName = "NFOV";
+				};
 			};
 		};
 		class TextureSources
@@ -1873,7 +2354,7 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 			};
 		};
 	};
-	class Y32C_Victus_Vehicle: Y32C_21stMAW_Vehicle
+	class Y32C_Victus_Vehicle: X32C_Vehicle_Base
 	{
 		author = "Frenchie";
 		DLC = "1st Marine Raiders Armory";
@@ -1883,8 +2364,9 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		crew = "21stMAW_Pilot";
 		typicalCargo[] = {"21stMAW_Pilot"};
 		textureList[] = {"274thTS",1};
+		
 	};
-	class Y32C_UCIA_Vehicle: O_T_VTOL_02_vehicle_dynamicLoadout_F
+	class Y32C_UCIA_Vehicle: X32C_Vehicle_Base
 	{
 		author = "Frenchie";
 		DLC = "1st Marine Raiders Armory";
@@ -1978,31 +2460,671 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		class EjectionSystem;
 	};
 	class Ejection_Seat_Plane_Fighter_02_base_F;
-	class O_Plane_Fighter_02_F: Plane_Fighter_02_Base_F{};
-	class O_Plane_Fighter_02_Stealth_F: Plane_Fighter_02_Base_F{};
+	class O_Plane_Fighter_02_F: Plane_Fighter_02_Base_F
+	{
+		magazines[] = {
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries",
+			"1800Rnd_Gatling_30mm_Plane_CAS_01_F"
+		};
+		weapons[] = {
+			"ej_master_arms_safe",
+			"Laserdesignator_pilotCamera",
+			"7EF_Gatling_30mm_Plane_CAS_01_F",
+			"CMFlareLauncher",
+			"kuy_IR_Jammer_Weapon"
+		};
+		airBrakeFrictionCoef = 15;
+		vtol = 4;
+		receiveRemoteTargets = true;
+		reportRemoteTargets = true;
+		reportOwnPosition = true;
+		class TransportMagazines{};
+		class TransportWeapons{};
+		class TransportItems
+		{
+			class Victus_Parachute_TI
+			{
+				item = "B_Parachute";
+				count = 1;
+			};
+		};
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=360;
+						angleRangeVertical=120;
+						maxTrackableSpeed=500;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=20;
+						maxTrackableSpeed=100;
+						aimDown=1;
+						animDirection="pilotCameraRotY";
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=13000;
+							maxRange=13000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=9000;
+							maxRange=9000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=6000;
+						angleRangeHorizontal=60;
+						angleRangeVertical=60;
+						groundNoiseDistanceCoef=0.1;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=60;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportPylonsComponent
+			{
+				UIPicture="\A3\Air_F_Jets\Plane_Fighter_02\Data\UI\Fighter_02_3DEN_ca.paa";
+				class pylons
+				{
+					class pylons1
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						attachment="7EF_StratosAA_1Rnd";
+						priority=13;
+						maxweight=300;
+						UIposition[]={0.60000002,0.44999999};
+					};
+					class pylons2: pylons1
+					{
+						UIposition[]={0.050000001,0.44999999};
+						mirroredMissilePos=1;
+					};
+					class pylons3
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints"
+						};
+						attachment="7EF_StratosAA_1Rnd";
+						priority=11;
+						maxweight=1050;
+						UIposition[]={0.55000001,0.34999999};
+					};
+					class pylons4: pylons3
+					{
+						UIposition[]={0.1,0.34999999};
+						mirroredMissilePos=3;
+					};
+					class pylons5
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints"
+						};
+						attachment="7EF_Jupiter_500_1Rnd";
+						priority=9;
+						maxweight=1200;
+						UIposition[]={0.5,0.25};
+					};
+					class pylons6: pylons5
+					{
+						UIposition[]={0.15000001,0.25};
+						mirroredMissilePos=5;
+					};
+					class pylonBayRight1
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=7;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=300;
+						UIposition[]={0.44999999,0.15000001};
+						bay=2;
+					};
+					class pylonBayLeft1: pylonBayRight1
+					{
+						UIposition[]={0.2,0.15000001};
+						mirroredMissilePos=7;
+						bay=1;
+					};
+					class pylonBayRight2
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=5;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=750;
+						UIposition[]={0.33000001,0.30000001};
+						bay=4;
+					};
+					class pylonBayLeft2: pylonBayRight2
+					{
+						UIposition[]={0.33000001,0.34999999};
+						mirroredMissilePos=9;
+						bay=3;
+					};
+					class pylonBayCenter1
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=2;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=750;
+						UIposition[]={0.33000001,0.44999999};
+						bay=5;
+					};
+					class pylonBayCenter2: pylonBayCenter1
+					{
+						UIposition[]={0.33000001,0.5};
+						mirroredMissilePos=11;
+					};
+					class pylonBayCenter3
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints"
+						};
+						priority=1;
+						attachment="7EF_Jupiter_500_1Rnd";
+						maxweight=1200;
+						UIposition[]={0.33000001,0.55000001};
+						bay=5;
+					};
+				};
+				class Bays
+				{
+					class BayLeft1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=0;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayRight1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=0;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayLeft2
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=2;
+					};
+					class BayRight2
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayCenter1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=2;
+					};
+				};
+			};
+			class TransportCountermeasuresComponent;
+		};
+	};
+	class O_Plane_Fighter_02_Stealth_F: Plane_Fighter_02_Base_F
+	{
+		magazines[] = {
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries",
+			"1800Rnd_Gatling_30mm_Plane_CAS_01_F"
+		};
+		weapons[] = {
+			"ej_master_arms_safe",
+			"Laserdesignator_pilotCamera",
+			"7EF_Gatling_30mm_Plane_CAS_01_F",
+			"CMFlareLauncher",
+			"kuy_IR_Jammer_Weapon"
+		};
+		airBrakeFrictionCoef = 15;
+		vtol = 4;
+		receiveRemoteTargets = true;
+		reportRemoteTargets = true;
+		reportOwnPosition = true;
+		class TransportMagazines{};
+		class TransportWeapons{};
+		class TransportItems
+		{
+			class Victus_Parachute_TI
+			{
+				item = "B_Parachute";
+				count = 1;
+			};
+		};
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=360;
+						angleRangeVertical=120;
+						maxTrackableSpeed=500;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=20;
+						maxTrackableSpeed=100;
+						aimDown=1;
+						animDirection="pilotCameraRotY";
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=13000;
+							maxRange=13000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=9000;
+							maxRange=9000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=6000;
+						angleRangeHorizontal=60;
+						angleRangeVertical=60;
+						groundNoiseDistanceCoef=0.1;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=60;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportPylonsComponent
+			{
+				UIPicture="\A3\Air_F_Jets\Plane_Fighter_02\Data\UI\Fighter_02_3DEN_ca.paa";
+				class pylons
+				{
+					class pylonDummy1
+					{
+						attachment="";
+						UIposition[]={10,10};
+					};
+					class pylonDummy2: pylonDummy1
+					{
+					};
+					class pylonDummy3: pylonDummy1
+					{
+					};
+					class pylonDummy4: pylonDummy1
+					{
+					};
+					class pylonDummy5: pylonDummy1
+					{
+					};
+					class pylonDummy6: pylonDummy1
+					{
+					};
+					class pylonBayRight1
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=7;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=300;
+						UIposition[]={0.44999999,0.15000001};
+						bay=2;
+					};
+					class pylonBayLeft1: pylonBayRight1
+					{
+						UIposition[]={0.2,0.15000001};
+						mirroredMissilePos=7;
+						bay=1;
+					};
+					class pylonBayRight2
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=5;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=750;
+						UIposition[]={0.33000001,0.30000001};
+						bay=4;
+					};
+					class pylonBayLeft2: pylonBayRight2
+					{
+						UIposition[]={0.33000001,0.34999999};
+						mirroredMissilePos=9;
+						bay=3;
+					};
+					class pylonBayCenter1
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=2;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=750;
+						UIposition[]={0.33000001,0.44999999};
+						bay=5;
+					};
+					class pylonBayCenter2: pylonBayCenter1
+					{
+						UIposition[]={0.33000001,0.5};
+						mirroredMissilePos=11;
+					};
+					class pylonBayCenter3
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints"
+						};
+						priority=1;
+						attachment="7EF_Jupiter_500_1Rnd";
+						maxweight=1200;
+						UIposition[]={0.33000001,0.55000001};
+						bay=5;
+					};
+				};
+				class Bays
+				{
+					class BayLeft1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=0;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayRight1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=0;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayLeft2
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=2;
+					};
+					class BayRight2
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayCenter1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=2;
+					};
+				};
+			};
+		};
+	};
 	class B_33rdCAW_Plane_Fighter_02_F: O_Plane_Fighter_02_F
 	{
 		author = "Frenchie";
+		armor = 100;
 		DLC = "1st Marine Raiders Armory";
 		displayname = "F-201/C Hawk";
 		side = 1;
 		faction = "7thFleet";
 		crew = "33rdCAW_Pilot";
-		magazines[] = {
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"Laserbatteries",
-			"800Rnd_Gatling_30mm_Plane_CAS_01_F"
-		};
-		weapons[] = {
-			"ej_master_arms_safe",
-			"7EF_Gatling_30mm_Plane_CAS_01_F",
-			"Laserdesignator_pilotCamera",
-			"EricJ_CMFlareLauncher",
-			"kuy_IR_Jammer_Weapon"
-		};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		class TransportItems{};
 		typicalCargo[] = {"33rdCAW_Pilot"};
 		class TextureSources
 		{
@@ -2055,6 +3177,337 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		{
 			EjectionSeatClass = "B_33rdCAW_Ejection_Seat_Plane_Fighter_02_F";
 		};
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=360;
+						angleRangeVertical=120;
+						maxTrackableSpeed=500;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=20;
+						maxTrackableSpeed=100;
+						aimDown=1;
+						animDirection="pilotCameraRotY";
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=13000;
+							maxRange=13000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=9000;
+							maxRange=9000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=6000;
+						angleRangeHorizontal=60;
+						angleRangeVertical=60;
+						groundNoiseDistanceCoef=0.1;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=60;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={16000,8000,4000,2000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportPylonsComponent
+			{
+				UIPicture="\A3\Air_F_Jets\Plane_Fighter_02\Data\UI\Fighter_02_3DEN_ca.paa";
+				class pylons
+				{
+					class pylons1
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						attachment="7EF_StratosAA_1Rnd";
+						priority=13;
+						maxweight=300;
+						UIposition[]={0.60000002,0.44999999};
+					};
+					class pylons2: pylons1
+					{
+						UIposition[]={0.050000001,0.44999999};
+						mirroredMissilePos=1;
+					};
+					class pylons3
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints"
+						};
+						attachment="7EF_StratosAA_1Rnd";
+						priority=11;
+						maxweight=1050;
+						UIposition[]={0.55000001,0.34999999};
+					};
+					class pylons4: pylons3
+					{
+						UIposition[]={0.1,0.34999999};
+						mirroredMissilePos=3;
+					};
+					class pylons5
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints"
+						};
+						attachment="7EF_Jupiter_500_1Rnd";
+						priority=9;
+						maxweight=1200;
+						UIposition[]={0.5,0.25};
+					};
+					class pylons6: pylons5
+					{
+						UIposition[]={0.15000001,0.25};
+						mirroredMissilePos=5;
+					};
+					class pylonBayRight1
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=7;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=300;
+						UIposition[]={0.44999999,0.15000001};
+						bay=2;
+					};
+					class pylonBayLeft1: pylonBayRight1
+					{
+						UIposition[]={0.2,0.15000001};
+						mirroredMissilePos=7;
+						bay=1;
+					};
+					class pylonBayRight2
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=5;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=750;
+						UIposition[]={0.33000001,0.30000001};
+						bay=4;
+					};
+					class pylonBayLeft2: pylonBayRight2
+					{
+						UIposition[]={0.33000001,0.34999999};
+						mirroredMissilePos=9;
+						bay=3;
+					};
+					class pylonBayCenter1
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints_Stratos",
+							"7th_Hardpoints_Atlas"
+						};
+						priority=2;
+						attachment="7EF_StratosAA_1Rnd";
+						maxweight=750;
+						UIposition[]={0.33000001,0.44999999};
+						bay=5;
+					};
+					class pylonBayCenter2: pylonBayCenter1
+					{
+						UIposition[]={0.33000001,0.5};
+						mirroredMissilePos=11;
+					};
+					class pylonBayCenter3
+					{
+						hardpoints[]=
+						{
+							"7th_Hardpoints"
+						};
+						priority=1;
+						attachment="7EF_Jupiter_500_1Rnd";
+						maxweight=1200;
+						UIposition[]={0.33000001,0.55000001};
+						bay=5;
+					};
+				};
+				class Bays
+				{
+					class BayLeft1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=0;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayRight1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=0;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayLeft2
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=2;
+					};
+					class BayRight2
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=1;
+					};
+					class BayCenter1
+					{
+						bayOpenTime=0.5;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=2;
+					};
+				};
+			};
+			class TransportCountermeasuresComponent;
+		};
 	};
 	class B_Victus_Plane_Fighter_02_F: B_33rdCAW_Plane_Fighter_02_F
 	{
@@ -2067,47 +3520,35 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		typicalCargo[] = {"33rdCAW_Pilot"};
 		magazines[] = {
 			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
 			"Laserbatteries",
-			"800Rnd_Gatling_30mm_Plane_CAS_01_F"
+			"1800Rnd_Gatling_30mm_Plane_CAS_01_F"
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
 			"7EF_Gatling_30mm_Plane_CAS_01_F",
 			"Laserdesignator_pilotCamera",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
+		airBrakeFrictionCoef = 15;
 		class TransportMagazines{};
 		class TransportWeapons{};
 		class TransportItems{};
 		textureList[] = {"274thTS",1};
 		hiddenSelectionsTextures[] = {"\1MR_Vehicles\Textures\Fighter_02_fuselage_01_Victus_CO.paa","\1MR_Vehicles\Textures\Fighter_02_fuselage_02_Victus_CO.paa","\1MR_Vehicles\Textures\Fighter_02_fuselage_01_Victus_CO.paa","\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_07_CO.paa","\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_00_CO.paa","\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_09_CO.paa","\A3\Data_F\clear_empty.paa"};
-
+		vtol = 4;
 	};
 	class B_33rdCAW_Plane_Fighter_02_Stealth_F: O_Plane_Fighter_02_Stealth_F
 	{
 		author = "Frenchie";
+		armor = 100;
 		DLC = "1st Marine Raiders Armory";
 		displayname = "F-201/S Hawk";
 		side = 1;
 		faction = "7thFleet";
 		crew = "33rdCAW_Pilot";
 		typicalCargo[] = {"33rdCAW_Pilot"};
-		magazines[] = {
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"Laserbatteries",
-			"800Rnd_Gatling_30mm_Plane_CAS_01_F"
-		};
-		weapons[] = {
-			"ej_master_arms_safe",
-			"7EF_Gatling_30mm_Plane_CAS_01_F",
-			"Laserdesignator_pilotCamera",
-			"EricJ_CMFlareLauncher",
-			"kuy_IR_Jammer_Weapon"
-		};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		class TransportItems{};
 		class TextureSources
 		{
 			class 33rdCAW
@@ -2171,14 +3612,15 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		typicalCargo[] = {"33rdCAW_Pilot"};
 		magazines[] = {
 			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
 			"Laserbatteries",
-			"800Rnd_Gatling_30mm_Plane_CAS_01_F"
+			"1800Rnd_Gatling_30mm_Plane_CAS_01_F"
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
 			"7EF_Gatling_30mm_Plane_CAS_01_F",
 			"Laserdesignator_pilotCamera",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
@@ -2186,7 +3628,11 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		class TransportItems{};
 		textureList[] = {"274thTS",1};
 		hiddenSelectionsTextures[] = {"\1MR_Vehicles\Textures\Fighter_02_fuselage_01_Victus_CO.paa","\1MR_Vehicles\Textures\Fighter_02_fuselage_02_Victus_CO.paa","\1MR_Vehicles\Textures\Fighter_02_fuselage_01_Victus_CO.paa","\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_07_CO.paa","\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_00_CO.paa","\A3\Air_F_Jets\Plane_Fighter_02\Data\Numbers\Fighter_02_number_09_CO.paa","\A3\Data_F\clear_empty.paa"};
-
+		airBrakeFrictionCoef = 15;
+		receiveRemoteTargets = true;
+		reportRemoteTargets = true;
+		reportOwnPosition = true;
+		vtol = 4;
 	};
 	class B_33rdCAW_Ejection_Seat_Plane_Fighter_02_F: Ejection_Seat_Plane_Fighter_02_base_F
 	{
@@ -2199,7 +3645,12 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 	class B_Heli_Transport_03_F;
 	class Victus_Heli_Transport_03_F: B_Heli_Transport_03_F
 	{
+		class EventHandlers
+		{
+			init="[_this select 0] execVM '\1MR_Vehicles\Functions\MagLock.sqf';";
+		};
 		author = "Frenchie";
+		armor = 80;
 		DLC = "1st Marine Raiders Armory";
 		side = 1;
 		faction = "274thTS";
@@ -2216,12 +3667,19 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		class TransportItems{};
+		class TransportItems
+		{
+			class Victus_Parachute_TI
+			{
+				item = "B_Parachute";
+				count = 1;
+			};
+		};
 		class ace_cargo {
             class cargo {
                 class EF_7th_Ammo {
@@ -2254,7 +3712,12 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 	class B_Heli_Transport_03_unarmed_F;
 	class Victus_Heli_Transport_03_unarmed_F: B_Heli_Transport_03_unarmed_F
 	{
+		class EventHandlers
+		{
+			init="[_this select 0] execVM '\1MR_Vehicles\Functions\MagLock.sqf';";
+		};
 		author = "Frenchie";
+		armor = 80;
 		DLC = "1st Marine Raiders Armory";
 		side = 1;
 		faction = "274thTS";
@@ -2271,12 +3734,19 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		class TransportItems{};
+		class TransportItems
+		{
+			class Victus_Parachute_TI
+			{
+				item = "B_Parachute";
+				count = 1;
+			};
+		};
 		class ace_cargo {
             class cargo {
                 class EF_7th_Ammo {
@@ -2309,7 +3779,12 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 	class B_Heli_Transport_01_F;
 	class Victus_Heli_Transport_01_F: B_Heli_Transport_01_F
 	{
+		class EventHandlers
+		{
+			init="[_this select 0] execVM '\1MR_Vehicles\Functions\MagLock.sqf';";
+		};
 		author = "Frenchie";
+		armor = 70;
 		DLC = "1st Marine Raiders Armory";
 		side = 1;
 		faction = "274thTS";
@@ -2326,12 +3801,19 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		class TransportItems{};
+		class TransportItems
+		{
+			class Victus_Parachute_TI
+			{
+				item = "B_Parachute";
+				count = 1;
+			};
+		};
 		class ace_cargo {
             class cargo {
                 class EF_7th_Ammo {
@@ -2353,6 +3835,7 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 	class Victus_Heli_Light_01_dynamicLoadout_F: B_Heli_Light_01_dynamicLoadout_F
 	{
 		author = "Frenchie";
+		armor = 50;
 		DLC = "1st Marine Raiders Armory";
 		side = 1;
 		faction = "274thTS";
@@ -2360,70 +3843,741 @@ class 124thESB_MSE_3_Unarmed: 7thFleet_MSE_3_Unarmed
 		typicalCargo[] = {"33rdCAW_Pilot"};
 		magazines[] = {
 			"240Rnd_CMFlare_Chaff_Magazine", 
-			"2500Rnd_127x99_mag_Tracer_Red",
 			"2500Rnd_127x99_mag_Tracer_Red"
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"7EF_ej_M134_minigun",
-			"EricJ_CMFlareLauncher",
+			"7EF_M134_minigun",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		class TransportItems{};
+		class TransportItems
+		{
+			class Victus_Parachute_TI
+			{
+				item = "B_Parachute";
+				count = 1;
+			};
+		};
 		hiddenSelectionsTextures[]= {"\1MR_Vehicles\Textures\Heli_Light_01_ext_UCN_CO.paa"};
+
+		incomingMissileDetectionSystem = 16;
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						aimDown = 30;
+						angleRangeHorizontal = 120;
+						angleRangeVertical = 90;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableSpeed = 300;
+						minSpeedThreshold = 0;
+						
+						class AirTarget
+						{
+							maxRange = 2000;
+							minRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 2000;
+							minRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+
+					class IRSensorComponent: SensorTemplateIR
+					{
+						aimdown = -0.25;
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						maxTrackableSpeed = 300;
+
+						class AirTarget
+						{
+							maxRange = 2000;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							maxRange = 2000;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+					};
+
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						aimdown = -0.25;
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						maxTrackableSpeed = 300;
+
+						class AirTarget
+						{
+							maxRange = 1500;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							maxRange = 1500;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+					};
+
+
+					class LaserSensorComponent;
+					class NVSensorComponent;
+					class PassiveRadarSensorComponent;
+				};
+			};
+			class TransportCountermeasuresComponent;
+			class TransportPylonsComponent
+			{
+				uiPicture = "\A3\Air_F\Heli_Light_01\Data\UI\Heli_Light_01_3DEN_CA.paa";
+				class Presets;
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment = "7th_Widowmaker_12Rnd";
+						hardpoints[] = {"7th_Hardpoints_Sabertooth","7th_Hardpoints_Talon","7th_Hardpoints_Havoc","7th_Hardpoints_Stratos","7th_Hardpoints_Atlas","7th_Hardpoints_Widowmaker"};
+						priority = 5;
+						UIposition[] = {0.06,0.4};
+					};
+					class PylonRight1:PylonLeft1
+					{
+						mirroredMissilePos = 1;
+						priority = 5;
+						UIposition[] = {0.59,0.4};
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+		};
 	};
 	class B_Heli_Light_01_F;
 	class Victus_Heli_Light_01_F: B_Heli_Light_01_F
 	{
 		author = "Frenchie";
+		armor = 50;
 		DLC = "1st Marine Raiders Armory";
 		side = 1;
 		faction = "274thTS";
 		crew = "33rdCAW_Pilot";
 		typicalCargo[] = {"33rdCAW_Pilot"};
 		magazines[] = {
+			"240Rnd_CMFlare_Chaff_Magazine",
 			"240Rnd_CMFlare_Chaff_Magazine"
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"EricJ_CMFlareLauncher",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		class TransportItems{};
+		class TransportItems
+		{
+			class Victus_Parachute_TI
+			{
+				item = "B_Parachute";
+				count = 1;
+			};
+		};
 		hiddenSelectionsTextures[]= {"\1MR_Vehicles\Textures\Heli_Light_01_ext_UCN_CO.paa"};
+		incomingMissileDetectionSystem = 16;
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						aimDown = 30;
+						angleRangeHorizontal = 120;
+						angleRangeVertical = 90;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableSpeed = 300;
+						minSpeedThreshold = 0;
+						
+						class AirTarget
+						{
+							maxRange = 2000;
+							minRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 2000;
+							minRange = 2000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+
+					class IRSensorComponent: SensorTemplateIR
+					{
+						aimdown = -0.25;
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						maxTrackableSpeed = 300;
+
+						class AirTarget
+						{
+							maxRange = 2000;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							maxRange = 2000;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+					};
+
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						aimdown = -0.25;
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						maxTrackableSpeed = 300;
+
+						class AirTarget
+						{
+							maxRange = 1500;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							maxRange = 1500;
+							minRange = 500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+					};
+
+
+					class LaserSensorComponent;
+					class NVSensorComponent;
+					class PassiveRadarSensorComponent;
+				};
+			};
+			class TransportCountermeasuresComponent;
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[] = {4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+		};
 	};
-	class B_Heli_Attack_01_F;
-	class Victus_Heli_Attack_01_F: B_Heli_Attack_01_F
+	class O_Plane_CAS_02_dynamicLoadout_F;
+	class Victus_O_Plane_CAS_02_dynamicLoadout_F: O_Plane_CAS_02_dynamicLoadout_F
 	{
 		author = "Frenchie";
+		armor = 120;
 		DLC = "1st Marine Raiders Armory";
 		side = 1;
 		faction = "274thTS";
 		crew = "33rdCAW_Pilot";
 		typicalCargo[] = {"33rdCAW_Pilot"};
+		displayName = "Strix-9";
 		magazines[] = {
-			"240Rnd_CMFlare_Chaff_Magazine", 
-			"2500Rnd_127x99_mag_Tracer_Red",
-			"2500Rnd_127x99_mag_Tracer_Red"
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries",
+			"1800Rnd_Gatling_30mm_Plane_CAS_01_F"
 		};
 		weapons[] = {
 			"ej_master_arms_safe",
-			"7EF_ej_M134_minigun",
-			"EricJ_CMFlareLauncher",
+			"Laserdesignator_pilotCamera",
+			"7EF_Gatling_30mm_Plane_CAS_01_F",
+			"CMFlareLauncher",
 			"kuy_IR_Jammer_Weapon"
 		};
 		class TransportMagazines{};
 		class TransportWeapons{};
 		class TransportItems{};
-		hiddenSelectionsTextures[]= {"\1MR_Vehicles\Textures\Heli_Attack_01_UCN_CO.paa"};
+		hiddenSelectionsTextures[] = {"\1MR_Vehicles\Textures\Fighter02_ext01_Victus_CO.paa","\1MR_Vehicles\Textures\Fighter02_ext02_Victus_CO.paa"};
+		airBrakeFrictionCoef = 15;
+		receiveRemoteTargets = true;
+		reportRemoteTargets = true;
+		reportOwnPosition = true;
+		fuelCapacity = 2540;
+		maxSpeed = 800;
+		thrustCoef[] = {2.5, 2.0, 1.8};
+		envelope[] = {1.0, 1.8, 2.5, 3.2, 3.5, 3.3, 3.0, 2.5, 2.0, 1.4, 0.8};
+		aileronSensitivity = 1.2;
+		elevatorSensitivity = 0.9;
+		GLimit = 9;
+		angleOfIndicence = 0.065;
+		airFrictionCoef = 0.85;
+		flapsEffectiveness = 1.6;
+		landingAoa = 14;
+		vtol = 4;
+		class Components
+		{
+			class TransportPylonsComponent
+			{
+				uiPicture="\A3\Air_F_EPC\Plane_CAS_02\Data\UI\Plane_cas_02_3DEN_CA.paa";
+				class Pylons
+				{
+					class Pylons1
+					{
+						hardpoints[]={"7th_Hardpoints_Stratos","7th_Hardpoints_Atlas",};
+						attachment="7EF_StratosAA_1Rnd";
+						priority=5;
+						maxweight=150;
+						UIposition[]={0.34999999,0};
+					};
+					class Pylons2: Pylons1
+					{
+						hardpoints[]={"7th_Hardpoints_Havoc", "7th_Hardpoints_Talon", "7th_Hardpoints_Stratos", "7th_Hardpoints_Atlas", "7th_Hardpoints_Bombs", "7th_Hardpoints_Widowmaker", "7th_Hardpoints_Cryon"};
+						priority=4;
+						attachment="7th_Widowmaker_12Rnd";
+						maxweight=500;
+						UIposition[]={0.345,0.050000001};
+					};
+					class Pylons3: Pylons1
+					{
+						hardpoints[]={"7th_Hardpoints_Guardian","7th_Hardpoints_Sabertooth","7th_Hardpoints_Havoc", "7th_Hardpoints_Talon", "7th_Hardpoints_Stratos", "7th_Hardpoints_Atlas", "7th_Hardpoints_Bombs", "7th_Hardpoints_Widowmaker"};
+						priority=3;
+						attachment="7EF_Talon_4Rnd";
+						maxweight=1050;
+						UIposition[]={0.34,0.1};
+					};
+					class Pylons4: Pylons1
+					{
+						hardpoints[]={"7th_Hardpoints_Havoc", "7th_Hardpoints_Talon", "7th_Hardpoints_Stratos", "7th_Hardpoints_Atlas", "7th_Hardpoints_Bombs"};
+						priority=2;
+						attachment="7EF_Jupiter_500_1Rnd";
+						maxweight=1200;
+						UIposition[]={0.33000001,0.2};
+					};
+					class Pylons5: Pylons1
+					{
+						hardpoints[]={"7th_Hardpoints_Havoc", "7th_Hardpoints_Talon", "7th_Hardpoints_Stratos", "7th_Hardpoints_Atlas", "7th_Hardpoints_Bombs"};
+						priority=1;
+						attachment="7EF_Jupiter_500_1Rnd";
+						maxweight=1200;
+						UIposition[]={0.33000001,0.25};
+					};
+					class Pylons6: Pylons5
+					{
+						UIposition[]={0.33000001,0.30000001};
+						mirroredMissilePos=5;
+					};
+					class Pylons7: Pylons4
+					{
+						UIposition[]={0.33000001,0.34999999};
+						mirroredMissilePos=4;
+					};
+					class Pylons8: Pylons3
+					{
+						UIposition[]={0.34,0.44999999};
+						mirroredMissilePos=3;
+					};
+					class Pylons9: Pylons2
+					{
+						UIposition[]={0.345,0.5};
+						mirroredMissilePos=2;
+					};
+					class Pylons10: Pylons1
+					{
+						UIposition[]={0.34999999,0.55000001};
+						mirroredMissilePos=1;
+					};
+				};
+			};
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=100;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=100;
+							maxRange=5000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=360;
+						angleRangeVertical=120;
+						maxTrackableSpeed=500;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=100;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=100;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=20;
+						maxTrackableSpeed=100;
+						aimDown=1;
+						animDirection="pilotCameraRotY";
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+						class AirTarget
+						{
+							minRange=5000;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=5000;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=6000;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=0.1;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=13000;
+							maxRange=13000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=9000;
+							maxRange=9000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=6000;
+						angleRangeHorizontal=360;
+						angleRangeVertical=360;
+						groundNoiseDistanceCoef=0.1;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=360;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={8000,2000,16000,6000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={8000,2000,16000,6000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class TransportCountermeasuresComponent;
+		};
 	};
-	class O_Plane_CAS_02_dynamicLoadout_F;
-	class Victus_O_Plane_CAS_02_dynamicLoadout_F: O_Plane_CAS_02_dynamicLoadout_F
+	class Heli_Attack_01_dynamicLoadout_base_F
 	{
-		
+		class Components;
+	};
+	class B_Heli_Attack_01_dynamicLoadout_F: Heli_Attack_01_dynamicLoadout_base_F
+	{
+		armor = 70;
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				uiPicture="\A3\Air_F_Beta\Heli_Attack_01\Data\UI\Heli_Attack_01_EDEN_CA.paa";
+				class Pylons
+				{
+					class PylonLeft1
+					{
+						attachment="7EF_StratosAA_1Rnd";
+						priority=5;
+						bay=1;
+						hardpoints[]={"7th_Hardpoints_Guardian","7th_Hardpoints_Sabertooth","7th_Hardpoints_Talon","7th_Hardpoints_Havoc","7th_Hardpoints_Widowmaker","7th_Hardpoints_Stratos","7th_Hardpoints_Atlas","7th_Hardpoints_Cryon"};
+						turret[]={0};
+						UIposition[]={0.059999999,0.40000001};
+					};
+					class PylonLeft2: PylonLeft1
+					{
+						attachment="7EF_Talon_4Rnd";
+						priority=4;
+						hardpoints[]={"7th_Hardpoints_Talon","7th_Hardpoints_Havoc","7th_Hardpoints_Widowmaker","7th_Hardpoints_Stratos","7th_Hardpoints_Atlas"};
+						UIposition[]={0.079999998,0.34999999};
+					};
+					class PylonLeft3: PylonLeft1
+					{
+						attachment="7th_Widowmaker_12Rnd";
+						priority=3;
+						hardpoints[]={"7th_Hardpoints_Talon","7th_Hardpoints_Havoc","7th_Hardpoints_Widowmaker","7th_Hardpoints_Stratos","7th_Hardpoints_Atlas"};
+						UIposition[]={0.1,0.30000001};
+					};
+					class PylonRight3: PylonLeft3
+					{
+						mirroredMissilePos=3;
+						UIposition[]={0.58999997,0.30000001};
+					};
+					class PylonRight2: PylonLeft2
+					{
+						mirroredMissilePos=2;
+						UIposition[]={0.62,0.34999999};
+					};
+					class PylonRight1: PylonLeft1
+					{
+						mirroredMissilePos=1;
+						UIposition[]={0.63999999,0.40000001};
+					};
+				};
+				class Bays
+				{
+					class Bay
+					{
+						bayOpenTime=1;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=2;
+					};
+				};
+			};
+		};
 	};
 };
