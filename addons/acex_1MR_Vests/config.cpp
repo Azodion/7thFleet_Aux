@@ -33,7 +33,7 @@ class XtdGearModels
 			options[] = {"Camo","Armour"};
 			class camo
 			{
-				values[] = {"274thTS","33rdCAW","21stMAW","1stMarRdr","7thFltMar","7FLT","124Blk","124Grn","124Wht","SOGBlk","SOGGrn","SOGWht","UCIABlack","UCIAWhite","UCIAGreen","UCIARed","UCIABlue"};
+				values[] = {"274thTS","33rdCAW","21stMAW","1MRLunar","1MRArid","1MRWdl","1MRWntr","7MEFLunar","7MEFArid","7MEFWdl","7MEFWntr","7thFLT","UCIABlack","UCIAWhite","UCIAGreen","UCIARed","UCIABlue"};
 				class 33rdCAW
 				{
 					label = "33rdCAW";
@@ -44,19 +44,49 @@ class XtdGearModels
 					label = "21stMAW";
 					image = "\acex_1MR_Uniforms\Textures\Base.paa";
 				};
-				class 1stMarRdr
+				class 1MRLunar
 				{
-					label = "1stMarRdr";
+					label = "1MRLunar";
 					image = "\acex_1MR_Uniforms\Textures\Base.paa";
 				};
-				class 7thFltMar
+                class 1MRArid
 				{
-					label = "7thMEF";
+					label = "1MRArid";
 					image = "\acex_1MR_Uniforms\Textures\Base.paa";
 				};
-                class 7FLT
+                class 1MRWdl
 				{
-					label = "7thFleet";
+					label = "1MRWdl";
+					image = "\acex_1MR_Uniforms\Textures\Base.paa";
+				};
+                class 1MRWntr
+				{
+					label = "1MRWntr";
+					image = "\acex_1MR_Uniforms\Textures\Base.paa";
+				};
+				class 7MEFLunar
+				{
+					label = "7MEFLunar";
+					image = "\acex_1MR_Uniforms\Textures\Base.paa";
+				};
+                class 7MEFArid
+				{
+					label = "7MEFArid";
+					image = "\acex_1MR_Uniforms\Textures\Base.paa";
+				};
+                class 7MEFWdl
+				{
+					label = "7MEFWdl";
+					image = "\acex_1MR_Uniforms\Textures\Base.paa";
+				};
+                class 7MEFWntr
+				{
+					label = "7MEFWntr";
+					image = "\acex_1MR_Uniforms\Textures\Base.paa";
+				};
+                class 7thFLT
+				{
+					label = "7thFlt";
 					image = "\acex_1MR_Uniforms\Textures\Base.paa";
 				};
                 class 124Grn
@@ -957,7 +987,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCNStandard";
 		};
 	};
@@ -966,7 +996,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN1";
 		};
 	};
@@ -975,7 +1005,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN2";
 		};
 	};
@@ -984,7 +1014,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN3";
 		};
 	};
@@ -993,7 +1023,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN4";
 		};
 	};
@@ -1002,7 +1032,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN5";
 		};
 	};
@@ -1011,7 +1041,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN6";
 		};
 	};
@@ -1020,7 +1050,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN7";
 		};
 	};
@@ -1029,7 +1059,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN8";
 		};
 	};
@@ -1038,7 +1068,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN9";
 		};
 	};
@@ -1047,7 +1077,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN10";
 		};
 	};
@@ -1056,7 +1086,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN11";
 		};
 	};
@@ -1065,19 +1095,16 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "1stMarRdr";
+			camo = "1MRLunar";
 			Armour= "UCN12";
 		};
 	};
-
-
-
     class TKE_UCMCArmour17th: Vest_Camo_Base_stock
 	{
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCNStandard";
 		};
 	};
@@ -1086,7 +1113,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN1";
 		};
 	};
@@ -1095,7 +1122,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN2";
 		};
 	};
@@ -1104,7 +1131,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN3";
 		};
 	};
@@ -1113,7 +1140,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN4";
 		};
 	};
@@ -1122,7 +1149,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN5";
 		};
 	};
@@ -1131,7 +1158,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN6";
 		};
 	};
@@ -1140,7 +1167,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN7";
 		};
 	};
@@ -1149,7 +1176,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN8";
 		};
 	};
@@ -1158,7 +1185,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN9";
 		};
 	};
@@ -1167,7 +1194,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN10";
 		};
 	};
@@ -1176,7 +1203,7 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
 			Armour= "UCN11";
 		};
 	};
@@ -1185,7 +1212,475 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7thFltMar";
+			camo = "7MEFLunar";
+			Armour= "UCN12";
+		};
+	};
+    class TKE_UCMCArmour11MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCNStandard";
+		};
+	};
+    class TKE_UCMCArmour2_11MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN1";
+		};
+	};
+    class TKE_UCMCArmour2_21MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN2";
+		};
+	};
+    class TKE_UCMCArmour3_11MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN3";
+		};
+	};
+    class TKE_UCMCArmour3_21MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN4";
+		};
+	};
+    class TKE_UCMCArmour4_11MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN5";
+		};
+	};
+   class TKE_UCMCArmour4_21MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN6";
+		};
+	};
+   class TKE_UCMCArmour5_11MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN7";
+		};
+	};
+    class TKE_UCMCArmour5_21MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN8";
+		};
+	};
+  class TKE_UCMCArmour6_11MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN9";
+		};
+	};
+   class TKE_UCMCArmour6_21MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN10";
+		};
+	};
+    class TKE_UCMCArmour6_31MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN11";
+		};
+	};
+   class TKE_UCMCArmour6_41MRArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRArid";
+			Armour= "UCN12";
+		};
+	};
+    class TKE_UCMCArmour17thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCNStandard";
+		};
+	};
+    class TKE_UCMCArmour2_17thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN1";
+		};
+	};
+    class TKE_UCMCArmour2_27thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN2";
+		};
+	};
+    class TKE_UCMCArmour3_17thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN3";
+		};
+	};
+    class TKE_UCMCArmour3_27thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN4";
+		};
+	};
+    class TKE_UCMCArmour4_17thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN5";
+		};
+	};
+   class TKE_UCMCArmour4_27thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN6";
+		};
+	};
+   class TKE_UCMCArmour5_17thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN7";
+		};
+	};
+    class TKE_UCMCArmour5_27thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN8";
+		};
+	};
+  class TKE_UCMCArmour6_17thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN9";
+		};
+	};
+   class TKE_UCMCArmour6_27thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN10";
+		};
+	};
+    class TKE_UCMCArmour6_37thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN11";
+		};
+	};
+   class TKE_UCMCArmour6_47thArid: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFArid";
+			Armour= "UCN12";
+		};
+	};
+    class TKE_UCMCArmour11MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCNStandard";
+		};
+	};
+    class TKE_UCMCArmour2_11MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN1";
+		};
+	};
+    class TKE_UCMCArmour2_21MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN2";
+		};
+	};
+    class TKE_UCMCArmour3_11MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN3";
+		};
+	};
+    class TKE_UCMCArmour3_21MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN4";
+		};
+	};
+    class TKE_UCMCArmour4_11MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN5";
+		};
+	};
+   class TKE_UCMCArmour4_21MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN6";
+		};
+	};
+   class TKE_UCMCArmour5_11MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN7";
+		};
+	};
+    class TKE_UCMCArmour5_21MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN8";
+		};
+	};
+  class TKE_UCMCArmour6_11MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN9";
+		};
+	};
+   class TKE_UCMCArmour6_21MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN10";
+		};
+	};
+    class TKE_UCMCArmour6_31MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN11";
+		};
+	};
+   class TKE_UCMCArmour6_41MRWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWdl";
+			Armour= "UCN12";
+		};
+	};
+    class TKE_UCMCArmour17thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCNStandard";
+		};
+	};
+    class TKE_UCMCArmour2_17thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN1";
+		};
+	};
+    class TKE_UCMCArmour2_27thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN2";
+		};
+	};
+    class TKE_UCMCArmour3_17thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN3";
+		};
+	};
+    class TKE_UCMCArmour3_27thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN4";
+		};
+	};
+    class TKE_UCMCArmour4_17thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN5";
+		};
+	};
+   class TKE_UCMCArmour4_27thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN6";
+		};
+	};
+   class TKE_UCMCArmour5_17thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN7";
+		};
+	};
+    class TKE_UCMCArmour5_27thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN8";
+		};
+	};
+  class TKE_UCMCArmour6_17thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN9";
+		};
+	};
+   class TKE_UCMCArmour6_27thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN10";
+		};
+	};
+    class TKE_UCMCArmour6_37thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
+			Armour= "UCN11";
+		};
+	};
+   class TKE_UCMCArmour6_47thWdl: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWdl";
 			Armour= "UCN12";
 		};
 	};
@@ -1311,918 +1806,289 @@ class TKE_UCIALArmourNPBlue: Vest_Camo_Base_stock
         class XtdGearInfo
         {
             model = "Vest_Camo_Base";
-            camo = "7FLT";
+            camo = "7thFLT";
             Armour= "FCFLite";
         };
     };
-    class TKE_UCMCArmour17FLT: Vest_Camo_Base_stock
+    class TKE_UCMCArmour17thFLT: Vest_Camo_Base_stock
 	{
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7FLT";
+			camo = "7thFLT";
 			Armour= "UCNStandard";
 		};
 	};
-    class TKE_UCMCArmour2_27FLT: Vest_Camo_Base_stock
+    class TKE_UCMCArmour2_27thFLT: Vest_Camo_Base_stock
 	{
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7FLT";
+			camo = "7thFLT";
 			Armour= "UCN2";
 		};
 	};
-    class TKE_UCMCArmour3_17FLT: Vest_Camo_Base_stock
+    class TKE_UCMCArmour3_17thFLT: Vest_Camo_Base_stock
 	{
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7FLT";
+			camo = "7thFLT";
 			Armour= "UCN3";
 		};
 	};
-    class TKE_UCMCArmour4_27FLT: Vest_Camo_Base_stock
+    class TKE_UCMCArmour4_27thFLT: Vest_Camo_Base_stock
 	{
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7FLT";
+			camo = "7thFLT";
 			Armour= "UCN6";
 		};
 	};
-    class TKE_UCMCArmour5_27FLT: Vest_Camo_Base_stock
+    class TKE_UCMCArmour5_27thFLT: Vest_Camo_Base_stock
 	{
 		class XtdGearInfo
 		{
 			model = "Vest_Camo_Base";
-			camo = "7FLT";
+			camo = "7thFLT";
 			Armour= "UCN8";
 		};
 	};
-    class TKE_124BLArmourNP: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "FCFNP";
-        };
-    };
-    class TKE_124BHArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "FCFHvy";
-        };
-    };
-    class TKE_124BLArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "FCFLite";
-        };
-    };
-    class TKE_UCMCArmour1124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCNStandard";
-        };
-    };
-    class TKE_UCMCArmour2_1124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN1";
-        };
-    };
-    class TKE_UCMCArmour2_2124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN2";
-        };
-    };
-    class TKE_UCMCArmour3_1124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN3";
-        };
-    };
-    class TKE_UCMCArmour3_2124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN4";
-        };
-    };
-    class TKE_UCMCArmour4_1124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN5";
-        };
-    };
-   class TKE_UCMCArmour4_2124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN6";
-        };
-    };
-   class TKE_UCMCArmour5_1124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN7";
-        };
-    };
-    class TKE_UCMCArmour5_2124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN8";
-        };
-    };
-  class TKE_UCMCArmour6_1124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN9";
-        };
-    };
-   class TKE_UCMCArmour6_2124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN10";
-        };
-    };
-    class TKE_UCMCArmour6_3124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN11";
-        };
-    };
-   class TKE_UCMCArmour6_4124B: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Blk";
-            Armour= "UCN12";
-        };
-    };
-    class TKE_124GLArmourNP: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "FCFNP";
-        };
-    };
-    class TKE_124GHArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "FCFHvy";
-        };
-    };
-    class TKE_124GLArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "FCFLite";
-        };
-    };
-    class TKE_UCMCArmour1124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCNStandard";
-        };
-    };
-    class TKE_UCMCArmour2_1124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN1";
-        };
-    };
-    class TKE_UCMCArmour2_2124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN2";
-        };
-    };
-    class TKE_UCMCArmour3_1124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN3";
-        };
-    };
-    class TKE_UCMCArmour3_2124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN4";
-        };
-    };
-    class TKE_UCMCArmour4_1124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN5";
-        };
-    };
-   class TKE_UCMCArmour4_2124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN6";
-        };
-    };
-   class TKE_UCMCArmour5_1124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN7";
-        };
-    };
-    class TKE_UCMCArmour5_2124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN8";
-        };
-    };
-  class TKE_UCMCArmour6_1124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN9";
-        };
-    };
-   class TKE_UCMCArmour6_2124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN10";
-        };
-    };
-    class TKE_UCMCArmour6_3124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN11";
-        };
-    };
-   class TKE_UCMCArmour6_4124G: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Grn";
-            Armour= "UCN12";
-        };
-    };
-class TKE_124WLArmourNP: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "FCFNP";
-        };
-    };
-    class TKE_124WHArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "FCFHvy";
-        };
-    };
-    class TKE_124WLArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "FCFLite";
-        };
-    };
-    class TKE_UCMCArmour1124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCNStandard";
-        };
-    };
-    class TKE_UCMCArmour2_1124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN1";
-        };
-    };
-    class TKE_UCMCArmour2_2124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN2";
-        };
-    };
-    class TKE_UCMCArmour3_1124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN3";
-        };
-    };
-    class TKE_UCMCArmour3_2124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN4";
-        };
-    };
-    class TKE_UCMCArmour4_1124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN5";
-        };
-    };
-   class TKE_UCMCArmour4_2124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN6";
-        };
-    };
-   class TKE_UCMCArmour5_1124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN7";
-        };
-    };
-    class TKE_UCMCArmour5_2124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN8";
-        };
-    };
-  class TKE_UCMCArmour6_1124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN9";
-        };
-    };
-   class TKE_UCMCArmour6_2124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN10";
-        };
-    };
-    class TKE_UCMCArmour6_3124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN11";
-        };
-    };
-   class TKE_UCMCArmour6_4124W: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "124Wht";
-            Armour= "UCN12";
-        };
-    };
-class TKE_AnvilGLArmourNP: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "FCFNP";
-        };
-    };
-    class TKE_AnvilGHArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "FCFHvy";
-        };
-    };
-    class TKE_AnvilGLArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "FCFLite";
-        };
-    };
-    class TKE_UCMCArmour1AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCNStandard";
-        };
-    };
-    class TKE_UCMCArmour2_1AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN1";
-        };
-    };
-    class TKE_UCMCArmour2_2AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN2";
-        };
-    };
-    class TKE_UCMCArmour3_1AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN3";
-        };
-    };
-    class TKE_UCMCArmour3_2AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN4";
-        };
-    };
-    class TKE_UCMCArmour4_1AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN5";
-        };
-    };
-   class TKE_UCMCArmour4_2AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN6";
-        };
-    };
-   class TKE_UCMCArmour5_1AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN7";
-        };
-    };
-    class TKE_UCMCArmour5_2AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN8";
-        };
-    };
-  class TKE_UCMCArmour6_1AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN9";
-        };
-    };
-   class TKE_UCMCArmour6_2AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN10";
-        };
-    };
-    class TKE_UCMCArmour6_3AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN11";
-        };
-    };
-   class TKE_UCMCArmour6_4AnvilG: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGGrn";
-            Armour= "UCN12";
-        };
-    };
-class TKE_AnvilWLArmourNP: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "FCFNP";
-        };
-    };
-    class TKE_AnvilWHArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "FCFHvy";
-        };
-    };
-    class TKE_AnvilWLArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "FCFLite";
-        };
-    };
-    class TKE_UCMCArmour1AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCNStandard";
-        };
-    };
-    class TKE_UCMCArmour2_1AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN1";
-        };
-    };
-    class TKE_UCMCArmour2_2AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN2";
-        };
-    };
-    class TKE_UCMCArmour3_1AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN3";
-        };
-    };
-    class TKE_UCMCArmour3_2AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN4";
-        };
-    };
-    class TKE_UCMCArmour4_1AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN5";
-        };
-    };
-   class TKE_UCMCArmour4_2AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN6";
-        };
-    };
-   class TKE_UCMCArmour5_1AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN7";
-        };
-    };
-    class TKE_UCMCArmour5_2AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN8";
-        };
-    };
-  class TKE_UCMCArmour6_1AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN9";
-        };
-    };
-   class TKE_UCMCArmour6_2AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN10";
-        };
-    };
-    class TKE_UCMCArmour6_3AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN11";
-        };
-    };
-   class TKE_UCMCArmour6_4AnvilW: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGWht";
-            Armour= "UCN12";
-        };
-    };
-    class TKE_AnvilBLArmourNP: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "FCFNP";
-        };
-    };
-    class TKE_AnvilBHArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "FCFHvy";
-        };
-    };
-    class TKE_AnvilBLArmour: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "FCFLite";
-        };
-    };
-    class TKE_UCMCArmour1AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCNStandard";
-        };
-    };
-    class TKE_UCMCArmour2_1AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN1";
-        };
-    };
-    class TKE_UCMCArmour2_2AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN2";
-        };
-    };
-    class TKE_UCMCArmour3_1AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN3";
-        };
-    };
-    class TKE_UCMCArmour3_2AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN4";
-        };
-    };
-    class TKE_UCMCArmour4_1AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN5";
-        };
-    };
-   class TKE_UCMCArmour4_2AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN6";
-        };
-    };
-   class TKE_UCMCArmour5_1AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN7";
-        };
-    };
-    class TKE_UCMCArmour5_2AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN8";
-        };
-    };
-  class TKE_UCMCArmour6_1AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN9";
-        };
-    };
-   class TKE_UCMCArmour6_2AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN10";
-        };
-    };
-    class TKE_UCMCArmour6_3AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN11";
-        };
-    };
-   class TKE_UCMCArmour6_4AnvilB: Vest_Camo_Base_stock
-    {
-        class XtdGearInfo
-        {
-            model = "Vest_Camo_Base";
-            camo = "SOGBlk";
-            Armour= "UCN12";
-        };
-    };
+    class TKE_UCMCArmour11MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCNStandard";
+		};
+	};
+    class TKE_UCMCArmour2_11MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN1";
+		};
+	};
+    class TKE_UCMCArmour2_21MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN2";
+		};
+	};
+    class TKE_UCMCArmour3_11MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN3";
+		};
+	};
+    class TKE_UCMCArmour3_21MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN4";
+		};
+	};
+    class TKE_UCMCArmour4_11MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN5";
+		};
+	};
+   class TKE_UCMCArmour4_21MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN6";
+		};
+	};
+   class TKE_UCMCArmour5_11MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN7";
+		};
+	};
+    class TKE_UCMCArmour5_21MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN8";
+		};
+	};
+  class TKE_UCMCArmour6_11MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN9";
+		};
+	};
+   class TKE_UCMCArmour6_21MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN10";
+		};
+	};
+    class TKE_UCMCArmour6_31MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN11";
+		};
+	};
+   class TKE_UCMCArmour6_41MRWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "1MRWntr";
+			Armour= "UCN12";
+		};
+	};
+    class TKE_UCMCArmour17thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCNStandard";
+		};
+	};
+    class TKE_UCMCArmour2_17thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN1";
+		};
+	};
+    class TKE_UCMCArmour2_27thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN2";
+		};
+	};
+    class TKE_UCMCArmour3_17thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN3";
+		};
+	};
+    class TKE_UCMCArmour3_27thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN4";
+		};
+	};
+    class TKE_UCMCArmour4_17thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN5";
+		};
+	};
+   class TKE_UCMCArmour4_27thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN6";
+		};
+	};
+   class TKE_UCMCArmour5_17thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN7";
+		};
+	};
+    class TKE_UCMCArmour5_27thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN8";
+		};
+	};
+  class TKE_UCMCArmour6_17thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN9";
+		};
+	};
+   class TKE_UCMCArmour6_27thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN10";
+		};
+	};
+    class TKE_UCMCArmour6_37thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN11";
+		};
+	};
+   class TKE_UCMCArmour6_47thWntr: Vest_Camo_Base_stock
+	{
+		class XtdGearInfo
+		{
+			model = "Vest_Camo_Base";
+			camo = "7MEFWntr";
+			Armour= "UCN12";
+		};
+	};
 };
+
 

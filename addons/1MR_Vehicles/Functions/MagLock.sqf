@@ -19,7 +19,6 @@ if (isNil {missionNamespace getVariable "whitelist"}) then {
 			['ej_UH92_Victus_MEV', 1, 0],
 			['ej_UH92_Victus', 1, 0],
 			['ej_MH92_Victus', 1, 0],
-			['ej_MH92DAP3_Victus', 1, 0],
 
 			['Victus_Heli_Transport_03_unarmed_F', 2, 0],
 			['Victus_Heli_Transport_03_F', 2, 0],
@@ -34,7 +33,6 @@ if (isNil {missionNamespace getVariable "whitelist"}) then {
 			//Customs
 			['ej_UH92_Schnee', 1, 0]
 		],
-		
 		[ //Black Hawk WL
 			['UCN_1MR_LSV_01_unarmed_F', 0, 5, 3, 1, 0],
 			['UCN_1MR_LSV_01_armed_F', 0, 5, 3, 1, 0],
@@ -54,9 +52,11 @@ if (isNil {missionNamespace getVariable "whitelist"}) then {
 
 			['124thESB_MRAP', 0, 7, 3, 1, 0],
 			['124thESB_MRAP_HMG', 0, 7, 3, 1, 0],
-			['124thESB_MRAP_GMG', 0, 7, 3, 1, 0]
-		],
+			['124thESB_MRAP_GMG', 0, 7, 3, 1, 0],
 
+			['qav_ripsaw_Mk44', 0, 5, 1, 1, 0],
+			['qav_ripsaw_Mk44_7thFleet', 0, 5, 1, 1, 0]
+		],
 		[ //Chinook WL
 
 			['7thFleet_MRAP', 0, 5, 1, 1, 0],
@@ -93,18 +93,9 @@ if (isNil {missionNamespace getVariable "whitelist"}) then {
 			['B_MBT_01_124arty_F', 0, 5, 1, 1, 0],
 			['B_MBT_01_124mlrs_F', 0, 5, 1, 1, 0],
 
-			['OPTRE_M494', 0, 5, 0, 1, 0],
-			['OPTRE_M494', 0, 5, 0, 1, 0],
-
-			['7th_Oryx', 0, 5, 0, 1, 0],
-			['7th_Bison_IFV', 0, 5, 0, 1, 0],
-			['7th_Bison_MGS', 0, 5, 0, 1, 0],
-
-			['OPTRE_M412_IFV_UNSC', 0, 5, 0, 1, 0],
-			['OPTRE_M411_APC_UNSC', 0, 5, 0, 1, 0],
-			['OPTRE_M413_MGS_UNSC', 0, 5, 0, 1, 0]
+			['qav_ripsaw_Mk44', 0, 5, 0, 1, 0],
+			['qav_ripsaw_Mk44_7thFleet', 0, 5, 0, 1, 0]
 		],
-
 		[ //X-32 WL
 			['UCN_1MR_LSV_01_unarmed_F', 0, 5, 2, 1, 0],
 			['UCN_1MR_LSV_01_armed_F', 0, 5, 2, 1, 0],
@@ -124,7 +115,10 @@ if (isNil {missionNamespace getVariable "whitelist"}) then {
 
 			['124thESB_MRAP', 0, 6, 2, 1, 0],
 			['124thESB_MRAP_HMG', 0, 6, 2, 1, 0],
-			['124thESB_MRAP_GMG', 0, 6, 2, 1, 0]
+			['124thESB_MRAP_GMG', 0, 6, 2, 1, 0],
+
+			['qav_ripsaw_Mk44', 0, 5, 0, 1, 0],
+			['qav_ripsaw_Mk44_7thFleet', 0, 5, 0, 1, 0]
 		]
 	];
 

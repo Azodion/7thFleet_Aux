@@ -743,148 +743,6 @@ class cfgWeapons
 			};
 		};
 	};
-	class TKE_UCMCArmour11MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Standard Issue Armour";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour17th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Standard Issue Armour";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCNLogoUI.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-		    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
 	class TKE_UCMCArmour1UCIA: Vest_Camo_Base
 	{
 		author = "Frenchie";
@@ -1240,148 +1098,6 @@ class cfgWeapons
 			};
 		};
 	};
-	class TKE_UCMCArmour2_11MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V1";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour2_17th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V1";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa"};
-	    model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
 	class TKE_UCMCArmour2_1UCIA: Vest_Camo_Base
 	{
 		author = "Frenchue";
@@ -1453,151 +1169,9 @@ class cfgWeapons
 			};
 		};
     };
-	class TKE_UCMCArmour2_21MR: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V2";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour2_27th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V2";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
     class TKE_UCMCArmour2_221st: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -1668,7 +1242,7 @@ class cfgWeapons
     };
      class TKE_UCMCArmour2_233rd: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -1739,7 +1313,7 @@ class cfgWeapons
     };
     class TKE_UCMCArmour2_27FLT: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -1810,7 +1384,7 @@ class cfgWeapons
     };
 	class TKE_UCMCArmour2_2UCIA: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -1879,151 +1453,9 @@ class cfgWeapons
 			};
 		};
     };
-	class TKE_UCMCArmour3_11MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V3";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour3_17th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V3";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
     class TKE_UCMCArmour3_121st: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -2094,7 +1526,7 @@ class cfgWeapons
     };
      class TKE_UCMCArmour3_133rd: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -2165,7 +1597,7 @@ class cfgWeapons
     };
     class TKE_UCMCArmour3_17FLT: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -2305,148 +1737,6 @@ class cfgWeapons
 			};
 		};
     };
-	class TKE_UCMCArmour3_21MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V4";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour3_27th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V4";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
 	class TKE_UCMCArmour3_2UCIA: Vest_Camo_Base
 	{
 		author = "Frenchie";
@@ -2466,148 +1756,6 @@ class cfgWeapons
 			mass = 25;
 			hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
 	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourUCIA_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonUCIA_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonUCIA_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourUCIA_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
-	class TKE_UCMCArmour4_11MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V5";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour4_17th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V5";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Neck
@@ -2731,151 +1879,9 @@ class cfgWeapons
 			};
 		};
 	};
-	class TKE_UCMCArmour4_21MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V6";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour4_27th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V6";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
     class TKE_UCMCArmour4_221st: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -2946,7 +1952,7 @@ class cfgWeapons
     };
      class TKE_UCMCArmour4_233rd: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -3017,7 +2023,7 @@ class cfgWeapons
     };
     class TKE_UCMCArmour4_27FLT: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -3157,148 +2163,6 @@ class cfgWeapons
 			};
 		};
 	};
-	class TKE_UCMCArmour5_11MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V7";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-			 hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			 hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour5_17th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V7";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
 	class TKE_UCMCArmour5_1UCIA: Vest_Camo_Base
 	{
 		author = "Frenchie";
@@ -3370,151 +2234,9 @@ class cfgWeapons
 			};
 		};
 	};
-	class TKE_UCMCArmour5_21MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V8";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour5_27th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V8";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
     class TKE_UCMCArmour5_221st: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -3585,7 +2307,7 @@ class cfgWeapons
     };
      class TKE_UCMCArmour5_233rd: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -3656,7 +2378,7 @@ class cfgWeapons
     };
     class TKE_UCMCArmour5_27FLT: Vest_Camo_Base
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -3796,148 +2518,6 @@ class cfgWeapons
 			};
 		};
     };
-	class TKE_UCMCArmour6_11MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V9";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour6_17th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V9";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
 	class TKE_UCMCArmour6_1UCIA: Vest_Camo_Base
 	{
 		author = "Frenchie";
@@ -3957,148 +2537,6 @@ class cfgWeapons
 			mass = 25;
         hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
 	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourUCIA_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonUCIA_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
-	class TKE_UCMCArmour6_21MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V10";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-   		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour6_27th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V10";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Neck
@@ -4222,148 +2660,6 @@ class cfgWeapons
 			};
 		};
     };
-	class TKE_UCMCArmour6_31MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V11";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour6_37th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V11";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-	    model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
 	class TKE_UCMCArmour6_3UCIA: Vest_Camo_Base
 	{
 		author = "Frenchie";
@@ -4383,148 +2679,6 @@ class cfgWeapons
 			mass = 25;
 		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
        	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourUCIA_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonUCIA_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-    };
-	class TKE_UCMCArmour6_41MR: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] 1st Marine Raiders Armour V12";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour6_47th: Vest_Camo_Base
-	{
-		author = "Rogue771";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Marine Armour V12";
-		pciture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level II";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Neck
@@ -8925,6838 +7079,6 @@ class TKE_UCMCArmour6_4UCIAWhite: Vest_Camo_Base
             };
         };
     };
-	class TKE_124GLArmourNP: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Green Army Light Riveted Armour (No Pouches)";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124GArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124GArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_124GHArmour: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Green Army Heavy Riveted Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124GArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_124GArmour_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124GArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_124GArmour_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_124GLArmour: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Green Army Light Riveted Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level I";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124GArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124GArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour1124G: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Green Army Standard Issue Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		}; 
-	};
-	class TKE_UCMCArmour2_1124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V1";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour2_2124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V2";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_1124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V3";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_2124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V4";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_1124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V5";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_2124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V6";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_1124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V7";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_2124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V8";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-
-
-class TKE_UCMCArmour6_1124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V9";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonUCIA_co.paaGreen"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_2124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V10";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_3124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V11";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_4124G: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green Army Armour V12";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-	class TKE_124WLArmourNP: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] White Army Light Riveted Armour (No Pouches)";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124WArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124WArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_124WHArmour: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] White Army Heavy Riveted Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124WArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_124WArmour_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124WArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_124WArmour_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_124WLArmour: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] White Army Light Riveted Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level I";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124WArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124WArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour1124W: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] White Army Standard Issue Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		}; 
-	};
-	class TKE_UCMCArmour2_1124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V1";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour2_2124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V2";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_1124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V3";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_2124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V4";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_1124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V5";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_2124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V6";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_1124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V7";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_2124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V8";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-
-
-class TKE_UCMCArmour6_1124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V9";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonUCIA_co.paaGreen"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_2124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V10";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_3124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V11";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_4124W: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White Army Armour V12";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_124BLArmourNP: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Light Riveted Armour (No Pouches)";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-        hiddenSelections[] = {"camo","camo1"};
-        descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124BArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124BArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 17;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 20;
-                    passThrough = 0.4500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 18;
-                    passThrough = 0.45000002;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_124BHArmour: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Heavy Riveted Armour";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124BArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_124BArmour_co.paa"};
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124BArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_124BArmour_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 17;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 20;
-                    passThrough = 0.4500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 18;
-                    passThrough = 0.45000002;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_124BLArmour: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Light Riveted Armour";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124BArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_124BArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 17;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 20;
-                    passThrough = 0.4500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 18;
-                    passThrough = 0.45000002;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_UCMCArmour1124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Standard Issue Armour";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-        hiddenSelections[] = {"camo","camo1"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_UCMCArmour2_1124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V1";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour2_2124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V2";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_1124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V3";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_2124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V4";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_1124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V5";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_2124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V6";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_1124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V7";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_2124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V8";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-
-
-
-
-class TKE_UCMCArmour6_1124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V9";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_2124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V10";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_3124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V11";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_4124B: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black Army Armour V12";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_AnvilGLArmourNP: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Green SOG Light Riveted Armour (No Pouches)";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilGArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilGArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_AnvilGHArmour: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Green SOG Heavy Riveted Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilGArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_AnvilGArmour_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilGArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_AnvilGArmour_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_AnvilGLArmour: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Green SOG Light Riveted Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level I";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilGArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilGArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour1AnvilG: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] Green SOG Standard Issue Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		}; 
-	};
-	class TKE_UCMCArmour2_1AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V1";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour2_2AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V2";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_1AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V3";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_2AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V4";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_1AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V5";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_2AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V6";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_1AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V7";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_2AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V8";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-
-
-class TKE_UCMCArmour6_1AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V9";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonUCIA_co.paaGreen"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_2AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V10";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_3AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V11";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_4AnvilG: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Green SOG Armour V12";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilG_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124G_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-	class TKE_AnvilWLArmourNP: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] White SOG Light Riveted Armour (No Pouches)";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilWArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilWArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_AnvilWHArmour: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] White SOG Heavy Riveted Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-		descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilWArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_AnvilWArmour_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilWArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_AnvilWArmour_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 25;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_AnvilWLArmour: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] White SOG Light Riveted Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-		descriptionShort = "Armour Level I";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilWArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-			hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilWArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 17;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 20;
-					passThrough = 0.4500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 18;
-					passThrough = 0.45000002;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		};
-	};
-	class TKE_UCMCArmour1AnvilW: Vest_Camo_Base
-	{
-		author = "Frenchie";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[7th Fleet] White SOG Standard Issue Armour";
-		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-		hiddenSelections[] = {"camo","camo1"};
-		descriptionShort = "Armour Level I";
-		class ItemInfo: VestItem
-		{
-			uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-			containerClass = "Supply120";
-			mass = 25;
-			hiddenSelections[] = {"camo","camo1"};
-	    	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 20;
-					passThrough = 0.5;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 15;
-					passThrough = 0.5;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 28;
-					passThrough = 0.32500002;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 25;
-					passThrough = 0.4;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 15;
-					passThrough = 0.3;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 5;
-					passThrough = 0.3;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.6;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 10;
-					passThrough = 0.3;
-				};
-			};
-		}; 
-	};
-	class TKE_UCMCArmour2_1AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V1";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour2_2AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V2";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_1AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V3";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_2AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V4";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_1AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V5";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_2AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V6";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_1AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V7";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_2AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V8";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-
-
-class TKE_UCMCArmour6_1AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V9";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonUCIA_co.paaGreen"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_2AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V10";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_3AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V11";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_4AnvilW: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] White SOG Armour V12";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilW_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124W_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_AnvilBLArmourNP: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Light Riveted Armour (No Pouches)";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-        hiddenSelections[] = {"camo","camo1"};
-        descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilBArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmourNP.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilBArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 17;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 20;
-                    passThrough = 0.4500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 18;
-                    passThrough = 0.45000002;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_AnvilBHArmour: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Heavy Riveted Armour";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilBArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_AnvilBArmour_co.paa"};
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFHArmour.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilBArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_AnvilBArmour_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 17;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 20;
-                    passThrough = 0.4500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 18;
-                    passThrough = 0.45000002;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_AnvilBLArmour: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Light Riveted Armour";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        model = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilBArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_FCF\TKE_FCFLArmour.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AnvilBArmour_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 17;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 20;
-                    passThrough = 0.4500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 18;
-                    passThrough = 0.45000002;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_UCMCArmour1AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Standard Issue Armour";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-        hiddenSelections[] = {"camo","camo1"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-    class TKE_UCMCArmour2_1AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V1";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour2_2AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V2";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_1AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V3";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level I";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour3_2AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V4";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_1AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V5";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
-	    hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour4_2AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V6";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_1AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V7";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour5_2AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V8";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-
-
-
-
-class TKE_UCMCArmour6_1AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V9";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_2AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V10";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_3AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V11";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-		hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
-       	hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
-class TKE_UCMCArmour6_4AnvilB: Vest_Camo_Base
-    {
-        author = "Frenchie";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[7th Fleet] Black SOG Armour V12";
-        picture = "\1MR_Uniforms\Textures\uciapatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-        descriptionShort = "Armour Level II";
-        class ItemInfo: VestItem
-        {
-            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
-            containerClass = "Supply120";
-            mass = 25;
-        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourAnvilB_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddon124B_co.paa"};
-            class HitpointsProtectionInfo
-            {
-                class Neck
-                {
-                    hitpointName = "HitNeck";
-                    armor = 20;
-                    passThrough = 0.5;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 15;
-                    passThrough = 0.5;
-                };
-                class Chest
-                {
-                    hitpointName = "HitChest";
-                    armor = 28;
-                    passThrough = 0.32500002;
-                };
-                class Diaphragm
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 25;
-                    passThrough = 0.4;
-                };
-                class Abdomen
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 15;
-                    passThrough = 0.3;
-                };
-                class Pelvis
-                {
-                    hitpointName = "HitPelvis";
-                    armor = 5;
-                    passThrough = 0.3;
-                };
-                class Body
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.6;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 10;
-                    passThrough = 0.3;
-                };
-            };
-        };
-    };
 class TKE_UCMCArmour1Victus: Vest_Camo_Base
     {
         author = "Frenchie";
@@ -15830,7 +7152,7 @@ class TKE_UCMCArmour1Victus: Vest_Camo_Base
     };
  class TKE_UCMCArmour2_2Victus: Vest_Camo_Base
     {
-        author = "Rogue771";
+        author = "Frenchie";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -15901,7 +7223,7 @@ class TKE_UCMCArmour1Victus: Vest_Camo_Base
     };
  class TKE_UCMCArmour3_1Victus: Vest_Camo_Base
     {
-        author = "Rogue771";
+        author = "Frenchie";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -15972,13 +7294,13 @@ class TKE_UCMCArmour1Victus: Vest_Camo_Base
     };
  class TKE_UCMCArmour4_2Victus: Vest_Camo_Base
     {
-        author = "Rogue771";
+        author = "Frenchie";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
         displayName = "[7th Fleet] 274th TS Armour V6";
         picture = "\1MR_Uniforms\Textures\274thpatch.paa";
-        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourVictus_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourVictus_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
         model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
         hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
         descriptionShort = "Armour Level I";
@@ -15988,7 +7310,7 @@ class TKE_UCMCArmour1Victus: Vest_Camo_Base
             containerClass = "Supply120";
             mass = 25;
         hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
-            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourVictus_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmourVictus_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
             class HitpointsProtectionInfo
             {
                 class Neck
@@ -16043,7 +7365,7 @@ class TKE_UCMCArmour1Victus: Vest_Camo_Base
     };
  class TKE_UCMCArmour5_2Victus: Vest_Camo_Base
     {
-        author = "Rogue771";
+        author = "Frenchie";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -16112,6 +7434,6820 @@ class TKE_UCMCArmour1Victus: Vest_Camo_Base
             };
         };
     };
-
-
+    class TKE_UCMCArmour2_11MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V1";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour2_21MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V2";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_11MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V3";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_21MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V4";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_11MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V5";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_21MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V6";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_11MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V7";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_21MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V8";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_11MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V9";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_21MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V10";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_31MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V11";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_41MR: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V12";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MR_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class TKE_UCMCArmour2_17th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V1";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour2_27th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V2";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_17th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V3";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_27th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V4";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_17th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V5";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_27th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V6";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_17th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V7";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_27th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V8";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_17th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V9";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_27th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V10";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_37th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V11";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_47th: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V12";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEF_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_ArmourAddon_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class TKE_UCMCArmour2_11MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V1 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour2_21MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V2 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_11MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V3 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_21MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V4 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_11MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V5 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_21MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V6 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_11MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V7 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_21MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V8 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_11MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V9 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_21MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V10 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_31MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V11 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_41MRArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V12 (Arid)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class TKE_UCMCArmour2_17thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V1 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour2_27thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V2 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_17thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V3 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_27thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V4 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_17thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V5 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_27thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V6 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_17thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V7 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_27thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V8 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_17thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V9 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_27thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V10 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_37thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V11 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_47thArid: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V12 (Arid)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFArid_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonArid_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class TKE_UCMCArmour2_11MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V1 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour2_21MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V2 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_11MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V3 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_21MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V4 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_11MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V5 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_21MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V6 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_11MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V7 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_21MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V8 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_11MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V9 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_21MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V10 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_31MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V11 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_41MRWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V12 (Woodland)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class TKE_UCMCArmour2_17thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V1 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour2_27thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V2 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_17thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V3 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_27thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V4 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_17thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V5 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_27thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V6 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_17thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V7 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_27thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V8 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_17thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V9 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_27thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V10 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_37thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V11 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_47thWdl: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V12 (Woodland)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWdl_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWdl_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class TKE_UCMCArmour2_11MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V1 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour2_21MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V2 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_11MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V3 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_21MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V4 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_11MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V5 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_21MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V6 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_11MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V7 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_21MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V8 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_11MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V9 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_21MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V10 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_31MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V11 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_41MRWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Raider Armour V12 (Winter)";
+        picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour1MRWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+    class TKE_UCMCArmour2_17thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V1 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour2_27thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V2 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour2_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_17thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V3 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level I";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa",""};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour3_27thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V4 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour3_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_17thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V5 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[]= {"camo","camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8"};        
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour4_27thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V6 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour4_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo7","camo8"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_17thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V7 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+             hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo5","camo6"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour5_27thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V8 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour5_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+            hiddenSelections[] = {"camo","camo1","camo2","camo3"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_17thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V9 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_1.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_27thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V10 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_2.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_37thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V11 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_3.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4","camo7","camo8"};
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCNExtras_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_BinoUCN_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+class TKE_UCMCArmour6_47thWntr: Vest_Camo_Base
+    {
+        author = "Frenchie";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[7th Fleet] Marine Armour V12 (Winter)";
+        picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
+        hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+        model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+        descriptionShort = "Armour Level II";
+        class ItemInfo: VestItem
+        {
+            uniformModel = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCMCArmour6_4.p3d";
+            containerClass = "Supply120";
+            mass = 25;
+        hiddenSelections[] = {"camo","camo1","camo2","camo3","camo4"};
+            hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_UCMCArmour7thMEFWntr_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCArmourP_co.paa","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa","","\1MR_Uniforms\Textures\TKE_ArmourAddonWntr_co.paa"};
+            class HitpointsProtectionInfo
+            {
+                class Neck
+                {
+                    hitpointName = "HitNeck";
+                    armor = 20;
+                    passThrough = 0.5;
+                };
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 15;
+                    passThrough = 0.5;
+                };
+                class Chest
+                {
+                    hitpointName = "HitChest";
+                    armor = 28;
+                    passThrough = 0.32500002;
+                };
+                class Diaphragm
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 25;
+                    passThrough = 0.4;
+                };
+                class Abdomen
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Pelvis
+                {
+                    hitpointName = "HitPelvis";
+                    armor = 5;
+                    passThrough = 0.3;
+                };
+                class Body
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.6;
+                };
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 10;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
 };

@@ -26,19 +26,47 @@ class CfgOptreHudSchemes
             TKE_TacticalGlasses_O        = "OPTRE_MarrineGlasses_orange";  
             TKE_TacticalGlasses_G        = "OPTRE_MarrineGlasses_green";
             TKE_TacticalGlasses_R        = "OPTRE_MarrineGlasses_red";
-            TKE_TacticalGlasses_W        = "OPTRE_MarrineGlasses_white";
+            TKE_TacticalGlasses       = "OPTRE_MarrineGlasses_white";
             TKE_TacticalGlasses_B        = "OPTRE_MarrineGlasses_blue";
             TKE_TacticalGlasses_P        = "OPTRE_MarrineGlasses_pink";
             TKE_TacticalGlasses_blk    = "OPTRE_MarrineGlasses_black";
+			Rogue_UCNHelmClosedFW        = "OPTRE_MarrineGlasses_blue";
+			Rogue_UCNHelmClosedFWV2        = "OPTRE_MarrineGlasses_blue";
         };
     };
 };
 class CfgGlasses
 {
+	class Rogue_MarineHelmClosedFW;
+	class Rogue_UCNHelmClosedFW: Rogue_MarineHelmClosedFW
+	{
+		author="Frenchie";
+		displayname="[7th Fleet] Visor";
+		model="\Rogue_ODST\Rogue_MarineHelmClosedFW.p3d";
+		picture = "\1MR_Uniforms\Textures\7thfleetpatch.paa";
+		optreHUDStyle = "Glasses";
+        optreVarietys[] = {"","",""};
+		hiddenSelections[]={"camo2"};
+		hiddenSelectionsTextures[]={"\1MR_Uniforms\Textures\Rogue_UCNHex_FacePlate_co.paa"};
+		identityTypes[] = {"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",0,"G_HAF_default",0,"G_CIVIL_female",0,"G_CIVIL_male",0};
+	};
+	class Rogue_MarineHelmClosedFWV2;
+	class Rogue_UCNHelmClosedFWV2: Rogue_MarineHelmClosedFWV2
+	{
+		author="Frenchie";
+		displayname="[7th Fleet] Visor Clear";
+		model="\Rogue_ODST\Rogue_MarineHelmClosedFWV2.p3d";
+		picture = "\1MR_Uniforms\Textures\7thfleetpatch.paa";
+		optreHUDStyle = "Glasses";
+        optreVarietys[] = {"","",""};
+		hiddenSelections[]={"camo2"};
+		hiddenSelectionsTextures[]={"\1MR_Uniforms\Textures\Rogue_UCNHex_FacePlate_ca.paa"};
+		identityTypes[] = {"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",0,"G_HAF_default",0,"G_CIVIL_female",0,"G_CIVIL_male",0};
+	};
 	class G_Diving;
 	class TKE_G_Diving: G_Diving
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		displayname = "[7th Fleet] Scuba Rebreather Kit";
 		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_UCNRebreatherKit.p3d";
 		picture = "\1MR_Uniforms\Textures\7thfleetpatch.paa";
@@ -113,16 +141,15 @@ class CfgGlasses
 		identityTypes[] = {"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",0,"G_HAF_default",0,"G_CIVIL_female",0,"G_CIVIL_male",0};
 		mass = 1;
 	};
-	class TKE_TacticalGlasses_W: TKE_CombatGlasses
+	class TKE_TacticalGlasses: TKE_CombatGlasses
 	{
 		author = "Frenchie";
-		displayname = "[7th Fleet] Tactical Glasses (White)";
+		displayname = "[7th Fleet] Tactical Glasses";
 		model = "\TKE_Kuiper_Engagements\TKE_UCN\TKE_CombatGlasses.p3d";
 		picture = "\1MR_Uniforms\Textures\7thfleetpatch.paa";
 		optreHUDStyle = "Glasses";
         optreVarietys[] = {"","",""};
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_TacticalGlasses_W_co.paa"};
 		identityTypes[] = {"NoGlasses",0,"G_NATO_default",0,"G_NATO_casual",0,"G_NATO_pilot",0,"G_NATO_recon",0,"G_NATO_SF",0,"G_NATO_sniper",0,"G_NATO_diver",0,"G_IRAN_default",0,"G_IRAN_diver",0,"G_GUERIL_default",0,"G_HAF_default",0,"G_CIVIL_female",0,"G_CIVIL_male",0};
 		mass = 1;
 	};
@@ -149,10 +176,43 @@ class cfgWeapons
 	{
 		class ItemInfo;
 	};
+	class TKE_PatrolCapCUCN;
+	class TKE_PatrolCapLunarB: TKE_PatrolCapCUCN
+	{
+		author = "Frenchie";
+		scope = 2;
+		displayName = "[7th Fleet] Lunar Patrol Cap";
+		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";
+		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_PatrolCapLunarB_co.paa"};
+	};
+	class TKE_PatrolCapWdlB: TKE_PatrolCapCUCN
+	{
+		author = "Frenchie";
+		scope = 2;
+		displayName = "[7th Fleet] Woodland Patrol Cap";
+		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";
+		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_PatrolCapWdlB_co.paa"};
+	};
+	class TKE_PatrolCapWntrB: TKE_PatrolCapCUCN
+	{
+		author = "Frenchie";
+		scope = 2;
+		displayName = "[7th Fleet] Winter Patrol Cap";
+		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";
+		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_PatrolCapWntrB_co.paa"};
+	};
+	class TKE_PatrolCapAridB: TKE_PatrolCapCUCN
+	{
+		author = "Frenchie";
+		scope = 2;
+		displayName = "[7th Fleet] Arid Patrol Cap";
+		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";
+		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_PatrolCapAridB_co.paa"};
+	};
     class H_Beret_EAF_01_F;
 	class TKE_beretUCN_1MR: H_Beret_EAF_01_F
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		_generalMacro = "TKE_beretUCN_1MR";
         DLC = "";
 		displayName = "[7th Fleet] 1st Marine Raider Beret";
@@ -160,49 +220,19 @@ class cfgWeapons
         hiddenSelectionsMaterials[] = {""};
 		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\1MR_beret.paa"};
 	};
-	class TKE_beretUCN_1MRT13: H_Beret_EAF_01_F
-	{
-		author = "Rogue771";
-		_generalMacro = "TKE_beretUCN_1MRT13";
-        DLC = "";
-		displayName = "[7th Fleet] 1st Marine Raider Beret (Type 13)";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\1MRT13_beret.paa"};
-	};
-    class TKE_beretUCN_1MRC: H_Beret_EAF_01_F
-	{
-		author = "Rogue771";
-		_generalMacro = "TKE_beretUCN_1MRC";
-        DLC = "";
-		displayName = "[7th Fleet] 1st Marine Raider Beret (Camo)";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\1MRC_beret.paa"};
-	};
-    class TKE_beretUCN_1MRS: H_Beret_EAF_01_F
-	{
-		author = "Rogue771";
-		_generalMacro = "TKE_beretUCN_1MRs";
-        DLC = "";
-		displayName = "[7th Fleet] 1st Marine Raider Beret (Stripe)";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\1MRS_beret.paa"};
-	};
     class TKE_beretUCN_7FLT: H_Beret_EAF_01_F
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		_generalMacro = "TKE_beretUCN_7FLT";
         DLC = "";
 		displayName = "[7th Fleet] Navy Beret";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
+		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";
         hiddenSelectionsMaterials[] = {""};
 		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\7FLT_beret.paa"};
 	};
     class TKE_beretUCN_7MEF: H_Beret_EAF_01_F
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		_generalMacro = "TKE_beretUCN_7MEF";
         DLC = "";
 		displayName = "[7th Fleet] 7th MEF Beret";
@@ -210,39 +240,9 @@ class cfgWeapons
         hiddenSelectionsMaterials[] = {""};
 		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\7MEF_beret.paa"};
 	};
-	class TKE_beretUCN_7MEFT13: H_Beret_EAF_01_F
-	{
-		author = "Rogue771";
-		_generalMacro = "TKE_beretUCN_7MEFT13";
-        DLC = "";
-		displayName = "[7th Fleet] 7th MEF Beret (Type 13)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\7MEFT13_beret.paa"};
-	};
-    class TKE_beretUCN_7MEFC: H_Beret_EAF_01_F
-	{
-		author = "Rogue771";
-		_generalMacro = "TKE_beretUCN_7MEFC";
-        DLC = "";
-		displayName = "[7th Fleet] 7th MEF Beret (Camo)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\1MRC_beret.paa"};
-	};
-    class TKE_beretUCN_7MEFS: H_Beret_EAF_01_F
-	{
-		author = "Rogue771";
-		_generalMacro = "TKE_beretUCN_7MEFs";
-        DLC = "";
-		displayName = "[7th Fleet] 7th MEF (Stripe)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\7MEFS_beret.paa"};
-	};
     class TKE_beretUCN_33CAW: H_Beret_EAF_01_F
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		_generalMacro = "TKE_beretUCN_33CAW";
         DLC = "";
 		displayName = "[7th Fleet] 33rd CAW Beret";
@@ -252,7 +252,7 @@ class cfgWeapons
 	};
     class TKE_beretUCN_21MAW: H_Beret_EAF_01_F
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		_generalMacro = "TKE_beretUCN_21MAW";
         DLC = "";
 		displayName = "[7th Fleet] 21st MAW Beret";
@@ -279,81 +279,18 @@ class cfgWeapons
         hiddenSelectionsMaterials[] = {""};
 		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\D14_beret.paa"};
 	};
-    class TKE_beretUCN_124: H_Beret_EAF_01_F
+	class TKE_beretUCN_UCIAD13: H_Beret_EAF_01_F
 	{
 		author = "Frenchie";
-		_generalMacro = "TKE_beretUCN_124";
-		displayName = "[7th Fleet] 124th Beret";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
+		_generalMacro = "TKE_beretUCN_UCIAD13";
+		displayName = "[7th Fleet] UCIA-SPG D13 Beret";
+		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
         hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124_beret.paa"};
-	};
-    class TKE_beretUCN_124G: H_Beret_EAF_01_F
-	{
-		author = "Frenchie";
-		_generalMacro = "TKE_beretUCN_124B";
-		displayName = "[7th Fleet] 124th Beret (Woodland Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124G_beret.paa"};
-	};
-    class TKE_beretUCN_124B: H_Beret_EAF_01_F
-	{
-		author = "Frenchie";
-		_generalMacro = "TKE_beretUCN_124B";
-		displayName = "[7th Fleet] 124th Beret (Night Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124B_beret.paa"};
-	};
-    class TKE_beretUCN_124W: TKE_beretUCN
-	{
-		author = "Frenchie";
-		_generalMacro = "TKE_beretUCN_124W";
-		displayName = "[7th Fleet] 124th Beret (Snow Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124W_beret.paa"};
-	};
-	class TKE_beretUCN_Anvil: H_Beret_EAF_01_F
-	{
-		author = "Frenchie";
-		_generalMacro = "TKE_beretUCN_Anvil";
-		displayName = "[7th Fleet] Anvil Beret";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\Anvil_beret.paa"};
-	};
-    class TKE_beretUCN_AnvilG: H_Beret_EAF_01_F
-	{
-		author = "Frenchie";
-		_generalMacro = "TKE_beretUCN_AnvilG";
-		displayName = "[7th Fleet] Anvil Beret (Woodland Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\AnvilG_beret.paa"};
-	};
-    class TKE_beretUCN_AnvilB: H_Beret_EAF_01_F
-	{
-		author = "Frenchie";
-		_generalMacro = "TKE_beretUCN_AnvilB";
-		displayName = "[7th Fleet] Anvil Beret (Night Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\AnvilB_beret.paa"};
-	};
-    class TKE_beretUCN_AnvilW: H_Beret_EAF_01_F
-	{
-		author = "Frenchie";
-		_generalMacro = "TKE_beretUCN_AnvilW";
-		displayName = "[7th Fleet] Anvil Beret (Snow Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-        hiddenSelectionsMaterials[] = {""};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\AnvilW_beret.paa"};
+		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\D13_beret.paa"};
 	};
 	class TKE_beretUCN_274TS: H_Beret_EAF_01_F
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		_generalMacro = "TKE_beretUCN_274TS";
         DLC = "";
 		displayName = "[7th Fleet] 274th TS Beret";
@@ -363,7 +300,7 @@ class cfgWeapons
 	};
 	class TKE_beretUCN_86CAB: H_Beret_EAF_01_F
 	{
-		author = "Rogue771";
+		author = "Frenchie";
 		_generalMacro = "TKE_beretUCN_274TS";
         DLC = "";
 		displayName = "[7th Fleet] 86th CAB Beret";
@@ -469,185 +406,6 @@ class cfgWeapons
 		picture = "\1MR_Uniforms\Textures\uciapatch.paa";
         hiddenSelectionsMaterials[] = {""};
 		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\BlueStripe_beret.paa"};
-	};
-    class H_MilCap_blue;
-    class H_Booniehat_khk;
-    class H_Booniehat_khk_hs;
-	class TKE_TempestMilcap: H_MilCap_blue
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] UCS-709 Tempest Patrol Cap";
-		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\Tempest_milcap.paa"};
-	};
-	class TKE_MarMilcap: H_MilCap_blue
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Patrol Cap";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\Mar_milcap.paa"};
-	};
-    class TKE_MarBooniehat: H_Booniehat_khk
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Booniehat";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\Mar_Booniehat.paa"};
-	};
-	class TKE_MarBooniehat_hs: H_Booniehat_khk_hs
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Booniehat (Headset)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\Mar_Booniehat.paa"};
-	};
-	class TKE_MarStripeMilcap: H_MilCap_blue
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Patrol Cap (Stripe)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarStripe_milcap.paa"};
-	};
-    class TKE_MarStripeBooniehat: H_Booniehat_khk
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Booniehat (Stripe)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarStripe_Booniehat.paa"};
-	};
-	class TKE_MarStripeBooniehat_hs: H_Booniehat_khk_hs
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Booniehat (Stripe, Headset)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarStripe_Booniehat.paa"};
-	};
-    class TKE_MarCamoMilcap: H_MilCap_blue
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Patrol Cap (Camo)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarCamo_milcap.paa"};
-	};
-    class TKE_MarCamoBooniehat: H_Booniehat_khk
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Booniehat (Camo)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarCamo_Booniehat.paa"};
-	};
-	class TKE_MarCamoBooniehat_hs: H_Booniehat_khk_hs
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Booniehat (Camo, Headset)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarCamo_Booniehat.paa"};
-	};
-	class TKE_MarType13Milcap: H_MilCap_blue
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Patrol Cap (Type 13)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarType13_milcap.paa"};
-	};
-    class TKE_MarType13Booniehat: H_Booniehat_khk
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Booniehat (Type 13)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarType13_Booniehat.paa"};
-	};
-	class TKE_MarType13Booniehat_hs: H_Booniehat_khk_hs
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Booniehat (Type 13, Headset)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\MarType13_Booniehat.paa"};
-	};
-    class TKE_124GMilcap: H_MilCap_blue
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Patrol Cap (Woodland Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124G_milcap.paa"};
-	};
-    class TKE_124GBooniehat: H_Booniehat_khk
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Booniehat (Woodland Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124G_Booniehat.paa"};
-	};
-	class TKE_124GBooniehat_hs: H_Booniehat_khk_hs
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Booniehat (Woodland Stripe, Headset)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124G_Booniehat.paa"};
-	};
-    class TKE_124WMilcap: H_MilCap_blue
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Patrol Cap (Snow Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124W_milcap.paa"};
-	};
-    class TKE_124WBooniehat: H_Booniehat_khk
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Booniehat (Snow Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124W_Booniehat.paa"};
-	};
-	class TKE_124WBooniehat_hs: H_Booniehat_khk_hs
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Booniehat (Snow Stripe, Headset)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124W_Booniehat.paa"};
-	};
-     class TKE_124BMilcap: H_MilCap_blue
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Patrol Cap (Night Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124B_milcap.paa"};
-	};
-    class TKE_124BBooniehat: H_Booniehat_khk
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Booniehat (Night Stripe)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124B_Booniehat.paa"};
-	};
-	class TKE_124BBooniehat_hs: H_Booniehat_khk_hs
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Booniehat (Night Stripe, Headset)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\124B_Booniehat.paa"};
 	};
 	class H_cap_oli;
 	class H_cap_oli_hs;

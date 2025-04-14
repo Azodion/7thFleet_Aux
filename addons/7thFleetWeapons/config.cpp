@@ -10,7 +10,7 @@ class CfgPatches
 			"A3_Characters_F"
 		};
 		units[]={};
-		weapons[]={"7th_Pointer_Attachment","7thFleet_SPNKr","7FW_WRS_Weapon_Sniper_Bolt","7FW_WRS_Weapon_Revolver","7FW_WRS_Weapon_Revolver_Black","7FW_WRS_Weapon_ShockGun","7FW_WRS_Weapon_ShockGun_Black","7FW_WRS_Weapon_ShotGun","7FW_WRS_Weapon_ShotGun_black","7FW_WRS_Weapon_LMG","WBK_SciFi_Pistol","WBK_SciFi_Pistol_black"};
+		weapons[]={"7thFleet_SPNKr","7FW_WRS_Weapon_Revolver","7FW_WRS_Weapon_Revolver_Black","WBK_SciFi_Pistol","WBK_SciFi_Pistol_black","7FW_WRS_Weapon_ShotGun","7FW_WRS_Weapon_ShotGun_black"};
 		magazines[]={};
 		ammo[]={};
 		requiredVersion=0.1;
@@ -25,32 +25,10 @@ class PointerSlot;
 class UnderBarrelSlot;
 class Single;
 class WeaponSlotsInfo;
-class SensorTemplatePassiveRadar;
-class SensorTemplateAntiRadiation;
-class SensorTemplateActiveRadar;
-class SensorTemplateIR;
-class SensorTemplateVisual;
-class SensorTemplateMan;
-class SensorTemplateLaser;
-class SensorTemplateNV;
-class SensorTemplateDataLink;
-class ItemCore;
-class InventoryItem_Base_F;
-class InventoryFlashLightItem_Base_F;
 class CfgWeapons
 {
 	class TKE_UBGL_F;
 	class WRS_Weapon_Sniper_Bolt;
-	class 7FW_WRS_Weapon_Sniper_Bolt: WRS_Weapon_Sniper_Bolt
-	{
-		author="Frenchie";
-		displayName="[7th Fleet] M2014/SR- Boomslang";
-		scope = 2;
-		scopeArsenal = 2;
-		baseWeapon = "7FW_WRS_Weapon_Sniper_Bolt";
-		pictureWire = "\7thFleetWeapons\WireWeaponIcons\boomslangicon.paa";
-		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Boomslang_Grey_CO.paa"};
-	};
 	class WRS_Weapon_Revolver;
 	class 7FW_WRS_Weapon_Revolver: WRS_Weapon_Revolver
 	{
@@ -60,6 +38,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		baseWeapon = "7FW_WRS_Weapon_Revolver";
 		pictureWire = "\7thFleetWeapons\WireWeaponIcons\constrictoricon.paa";
+		magazines[]={"WRS_Revolver_Magazine","WRS_Revolver_Magazine_plastic"};
 		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Constrictor_Base_CO.paa"};
 	};
 	class 7FW_WRS_Weapon_Revolver_Black: WRS_Weapon_Revolver
@@ -70,55 +49,8 @@ class CfgWeapons
 		scopeArsenal = 2;
 		baseWeapon = "7FW_WRS_Weapon_Revolver_Black";
 		pictureWire = "\7thFleetWeapons\WireWeaponIcons\constrictoricon.paa";
+		magazines[]={"WRS_Revolver_Magazine","WRS_Revolver_Magazine_plastic"};
 		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Constrictor_Black_CO.paa"};
-	};
-	class WRS_Weapon_ShockGun;
-	class 7FW_WRS_Weapon_ShockGun: WRS_Weapon_ShockGun
-	{
-		author="Frenchie";
-		displayName="[7th Fleet] XSG/10- Rhino";
-		baseWeapon = "7FW_WRS_Weapon_ShockGun";
-		pictureWire = "\7thFleetWeapons\WireWeaponIcons\rhinoicon.paa";
-	};
-	class WRS_Weapon_ShockGun_black;
-	class 7FW_WRS_Weapon_ShockGun_Black: WRS_Weapon_ShockGun_black
-	{
-		author="Frenchie";
-		displayName="[7th Fleet] XSG/10- Rhino (Black)";
-		baseWeapon = "7FW_WRS_Weapon_ShockGun_Black";
-		pictureWire = "\7thFleetWeapons\WireWeaponIcons\rhinoicon.paa";
-	};
-	class WRS_Weapon_ShotGun;
-	class 7FW_WRS_Weapon_ShotGun: WRS_Weapon_ShotGun
-	{
-		author="Frenchie";
-		displayName="[7th Fleet] M12/SG- Bullshark";
-		scope = 2;
-		scopeArsenal = 2;
-		baseWeapon = "7FW_WRS_Weapon_ShotGun";
-		pictureWire = "\7thFleetWeapons\WireWeaponIcons\bulldogicon.paa";
-		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Bullshark_Silver_CO.paa"};
-	};
-	class 7FW_WRS_Weapon_ShotGun_Black: WRS_Weapon_ShotGun
-	{
-		author="Frenchie";
-		displayName="[7th Fleet] M12/SG- Bullshark (Black)";
-		scope = 2;
-		scopeArsenal = 2;
-		baseWeapon = "7FW_WRS_Weapon_ShotGun_Black";
-		pictureWire = "\7thFleetWeapons\WireWeaponIcons\bulldogicon.paa";
-		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Bullshark_Black_CO.paa"};
-	};
-	class WRS_Weapon_LMG;
-	class 7FW_WRS_Weapon_LMG: WRS_Weapon_LMG
-	{
-		author="Frenchie";
-		displayName="[7th Fleet] M7/HAW- Wildebeest";
-		scope = 2;
-		scopeArsenal = 2;
-		baseWeapon = "7FW_WRS_Weapon_LMG";
-		pictureWire = "\7thFleetWeapons\WireWeaponIcons\wildebeasticon.paa";
-		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Wildebeest_co.paa"};
 	};
 	class WBK_SciFi_Pistol;
 	class 7FW_WBK_SciFi_Pistol: WBK_SciFi_Pistol
@@ -128,6 +60,7 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		pictureWire = "\7thFleetWeapons\WireWeaponIcons\pumaicon.paa";
+		magazines[]={"WRS_Puma_Magazine","WRS_Puma_Magazine_plastic"};
 		baseWeapon = "7FW_WBK_SciFi_Pistol";
 		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Puma_Base_CO.paa"};
 	};
@@ -138,25 +71,16 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		pictureWire = "\7thFleetWeapons\WireWeaponIcons\pumaicon.paa";
+		magazines[]={"WRS_Puma_Magazine","WRS_Puma_Magazine_plastic"};
 		baseWeapon = "7FW_WBK_SciFi_Pistol_Black";
 		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Puma_Black_CO.paa"};
-	};
-	class TKE_UCNLasRifle;
-	class 7FW_UCNLasRifle: TKE_UCNLasRifle
-	{
-		author="Frenchie";
-		displayName="[7th Fleet] XLR/01- Lance";
-		scope = 2;
-		scopeArsenal = 2;
-		pictureWire = "\7thFleetWeapons\WireWeaponIcons\xlricon.paa";
-		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_UCNLasRifle1_co.paa","\7thFleetWeapons\Textures\7FW_UCNLasRifle2_co.paa"};
 	};
 	class hgun_ACPC2_F;
 	class TKE_hgun_M1911_F: hgun_ACPC2_F
 	{
 		author="Frenchie";
 		displayName="[7th Fleet] M1911A5";
-		magazines[]={"TKE_1911_mag"};
+		magazines[]={"TKE_1911_mag","TKE_1911T_mag","TKE_1911_mag_plastic"};
 		baseWeapon="TKE_hgun_M1911_F";
 		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\TKE_M1911_co.paa"};
 		pictureWire = "\7thFleetWeapons\WireWeaponIcons\M1911icon.paa";
@@ -816,6 +740,7 @@ class CfgWeapons
 	{
 		author = "Frenchie";
 		displayName = "[7th Fleet] Model-30 Combat Pistol";
+		magazines[]={"TKE_UCNPistol_mag","TKE_UCNPistolT_mag","TKE_UCNPistol_mag_plastic"};
 		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_UCNPistol_co.paa"};
 		pictureWire = "\7thFleetWeapons\WireWeaponIcons\M30icon.paa";
 		modes[] = {"Single","FullAuto","single_medium_optics1","single_far_optics2"};
@@ -865,257 +790,44 @@ class CfgWeapons
 		class single_medium_optics1: Single{};
 		class single_far_optics2: single_medium_optics1{};
 	};
-	class TKE_UCNBPRifle;
-	class 7FW_UCNBPRifle: TKE_UCNBPRifle
+	class launch_MRAWS_base_F;
+	class kef_launch_7FW_black_F: launch_MRAWS_base_F
 	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] BPR/0-D/1";
-		hiddenSelectionsTextures[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\data\TKE_UCNBPRifle_co.paa"};
-		modes[] = {"Single","FullAuto","fullauto_medium","single_medium_optics1","single_far_optics2"};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARB_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARB.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARBSilenced_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARBSilenced.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			reloadTime = 0.09;
-			dispersion = 0.00035;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 200;
-			midRangeProbab = 0.7;
-			maxRange = 400;
-			maxRangeProbab = 0.3;
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARB_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARB.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARBSilenced_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARBSilenced.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			reloadTime = 0.09;
-			dispersion = 0.00035;
-			minRange = 0;
-			minRangeProbab = 0.9;
-			midRange = 15;
-			midRangeProbab = 0.7;
-			maxRange = 30;
-			maxRangeProbab = 0.1;
-			aiRateOfFire = 1e-06;
-		};
-		class FullAuto_medium: FullAuto
-		{
-			showToPlayer = 0;
-			burst = 3;
-			aiBurstTerminable = 1;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 75;
-			midRangeProbab = 0.7;
-			maxRange = 150;
-			maxRangeProbab = 0.05;
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 200;
-		};
-		class single_medium_optics1: Single
-		{
-			requiredOpticType = 1;
-			showToPlayer = 0;
-			minRange = 2;
-			minRangeProbab = 0.2;
-			midRange = 450;
-			midRangeProbab = 0.7;
-			maxRange = 600;
-			maxRangeProbab = 0.2;
-			aiRateOfFire = 6;
-			aiRateOfFireDistance = 600;
-		};
-		class single_far_optics2: single_medium_optics1
-		{
-			requiredOpticType = 2;
-			showToPlayer = 0;
-			minRange = 100;
-			minRangeProbab = 0.1;
-			midRange = 500;
-			midRangeProbab = 0.6;
-			maxRange = 700;
-			maxRangeProbab = 0.05;
-			aiRateOfFire = 8;
-			aiRateOfFireDistance = 700;
-		};
+		author = "the Neptune Corporation";
+		baseWeapon = "launch_MRAWS_black_F";
+		scope = 0;
+		displayName = "MAAWS Mk4 Mod 1 (Black)";
+		picture = "\kef_weapon_retextures\data\UI\icon_launch_MRAWS_black_F_X_CA.paa";
+		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\launch_MRAWS_7FW_01_F_CO.paa","\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_CO.paa"};
 	};
-	class TKE_UCNBPRifleV2;
-	class 7FW_UCNBPRifleV2: TKE_UCNBPRifleV2
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] BPR/0-D/1 (UBGL)";
-		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_UCNBPRifle_co.paa","\TKE_Kuiper_Engagements\TKE_Weapons\data\TKE_UBGL_co.paa"};
-		pictureWire = "\7thFleetWeapons\WireWeaponIcons\bprglicon.paa";
-		modes[] = {"Single","Burst","FullAuto","fullauto_medium","single_medium_optics1","single_far_optics2"};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARB_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARB.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARBSilenced_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARBSilenced.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			reloadTime = 0.09;
-			dispersion = 0.00035;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 200;
-			midRangeProbab = 0.7;
-			maxRange = 400;
-			maxRangeProbab = 0.3;
-		};
-		class Burst: Mode_Burst
-		{
-			sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType{};
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARB_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARB.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARBSilenced_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARBSilenced.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			soundBurst = 0;
-			burst = 3;
-			reloadTime = 0.096;
-			dispersion = 0.00035;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 200;
-			midRangeProbab = 0.7;
-			maxRange = 400;
-			maxRangeProbab = 0.3;
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARB_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARB.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				soundSetShot[] = {"WBK_TKE_ARBSilenced_SoundSet"};
-				begin1[] = {"\TKE_Kuiper_Engagements\TKE_Weapons\sounds\TKEARBSilenced.ogg",1,1,1800};
-				soundBegin[] = {"begin1",1};
-			};
-			reloadTime = 0.09;
-			dispersion = 0.00035;
-			minRange = 0;
-			minRangeProbab = 0.9;
-			midRange = 15;
-			midRangeProbab = 0.7;
-			maxRange = 30;
-			maxRangeProbab = 0.1;
-			aiRateOfFire = 1e-06;
-		};
-		class FullAuto_medium: FullAuto
-		{
-			showToPlayer = 0;
-			burst = 3;
-			aiBurstTerminable = 1;
-			minRange = 2;
-			minRangeProbab = 0.5;
-			midRange = 75;
-			midRangeProbab = 0.7;
-			maxRange = 150;
-			maxRangeProbab = 0.05;
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 200;
-		};
-		class single_medium_optics1: Single
-		{
-			requiredOpticType = 1;
-			showToPlayer = 0;
-			minRange = 2;
-			minRangeProbab = 0.2;
-			midRange = 450;
-			midRangeProbab = 0.7;
-			maxRange = 600;
-			maxRangeProbab = 0.2;
-			aiRateOfFire = 6;
-			aiRateOfFireDistance = 600;
-		};
-		class single_far_optics2: single_medium_optics1
-		{
-			requiredOpticType = 2;
-			showToPlayer = 0;
-			minRange = 100;
-			minRangeProbab = 0.1;
-			midRange = 500;
-			midRangeProbab = 0.6;
-			maxRange = 700;
-			maxRangeProbab = 0.05;
-			aiRateOfFire = 8;
-			aiRateOfFireDistance = 700;
-		};
-	};
-	class kef_launch_MRAWS_black_F;
-	class 7thFleet_SPNKr: kef_launch_MRAWS_black_F
+	class 7thFleet_SPNKr: kef_launch_7FW_black_F
 	{
 		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
 		ace_overpressure_angle = 20;
 		ace_overpressure_range = 5;
 		author = "Hophri";
 		displayName = "[7th Fleet] MAAWS Mk.5 Mod 2";
-		magazines[] = {"7thFleet_HEAT","7thFleet_HE","7thFleet_HEAT_G","7thFleet_HEAT_SALH","7thFleet_HEAT_SACLOS","7thFleet_Smoke_B","7thFleet_Smoke_G","7thFleet_Smoke_O","7thFleet_Smoke_P","7thFleet_Smoke_R","7thFleet_Smoke_W","7thFleet_Smoke_Y"};
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\7thFleetWeapons\textures\7FW_SPNKr_co.paa","\A3\Weapons_F_Tank\Launchers\MRAWS\Data\launch_MRAWS_02_F_CO.paa"};
-		recoil = "";
+		magazines[] = {"7thFleet_OPTRE_M41_Twin_HEAT", "7thFleet_OPTRE_M41_Twin_HEAP", "7thFleet_OPTRE_M41_Twin_HEAT_G", "7thFleet_OPTRE_M41_Twin_HE", "7thFleet_OPTRE_M41_Twin_HEAT_SALH", "7thFleet_OPTRE_M41_Twin_HEAT_SACLOS", "7thFleet_OPTRE_M41_Twin_HE_SALH_ProximityFuse", "7thFleet_OPTRE_M41_Twin_HE_SACLOS_ProximityFuse", "7thFleet_OPTRE_M41_Twin_Smoke_B", "7thFleet_OPTRE_M41_Twin_Smoke_G", "7thFleet_OPTRE_M41_Twin_Smoke_O", "7thFleet_OPTRE_M41_Twin_Smoke_P", "7thFleet_OPTRE_M41_Twin_Smoke_R", "7thFleet_OPTRE_M41_Twin_Smoke_W", "7thFleet_OPTRE_M41_Twin_Smoke_Y"};
 		weaponLockDelay = 2;
 		weaponLockSystem = "2 + 16";
 		cmImmunity	= 0.25;
 		canLock = 2;
+		recoil = "";
 		modes[] = {"Direct", "TopDown"};
-		lockAcquire = 0;
 		class Direct: Mode_SemiAuto
 		{
-			displayName = "Direct Seek";
-			recoil = "";
+			displayName = "Direct seek";
+			
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType{};
+			class StandardSound: BaseSoundModeType {
+				begin1[] = {"OPTRE_Weapons\Rockets\data\sounds\rocket_1.wss",2.5,1,1500};
+				soundBegin[] = {"begin1",1};
+			};
+			recoil = "recoil_single_law";
+			
 			reloadtime = 1;
+			
 			aiRateOfFire = 7.0;
 			aiRateOfFireDistance = 600;
 			minRange = 10;
@@ -1125,12 +837,12 @@ class CfgWeapons
 			maxRange = 600;
 			maxRangeProbab = 0.1;
 		};
-		class TopDown: Direct
-		{
-			displayName = "Top-Down Seek";
+		class TopDown: Direct {
+			displayName = "Top-down seek";
 			textureType = "topDown";
 			ace_missileGuidance_attackProfile = "JAV_TOP";
 		};
+		lockAcquire = 0;
 		lockingTargetSound[]=
 		{
 			"A3\Sounds_F\arsenal\weapons\Launchers\Titan\locking_Titan",
@@ -1163,12 +875,130 @@ class CfgWeapons
 			};
 		};
 	};
+	class WRS_Weapon_ShotGun;
+	class 7FW_WRS_Weapon_ShotGun: WRS_Weapon_ShotGun
+	{
+		author="Frenchie";
+		displayName="[7th Fleet] M12/SG- Bullshark";
+		scope = 2;
+		scopeArsenal = 2;
+		baseWeapon = "7FW_WRS_Weapon_ShotGun";
+		magazines[] = {"WRS_12rnd_Shotgun_Magazine","WRS_12rnd_Shotgun_Magazine_Slug","WRS_12rnd_Shotgun_Magazine_NonLethal"};
+		pictureWire = "\7thFleetWeapons\WireWeaponIcons\bulldogicon.paa";
+		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Bullshark_Silver_CO.paa"};
+		modes[] = {"Single","FullAuto"};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType
+			{
+				closure1[] = {"A3\Sounds_F\arsenal\weapons\SMG\PDW2000\closure_pdw2000_01",0.5011872,1,10};
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\SMG\PDW2000\closure_pdw2000_02",0.5011872,1.1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundsetshot[] = {"WBK_SCIFI_SHAWTY_SoundSet","DMR05_tail_SoundSet","GM6Lynx_InteriorTail_SoundSet"};
+			};
+			reloadTime = 0.1;
+			recoil = "recoil_single_gm6";
+			recoilProne = "recoil_single_prone_gm6";
+			dispersion = 0.0051;
+			minRange = 5;
+			minRangeProbab = 0.8;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 350;
+			maxRangeProbab = 0.05;
+			aiDispersionCoefX = 0;
+			aiDispersionCoefY = 0;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 500;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType
+			{
+				closure1[] = {"A3\Sounds_F\arsenal\weapons\SMG\PDW2000\closure_pdw2000_01",0.5011872,1,10};
+				closure2[] = {"A3\Sounds_F\arsenal\weapons\SMG\PDW2000\closure_pdw2000_02",0.5011872,1.1,10};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundsetshot[] = {"WBK_SCIFI_SHAWTY_SoundSet","DMR05_tail_SoundSet","GM6Lynx_InteriorTail_SoundSet"};
+			};
+			reloadTime = 0.1;
+			recoil = "recoil_single_gm6";
+			recoilProne = "recoil_single_prone_gm6";
+			dispersion = 0.0051;
+			minRange = 5;
+			minRangeProbab = 0.8;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 350;
+			maxRangeProbab = 0.05;
+			aiDispersionCoefX = 0;
+			aiDispersionCoefY = 0;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 250;
+		};
+		class far_optic1: Single
+		{
+			showToPlayer = 0;
+			dispersion = 0.00018;
+			aiRateOfFire = 6;
+			aiRateOfFireDistance = 700;
+		};
+		class far_optic2: Single
+		{
+			showToPlayer = 0;
+			dispersion = 0.00018;
+			aiRateOfFire = 8;
+			aiRateOfFireDistance = 2000;
+		};
+		class medium_optic2: Single
+		{
+			showToPlayer = 0;
+			dispersion = 0.00018;
+			aiRateOfFire = 6;
+			aiRateOfFireDistance = 1000;
+		};
+	};
+	class 7FW_WRS_Weapon_ShotGun_Black: 7FW_WRS_Weapon_ShotGun
+	{
+		author="Frenchie";
+		displayName="[7th Fleet] M12/SG- Bullshark (Black)";
+		scope = 2;
+		scopeArsenal = 2;
+		baseWeapon = "7FW_WRS_Weapon_ShotGun_Black";
+		pictureWire = "\7thFleetWeapons\WireWeaponIcons\bulldogicon.paa";
+		hiddenSelectionsTextures[] = {"\7thFleetWeapons\Textures\7FW_Bullshark_Black_CO.paa"};
+	};
 };
 class CfgMagazines
 {
-	class MRAWS_HEAT_F;
-	class MRAWS_HE_F;
-	class Titan_AT;
+	class WRS_Shotgun_Magazine;
+	class WRS_12rnd_Shotgun_Magazine: WRS_Shotgun_Magazine
+	{
+		displayName = "12rnd Buckshot";
+		count = 12;
+		mass = 12;
+	};
+	class WRS_Shotgun_Magazine_Slug;
+	class WRS_12rnd_Shotgun_Magazine_Slug: WRS_Shotgun_Magazine_Slug
+	{
+		count = 12;
+		displayName = "12rnd Slug";
+		mass = 12;
+	};
+	class WRS_Shotgun_Magazine_NonLethal;
+	class WRS_12rnd_Shotgun_Magazine_NonLethal: WRS_Shotgun_Magazine_NonLethal
+	{
+		count = 12;
+		displayName = "12rnd plastic";
+		mass = 10;
+	};
 	class 20Rnd_556x45_UW_mag;
 	class TKE_SMGUDT_mag: 20Rnd_556x45_UW_mag
 	{
@@ -1212,6 +1042,39 @@ class CfgMagazines
 		descriptionShort = "";
 		magazineGroup[] = {"TKE_Pistol_group"};
 	};
+	class TKE_1911_mag_plastic: TKE_UCNPistol_mag
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "M1911A5 Mag (Plastic)";
+        displaynameshort="Plastic";
+		ammo = "Shotgin_NonLethalRound";
+		count = 12;
+		initSpeed = 410;
+		tracersEvery = 0;
+		descriptionShort = "";
+		magazineGroup[] = {"TKE_Pistol_group"};
+	};
+	class WRS_Revolver_Magazine;
+	class WRS_Revolver_Magazine_plastic: WRS_Revolver_Magazine
+	{
+		tracersEvery = 0;
+		displayName = "6rd Plastic cylinder";
+		displaynameshort="Plastic";
+		ammo = "Shotgin_NonLethalRound";
+		mass = 4;
+		count = 6;
+	};
+	class WRS_Puma_Magazine;
+	class WRS_Puma_Magazine_plastic: WRS_Puma_Magazine
+	{
+		tracersEvery = 0;
+		displayName = "16rnd Plastic LDUR";
+		displaynameshort="Plastic";
+		ammo = "Shotgin_NonLethalRound";
+		count = 16;
+	};
 	class TKE_UCNPistolT_mag: TKE_UCNPistol_mag
 	{
 		scope = 2;
@@ -1226,293 +1089,125 @@ class CfgMagazines
 		descriptionShort = "";
 		magazineGroup[] = {"TKE_Pistol_group"};
 	};
-
-	class 7thFleet_HEAT: MRAWS_HEAT_F
+	class TKE_UCNPistol_mag_plastic: TKE_UCNPistol_mag
 	{
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
-		ammo = "7thFleet_HEAT75_Ammo";
-		displayName = "[7th Fleet] HEAT (Un-Guided)";
-		count = 1;		
-		mass = 60;
-	};
-	class 7thFleet_HE: MRAWS_HE_F
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_HE_Ammo";
-		displayName = "[7th Fleet] HE (Un-Guided)";
-		count = 1;		
-		mass = 60;
-	};
-	class 7thFleet_HEAT_G: Titan_AT
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_HEAT_G_Ammo";
-		displayName = "[7th Fleet] HEAT (IR)";
-		count = 1;		
-		mass = 60;
-	};
-	class 7thFleet_HEAT_SALH: Titan_AT
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SALH_Ammo";
-		displayName = "[7th Fleet] HEAT (SALH)";
-		count = 1;		
-		mass = 60;
-	};
-	class 7thFleet_HEAT_SACLOS: Titan_AT
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SACLOS_Ammo";
-		displayName = "[7th Fleet] HEAT (SACLOS)";
-		count = 1;		
-		mass = 60;
-	};
-	class 7thFleet_Smoke_B: MRAWS_HE_F
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SMK_B";
-		displayName = "[7th Fleet] Smoke Blue";
-		count = 1;		
-		mass = 40;
-	};
-	class 7thFleet_Smoke_G: MRAWS_HE_F
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SMK_G";
-		displayName = "[7th Fleet] Smoke Green";
-		count = 1;		
-		mass = 40;
-	};
-	class 7thFleet_Smoke_O: MRAWS_HE_F
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SMK_O";
-		displayName = "[7th Fleet] Smoke Orange";
-		count = 1;		
-		mass = 40;
-	};
-	class 7thFleet_Smoke_P: MRAWS_HE_F
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SMK_P";
-		displayName = "[7th Fleet] Smoke Purple";
-		count = 1;		
-		mass = 40;
-	};
-	class 7thFleet_Smoke_R: MRAWS_HE_F
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SMK_R";
-		displayName = "[7th Fleet] Smoke Red";
-		count = 1;		
-		mass = 40;
-	};
-	class 7thFleet_Smoke_W: MRAWS_HE_F
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SMK_W";
-		displayName = "[7th Fleet] Smoke White";
-		count = 1;		
-		mass = 40;
-	};
-	class 7thFleet_Smoke_Y: MRAWS_HE_F
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-		ammo = "7thFleet_SMK_Y";
-		displayName = "[7th Fleet] Smoke Yellow";
-		count = 1;		
-		mass = 40;
-	};
-};
-class CfgAmmo
-{
-	class Components;
-	class M_Titan_AT;
-	class 7thFleet_SACLOS_Ammo: M_Titan_AT
-	{
-		autoSeekTarget = 1;
-		airLock = 0;
-		irLock = 0;
-		laserLock = 0;
-		nvLock = 0;
-		lockType = 2;
-		canLock = 2;
-		hit = 500;
-		indirectHit = 40;
-		indirectHitRange = 4;
-		thrust = 100;
-		thrustTime = 2;
-		timeToLive = 30;
-		maxControlRange = 5000;
-		maxSpeed = 270;
-		missileManualControlCone = 60;
-		maneuvrability = 16;
-		flightProfiles[] = {"Direct"};
-		weaponType = "missileAT";
-		fuseDistance = 50;
-	};
-	class 7thFleet_HEAT_G_Ammo: M_Titan_AT
-	{
-		autoSeekTarget = 1;
-		airLock = 1;
-		irLock = 1;
-		laserLock = 1;
-		nvLock = 1;
-		weaponLockSystem = "1+2+4";
-		lockType = 0;
-		canLock = 2;
-		hit = 500;
-		indirectHit = 40;
-		indirectHitRange = 4;
-		trackLead = 1;
-		trackOversteer = 1;
-		thrust = 100;
-		thrustTime = 2;
-		timeToLive = 30;
-		maxControlRange = 5000;
-		maxSpeed = 270;
-		manualControl = 0;
-		missileLockMaxDistance = 1500;
-		missileManualControlCone = 60;
-		maneuvrability = 16;
-		flightProfiles[] = {"Direct","TopDown"};
-		weaponType = "missileAT";
-		fuseDistance = 50;
-	};
-	class 7thFleet_SALH_Ammo: M_Titan_AT
-	{
-		autoSeekTarget = 1;
-		airLock = 1;
-		irLock = 0;
-		laserLock = 1;
-		nvLock = 1;
-		weaponLockSystem = "4";
-		lockType = 0;
-		canLock = 2;
-		hit = 500;
-		indirectHit = 40;
-		indirectHitRange = 4;
-		trackLead = 1;
-		trackOversteer = 1;
-		thrust = 100;
-		thrustTime = 2;
-		timeToLive = 30;
-		maxControlRange = 5000;
-		maxSpeed = 270;
-		manualControl = 0;
-		missileLockMaxDistance = 1500;
-		missileManualControlCone = 60;
-		maneuvrability = 16;
-		flightProfiles[] = {"Direct","TopDown"};
-		weaponType = "missileAT";
-		fuseDistance = 50;
+		displayName = "Model-30 Combat Pistol mag (Plastic)";
+		displaynameshort="Plastic";
+		ammo = "Shotgin_NonLethalRound";
+		count = 12;
+		initSpeed = 410;
+		tracersEvery = 1;
+		descriptionShort = "";
+		magazineGroup[] = {"TKE_Pistol_group"};
 	};
 
-	class R_MRAAWS_HE_F;
-	class 7thFleet_HE_Ammo: R_MRAAWS_HE_F
-	{
-		hit = 200;
-		indirectHit = 100;
-		indirectHitRange = 10;
-		explosive = 1;
-		weaponType = "rocket";
-		canLock = 0;
-	};
+	class OPTRE_M41_Twin_HEAT;
+	class OPTRE_M41_Twin_HEAP;
+	class OPTRE_M41_Twin_HEAT_G;
+	class OPTRE_M41_Twin_HE;
+	class OPTRE_M41_Twin_HEAT_SALH;
+	class OPTRE_M41_Twin_HEAT_SACLOS;
+	class OPTRE_M41_Twin_HE_SALH_ProximityFuse;
+	class OPTRE_M41_Twin_HE_SACLOS_ProximityFuse;
+	class OPTRE_M41_Twin_Smoke_B;
+	class OPTRE_M41_Twin_Smoke_G;
+	class OPTRE_M41_Twin_Smoke_O;
+	class OPTRE_M41_Twin_Smoke_P;
+	class OPTRE_M41_Twin_Smoke_R;
+	class OPTRE_M41_Twin_Smoke_W;
+	class OPTRE_M41_Twin_Smoke_Y;
 
-	class R_MRAAWS_HEAT_F;
-	class 7thFleet_HEAT75_Ammo: R_MRAAWS_HEAT_F
+	class 7thFleet_OPTRE_M41_Twin_HEAT: OPTRE_M41_Twin_HEAT
 	{
-		hit = 500;
-		indirectHit = 100;
-		indirectHitRange = 2;
-		weaponType = "rocket";
-		canLock = 0;
+		displayName = "HEAT (Un-Guided)";
+		count = 1;		
+		mass = 60;
 	};
-	class 7thFleet_SMK_B: R_MRAAWS_HEAT_F
+	class 7thFleet_OPTRE_M41_Twin_HEAP: OPTRE_M41_Twin_HEAP
 	{
-		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Blue";
-		hit = 0;
-		indirectHit = 0;
-		weaponLockSystem = 0;
-		weaponType = "special";
-		canLock = 0;
+		displayName = "HEAP (Un-Guided)";
+		count = 1;		
+		mass = 60;
 	};
-	class 7thFleet_SMK_G: R_MRAAWS_HEAT_F
+	class 7thFleet_OPTRE_M41_Twin_HEAT_G: OPTRE_M41_Twin_HEAT_G
 	{
-		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Green";
-		hit = 0;
-		indirectHit = 0;
-		weaponLockSystem = 0;
-		weaponType = "special";
-		canLock = 0;
+		displayName = "HEAT (IR)";
+		count = 1;		
+		mass = 80;
 	};
-	class 7thFleet_SMK_O: R_MRAAWS_HEAT_F
+	class 7thFleet_OPTRE_M41_Twin_HE: OPTRE_M41_Twin_HE
 	{
-		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Orange";
-		hit = 0;
-		indirectHit = 0;
-		weaponLockSystem = 0;
-		weaponType = "special";
-		canLock = 0;
+		displayName = "HE (Un-Guided)";
+		count = 1;		
+		mass = 80;
 	};
-	class 7thFleet_SMK_P: R_MRAAWS_HEAT_F
+	class 7thFleet_OPTRE_M41_Twin_HEAT_SALH: OPTRE_M41_Twin_HEAT_SALH
 	{
-		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Purple";
-		hit = 0;
-		indirectHit = 0;
-		weaponLockSystem = 0;
-		weaponType = "special";
-		canLock = 0;
+		displayName = "HEAT (SALH)";
+		count = 1;		
+		mass = 80;
 	};
-	class 7thFleet_SMK_R: R_MRAAWS_HEAT_F
+	class 7thFleet_OPTRE_M41_Twin_HEAT_SACLOS: OPTRE_M41_Twin_HEAT_SACLOS
 	{
-		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Red";
-		hit = 0;
-		indirectHit = 0;
-		weaponLockSystem = 0;
-		weaponType = "special";
-		canLock = 0;
+		displayName = "HEAT (SACLOS)";
+		count = 1;		
+		mass = 80;
 	};
-	class 7thFleet_SMK_W: R_MRAAWS_HEAT_F
+	class 7thFleet_OPTRE_M41_Twin_HE_SALH_ProximityFuse: OPTRE_M41_Twin_HE_SALH_ProximityFuse
 	{
-		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_White";
-		hit = 0;
-		indirectHit = 0;
-		weaponLockSystem = 0;
-		weaponType = "special";
-		canLock = 0;
+		displayName = "HEAT (SALH Prox Fuse)";
+		count = 1;		
+		mass = 80;
 	};
-	class 7thFleet_SMK_Y: R_MRAAWS_HEAT_F
+	class 7thFleet_OPTRE_M41_Twin_HE_SACLOS_ProximityFuse: OPTRE_M41_Twin_HE_SACLOS_ProximityFuse
 	{
-		explosionEffects = "OPTRE_ComplexSmokeRocketEffect_Yellow";
-		hit = 0;
-		indirectHit = 0;
-		weaponLockSystem = 0;
-		weaponType = "special";
-		canLock = 0;
+		displayName = "HEAT (SACLOS Prox Fuse)";
+		count = 1;		
+		mass = 80;
 	};
+	class 7thFleet_OPTRE_M41_Twin_Smoke_B: OPTRE_M41_Twin_Smoke_B
+	{
+		displayName = "Smoke Blue";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_OPTRE_M41_Twin_Smoke_G: OPTRE_M41_Twin_Smoke_G
+	{
+		displayName = "Smoke Green";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_OPTRE_M41_Twin_Smoke_O: OPTRE_M41_Twin_Smoke_O
+	{
+		displayName = "Smoke Orange";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_OPTRE_M41_Twin_Smoke_P: OPTRE_M41_Twin_Smoke_P
+	{
+		displayName = "Smoke Purple";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_OPTRE_M41_Twin_Smoke_R: OPTRE_M41_Twin_Smoke_R
+	{
+		displayName = "Smoke Red";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_OPTRE_M41_Twin_Smoke_W: OPTRE_M41_Twin_Smoke_W
+	{
+		displayName = "Smoke White";
+		count = 1;		
+		mass = 40;
+	};
+	class 7thFleet_OPTRE_M41_Twin_Smoke_Y: OPTRE_M41_Twin_Smoke_Y
+	{
+		displayName = "Smoke Yellow";
+		count = 1;		
+		mass = 40;
+	}; 
 };

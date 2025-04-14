@@ -29,388 +29,10 @@ class CfgFactionClasses
 		priority = 2;
 		side = 1;
 	};
-	class UCIA
-	{
-		displayName = "United Coalition Intelligence Agency";
-		author ="Frenchie";
-		icon = "";
-		priority = 2;
-		side = 1;
-	};
-	class 7thFleet
-	{
-		displayName = "7th Fleet";
-		author = "Frenchie";
-		icon = "";
-		priority = 2;
-		side = 1;
-	};
-};
-class CfgUnitInsignia
-{
-	class insignia_1MR_UCN_1
-	{
-		displayName = "[7th Fleet] 1st Marine Raider Patch-Full";
-		author = "Frenchie";
-		texture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";	
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_1MR_UCN_2
-	{
-		displayName = "[7th Fleet] 1st Marine Raider Patch-Red";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\1MRred.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_1MR_UCN_3
-	{
-		displayName = "[7th Fleet] 1st Marine Raider Patch-Grey";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\1MRgrey.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_UCIA
-	{
-		displayName = "[7th Fleet] UCIA Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\uciapatch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_21stMAW
-	{
-		displayName = "[7th Fleet] 21st MAW Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\21stMAWpatch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_33rdCAW
-	{
-		displayName = "[7th Fleet] 33rd CAW Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\33rdCAWpatch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_7thFleet
-	{
-		displayName = "[7th Fleet] 7th Fleet Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_7thMEF
-	{
-		displayName = "[7th Fleet] 7th MEF Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_SPGD9
-	{
-		displayName = "[7th Fleet] SPG-D9 Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\SPGD9patch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_SPGD14
-	{
-		displayName = "[7th Fleet] SPG-D14 Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\SPGD14patch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_124ESB
-	{
-		displayName = "[7th Fleet] 124th Expeditionary Service Battalion Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_274TS
-	{
-		displayName = "[7th Fleet] 274th Tactical Squadron Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\124thpatch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-	class insignia_86CAB
-	{
-		displayName = "[7th Fleet] 86th Combined Arms Brigade Patch";
-		author = "Frenchie";
-		texture = "\1MR_Uniforms\Textures\86CABpatch.paa";
-		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
-		textureVehicle = "";
-	};
-
 };
 
 class CfgVehicles
 {
-	class Man;
-	class TKE_EVAPack;
-	class TKE_EVAPack7th: TKE_EVAPack
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] EVA Pack";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_EVAPack7th_co.paa"};
-		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";	
-	};
-	class TKE_EVAPack7thLR: TKE_EVAPack
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] EVA Pack (LR)";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_EVAPack7thLR_co.paa"};
-		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";	
-		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio = 1;
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_dialog = "rt1523g_radio_dialog";
-		tf_subtype = "digital_lr";
-	};
-	class TKE_RadioPackUCN;
-	class TKE_RadioPack1MR: TKE_RadioPackUCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Radio Pack";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_RadioPack_co.paa"};
-		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";	
-		maximumLoad = 300;
-		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio = 1;
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_dialog = "rt1523g_radio_dialog";
-		tf_subtype = "digital_lr";
-	};
-	class TKE_JammerPackUCN;
-	class TKE_JammerPack1MR: TKE_JammerPackUCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Jammer Pack";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\TKE_Kuiper_Engagements\TKE_MD\data\TKE_JammerPack_co.paa"};
-		picture = "\1MR_Uniforms\Textures\7thFleetpatch.paa";	
-		maximumLoad = 300;
-		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio = 1;
-		tf_encryptionCode = "tf_west_radio_code";
-		tf_dialog = "rt1523g_radio_dialog";
-		tf_subtype = "digital_lr";
-	};
-	class TKE_LightPackUCN;
-	class TKE_LightPack1MR: TKE_LightPackUCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Raider Light Pack";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";	
-		maximumLoad = 300;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_LightPack1MR_co.paa"};
-	
-	};
-	class TKE_LightPack7MEF: TKE_LightPackUCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Light Pack";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		maximumLoad = 300;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_LightPack7MEF_co.paa"};
-	
-	};
-	class TKE_LightPack124: TKE_LightPackUCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Light Pack";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";	
-		maximumLoad = 300;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_LightPack124_co.paa"};
-	};
-	class TKE_CamelBakUCN;
-	class TKE_CamelBak1MR: TKE_CamelBakUCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Raider Camel Bak";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		maximumLoad = 350;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_CamelBak1MR_co.paa"};
-	};
-	class TKE_CamelBak7MEF: TKE_CamelBakUCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Camel Bak";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		maximumLoad = 350;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_CamelBak7MEF_co.paa"};
-	};
-	class TKE_CamelBak124: TKE_CamelBakUCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Camel Bak";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";	
-		maximumLoad = 350;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_CamelBak124_co.paa"};
-	};
-	class TKE_CamelBakV2UCN;
-	class TKE_CamelBakV21MR: TKE_CamelBakV2UCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Raider Field Camel Bak ";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		maximumLoad = 350;
-		hiddenSelections[] = {"camo","camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_CamelBak1MR_co.paa","\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BedRoll_co","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa"};
-	};
-	class TKE_CamelBakV27MEF: TKE_CamelBakV2UCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Field Camel Bak ";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		maximumLoad = 350;
-		hiddenSelections[] = {"camo","camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_CamelBak7MEF_co.paa","\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BedRoll_co","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa"};
-	};
-	class TKE_CamelBakV2124: TKE_CamelBakV2UCN
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Field Camel Bak ";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";	
-		maximumLoad = 350;
-		hiddenSelections[] = {"camo","camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_CamelBak124_co.paa","\TKE_Kuiper_Engagements\TKE_MD\data\TKE_BedRoll_co","\TKE_Kuiper_Engagements\TKE_UCN\data\TKE_UCMCPouches_co.paa"};
-	};
-	class TKE_BackPack1;
-	class TKE_BackPack11MR: TKE_BackPack1
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Raider Combat Pack";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		maximumLoad = 400;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_BackPack11MR_co.paa"};
-	};
-	class TKE_BackPack17MEF: TKE_BackPack1
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Marine Combat Pack";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		maximumLoad = 400;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_BackPack17MEF_co.paa"};
-	};
-	class TKE_BackPack1124: TKE_BackPack1
-	{
-		author = "Frenchie";
-		displayName = "[7th Fleet] Army Combat Pack";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";	
-		maximumLoad = 400;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_BackPack1124_co.paa"};
-	};
-	class TKE_BackPack2;
-	class TKE_BackPack21MR: TKE_BackPack2
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Raider Combat Pack (Bedroll)";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		maximumLoad = 400;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_BackPack11MR_co.paa"};
-	};
-	class TKE_BackPack27MEF: TKE_BackPack2
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Marine Combat Pack (Bedroll)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		maximumLoad = 400;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_BackPack17MEF_co.paa"};
-	};
-	class TKE_BackPack2124: TKE_BackPack2
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Army Combat Pack (Bedroll)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";	
-		maximumLoad = 400;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_BackPack1124_co.paa"};
-	};
-	class TKE_AlicePackUCN;
-	class TKE_AlicePack1MR: TKE_AlicePackUCN
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Raider Alicepack";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		maximumLoad = 550;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AlicePack1MR_co.paa"};
-	};
-	class TKE_AlicePack7MEF: TKE_AlicePackUCN
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Marine Alicepack";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		maximumLoad = 550;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AlicePack7MEF_co.paa"};
-	};
-	class TKE_AlicePack124: TKE_AlicePackUCN
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Army Alicepack";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";	
-		maximumLoad = 550;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AlicePack124_co.paa"};
-	};
-	class TKE_AlicePackUCNM;
-	class TKE_AlicePack1MRM: TKE_AlicePackUCNM
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Raider Alicepack (Medic)";
-		picture = "\TKE_Kuiper_Engagements\TKE_Uniforms\ui\UCN1stRaidersUI.paa";
-		maximumLoad = 550;
-		mass = 40;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AlicePack1MRM_co.paa"};
-	};
-	class TKE_AlicePack7MEFM: TKE_AlicePackUCNM
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Marine Alicepack (Medic)";
-		picture = "\1MR_Uniforms\Textures\7thMEFpatch.paa";
-		maximumLoad = 550;
-		mass = 40;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AlicePack7MEFM_co.paa"};
-	};
-	class TKE_AlicePack124M: TKE_AlicePackUCNM
-	{
-		author = "Rogue771";
-		displayName = "[7th Fleet] Army Alicepack (Medic)";
-		picture = "\1MR_Uniforms\Textures\124thpatch.paa";	
-		maximumLoad = 550;
-		mass = 40;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\1MR_Uniforms\Textures\TKE_AlicePack124M_co.paa"};
-	};
 	class B_G_Soldier_LAT_F;
 	class B_1MR_Sweater_camo_black_F: B_G_Soldier_LAT_F
 	{
@@ -2328,7 +1950,7 @@ class TKE_Uniform124BStripe_BlackButtonUp: I_G_Story_Protagonist_F
 		displayName = "Rifleman";
 		backpack = "";
 	};
-	class 86CAB_Medic: 86CAB_Rifleman
+	class 86CAB_Medic: TKE_Rogue_Uniform1MR_inf_B
 	{
 		scope = 2;
 		scopecurator = 2;
@@ -2344,7 +1966,7 @@ class TKE_Uniform124BStripe_BlackButtonUp: I_G_Story_Protagonist_F
 		role = "CombatLifeSaver";
 		backpack = "";
 	};
-	class 86CAB_Engineer: 86CAB_Rifleman
+	class 86CAB_Engineer: TKE_Rogue_Uniform1MR_inf_B
 	{
 		scope = 2;
 		scopecurator = 2;
@@ -2360,6 +1982,7 @@ class TKE_Uniform124BStripe_BlackButtonUp: I_G_Story_Protagonist_F
 		role = "CombatEngineer";
 		backpack = "";
 	};
+	
 };
 
 class cfgWeapons
@@ -2376,7 +1999,6 @@ class cfgWeapons
 	class U_B_CTRG_1;
 	class ItemCore;
 	class ItemInfo;
-	class Eventhandlers;
 	class U_TKE_Uniform_base: U_B_CTRG_Soldier_F
 	{
 		class ItemInfo;
@@ -2967,7 +2589,7 @@ class cfgWeapons
     };
 
 
-	class U_TKE_Uniform1MRType13: U_TKE_Uniform_base
+class U_TKE_Uniform1MRType13: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3017,7 +2639,7 @@ class cfgWeapons
     };
 
 
-	class U_TKE_Uniform1MRCamo: U_TKE_Uniform_base
+class U_TKE_Uniform1MRCamo: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3067,7 +2689,7 @@ class cfgWeapons
     };
 
 
-	class U_TKE_Uniform1MRStripe: U_TKE_Uniform_base
+class U_TKE_Uniform1MRStripe: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3115,7 +2737,7 @@ class cfgWeapons
 			mass = 80;
         };
     };
-	class U_TKE_Uniform124GStripe: U_TKE_Uniform_base
+class U_TKE_Uniform124GStripe: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3163,7 +2785,7 @@ class cfgWeapons
 			mass = 80;
         };
     };
-	class U_TKE_Uniform124WStripe: U_TKE_Uniform_base
+class U_TKE_Uniform124WStripe: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3211,7 +2833,7 @@ class cfgWeapons
 			mass = 80;
         };
     };
-	class U_TKE_Uniform124BStripe: U_TKE_Uniform_base
+class U_TKE_Uniform124BStripe: U_TKE_Uniform_base
     {
         author = "Frenchie";
         scope = 2;
@@ -3911,7 +3533,7 @@ class cfgWeapons
 			mass = 80;
         };
     };
-	class U_TKE_Uniform1MRType13_BlackButtonUp: U_I_G_Story_Protagonist_F
+class U_TKE_Uniform1MRType13_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Marine Uniform (Type 13, Black Button Up)";
@@ -3965,7 +3587,7 @@ class cfgWeapons
 			mass = 80;
         };
     };
-	class U_TKE_Uniform1MRCamo_BlackButtonUp: U_I_G_Story_Protagonist_F
+class U_TKE_Uniform1MRCamo_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Marine Uniform (Camo, Black Button Up)";
@@ -4019,7 +3641,7 @@ class cfgWeapons
 			mass = 80;
         };
     };
-	class U_TKE_Uniform1MRStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
+class U_TKE_Uniform1MRStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Marine Uniform (Stripe, Black Button Up)";
@@ -4075,7 +3697,7 @@ class cfgWeapons
     };
 
 
-	class U_TKE_Uniform124GStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
+class U_TKE_Uniform124GStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Army Uniform (Woodland Stripe, Black Button Up)";
@@ -4129,7 +3751,7 @@ class cfgWeapons
 			mass = 80;
         };
     };
-	class U_TKE_Uniform124WStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
+class U_TKE_Uniform124WStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Army Uniform (Snow Stripe, Black Button Up)";
@@ -4183,7 +3805,7 @@ class cfgWeapons
 			mass = 80;
         };
     };
-	class U_TKE_Uniform124BStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
+class U_TKE_Uniform124BStripe_BlackButtonUp: U_I_G_Story_Protagonist_F
     {
         author = "Frenchie";
         displayName = "[7th Fleet] Army Uniform (Night Stripe, Black Button Up)";
