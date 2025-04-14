@@ -29,5 +29,3 @@ We are intending to host main ops on Saturdays at 7 PM EST, however, there may a
 The 7th Expeditionary Fleet is the Primary Direct-Action Unit of the UCN outside of Earth, we expect the best of Earth to join your comrades in Arms and the experience of seeing the Sol System and quite possibly more! What are you waiting for? Earth NEEDS YOU!!!
 
 https://discord.gg/zhJkjrG7cN
-
-[Some images do not represent 7EF assets, but rather assets from the rest of the TKE universe.]
