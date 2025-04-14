@@ -46,6 +46,9 @@ class CfgAmmo
 		tracerStartTime = 0.002;
 		tracerEndTime = 30;
 		typicalSpeed = 1300;
+		warheadName = "30mm HE";
+		whistleDist = 40;
+		whistleOnFire = 1;
 	};
 	class B_127x99_Ball_Tracer_Red;
 	class 7EF_B_127x99_HE_Tracer_Red: B_127x99_Ball_Tracer_Red
@@ -66,8 +69,11 @@ class CfgAmmo
 		tracerScale = 1.2;
 		tracerStartTime = 0.01;
 		tracerEndTime = 30;
+		warheadName = "12.7mm HE";
 		weaponType = "mGun";
 		typicalSpeed = 1600;
+		whistleDist = 30;
+		whistleOnFire = 1;
 	};
 	class B_30x113mm_M789_HEDP;
 	class 7EF_30mm_M230_HEDPT: B_30x113mm_M789_HEDP
@@ -79,7 +85,9 @@ class CfgAmmo
 		indirectHitRange = 4;
 		tracerStartTime = 0.002;
 		tracerEndTime = 30;
-		typicalSpeed = 1300;
+		typicalSpeed = 1900;
+		whistleDist = 40;
+		whistleOnFire = 1;
 	};
 	class M_Scalpel_AT;
 	class 7EF_Talon_AT: M_Scalpel_AT
@@ -105,6 +113,7 @@ class CfgAmmo
 		airLock = 0;
 		irLock = 1;
         laserLock = 1;
+		warheadName = "Talon IR AT";
 	};
 	class 7EF_Havoc_AT: M_Scalpel_AT
 	{
@@ -129,6 +138,7 @@ class CfgAmmo
 		airLock = 0;
 		irLock = 0;
         laserLock = 0;
+		warheadName = "Havoc Radar AT";
 		class Components
 		{
 			class SensorsManagerComponent
@@ -221,6 +231,7 @@ class CfgAmmo
 		thrustTime = 2;
 		model = "\A3\Weapons_F\Ammo\Rocket_01_fly_F";
 		proxyShape = "\A3\Weapons_F\Ammo\Rocket_01_F";
+		warheadName = "Cryon AA";
 		class Components
 		{
 			class SensorsManagerComponent
@@ -243,6 +254,46 @@ class CfgAmmo
 						{
 							maxRange = 4500;
 							minRange = 5;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+						angleRangeHorizontal = 90;
+						angleRangeVertical = 90;
+						maxTrackableSpeed = 1200;
+						class AirTarget
+						{
+							maxRange = 4500;
+							minRange = 50;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 4500;
+							minRange = 50;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						angleRangeHorizontal = 240;
+						angleRangeVertical = 240;
+						maxTrackableSpeed = 1200;
+						class AirTarget
+						{
+							maxRange = 5000;
+							minRange = 50;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 5000;
+							minRange = 50;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = -1;
 						};
@@ -270,6 +321,7 @@ class CfgAmmo
         laserLock = 0;
 		thrust = 800;
 		thrustTime = 2;
+		warheadName = "Stratos IR AA";
 		class Components
 		{
 			class SensorsManagerComponent
@@ -319,6 +371,7 @@ class CfgAmmo
         laserLock = 0;
 		thrust = 800;
 		thrustTime = 2;
+		warheadName = "Atlas Radar AA";
 		class Components
 		{
 			class SensorsManagerComponent
@@ -401,6 +454,7 @@ class CfgAmmo
 		laserLock = 1;
 		maneuvrability = 20;
 		weaponLockSystem = "2 + 4";
+		warheadName = "Jupiter IR Bomb";
 		class Components
 		{
 			class SensorsManagerComponent
@@ -482,6 +536,7 @@ class CfgAmmo
 		laserLock = 0;
 		maneuvrability = 20;
 		weaponLockSystem = 8;
+		warheadName = "Neptune Radar Bomb";
 		class Components
 		{
 			class SensorsManagerComponent
@@ -540,25 +595,53 @@ class CfgAmmo
 		indirectHitRange = 10;
 		model = "\A3\Weapons_F\Ammo\Rocket_02_fly_F";
 		proxyShape = "\A3\Weapons_F\Ammo\Rocket_02_F";
+		warheadName = "Widowmaker HE";
 	};
-	class 7th_57mm_HEDPT: BulletBase
+	class 7th_57mm_HE: BulletBase
 	{
 		allowAgainstInfantry = 1;
 		airFriction = -0.00012;
-		caliber = 12;
+		caliber = 21;
 		deflecting = 0;
 		deflectionSlowDown = 0.8;
-		hit = 180;
+		hit = 140;
 		indirectHit = 140;
 		indirectHitRange = 6;
 		timeToLive = 20;
 		tracerStartTime = 0.02;
 		tracerScale = 3;
-		typicalSpeed = 1100;
+		typicalSpeed = 1600;
 		explosive = 0.6;
 		explosionEffects = "ExploAmmoExplosion";
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		warheadName = "57mm HE";
+		whistleDist = 50;
+		whistleOnFire = 1;
 	};
+
+	class ammo_Penetrator_Base;
+	class 7th_ammo_Penetrator_57mm: ammo_Penetrator_Base
+	{
+		caliber = 21;
+		hit = 600;
+		warheadName = "57mm AP";
+	};
+	class 7th_57mm_AP: 7th_57mm_HE
+	{
+		allowAgainstInfantry = 0;
+		hit = 600;
+		indirectHit = 80;
+		indirectHitRange = 2;
+		explosive = 0;
+		submunitionAmmo = "7th_ammo_Penetrator_57mm";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitSpeed = 1000;
+		submunitionParentSpeedCoef = 0;
+		explosionEffects = "ExplosionEffects";
+		warheadName = "57mm AP";
+	};
+
+
 
 	class 7th_Nuke_AGM: MissileCore
 	{
@@ -596,10 +679,13 @@ class CfgAmmo
 		fuseDistance = 80;
 		hit = 3000;
 		indirectHit = 80;
-		maneuvrability = 30;
+		maneuvrability = 90;
 		manualControl = 1;
 		maxControlRange = 20000;
 		maxSpeed = 900;
+		thrust = 800;
+		thrustTime = 1;
+		trackOversteer = 2;
 		missileKeepLockedCone = 90;
 		missileLockCone = 15;
 		missileLockMaxDistance = 3000;
@@ -691,7 +777,7 @@ class CfgAmmo
 	class M_Titan_AA_long;
 	class 7EF_Atlas_G2A_AA: M_Titan_AA_long
 	{
-		cmImmunity = 1.0;
+		cmImmunity = 0.8;
 		hit = 500;
 		indirectHit = 500;
 		maneuvrability = 100;
@@ -769,6 +855,83 @@ class CfgAmmo
 						class GroundTarget
 						{
 							maxRange = 16000;
+							minRange = 50;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+				};
+			};
+		};
+	};
+	class 7EF_AI_AAMissiles: 7EF_Atlas_G2A_AA
+	{
+		cmImmunity = 0.8;
+		hit = 150;
+		indirectHit = 80;
+		missileLockMaxDistance = 6000;
+		weaponLockDelay = 5;
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						angleRangeHorizontal = 45;
+						angleRangeVertical = 45;
+						maxTrackableSpeed = 1200;
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 5;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						}
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 5;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						}
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+						angleRangeHorizontal = 45;
+						angleRangeVertical = 45;
+						maxTrackableSpeed = 1200;
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 50;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
+							minRange = 50;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						angleRangeHorizontal = 45;
+						angleRangeVertical = 45;
+						maxTrackableSpeed = 1200;
+						class AirTarget
+						{
+							maxRange = 6000;
+							minRange = 50;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							maxRange = 6000;
 							minRange = 50;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = -1;
@@ -923,13 +1086,13 @@ class CfgMagazines
 		model = "\1MR_Vehicles\Vehicle Weapons Config\Pylons\Sabertooth\Sabertooth_30mm_Pylon.p3d";
 		pylonWeapon = "7EF_Sabertooth_Weapon";
 	};
-	class 7EF_Guardian_60Rnd: VehicleMagazine
+	class 7EF_Guardian_60Rnd_HE: VehicleMagazine
 	{
 		count = 60;
-		ammo = "7th_57mm_HEDPT";
-		descriptionShort = "60Rnd of That Good Ol 57mm";
+		ammo = "7th_57mm_HE";
+		descriptionShort = "60Rnd of That Good Ol 57mm HE";
 		displayName = "[7th Fleet] 57mm Guardian";
-		displayNameMFDFormat = "57mm HEDPT";
+		displayNameMFDFormat = "57mm HE";
 		displayNameShort = "[7th Fleet] Guardian";
 		hardpoints[] = {"7th_Hardpoints_Guardian"};
 		tracersEvery = 1;
@@ -937,7 +1100,15 @@ class CfgMagazines
 		muzzlePos = "memMuzzle";
 		muzzleEnd = "memGunTip";
 		model = "\1MR_Vehicles\Vehicle Weapons Config\Pylons\Guardian\Guardian_57mm_Pylon.p3d";
-		pylonWeapon = "7EF_Guardian_Weapon";
+		pylonWeapon = "7EF_Guardian_Weapon_HE";
+	};
+
+	class 7EF_Guardian_60Rnd_AP: 7EF_Guardian_60Rnd_HE
+	{
+		ammo = "7th_57mm_AP";
+		descriptionShort = "60Rnd of That Good Ol 57mm AP";
+		displayNameMFDFormat = "57mm AP";
+		pylonWeapon = "7EF_Guardian_Weapon_AP";
 	};
 
 	//Ground Vics
@@ -1001,9 +1172,19 @@ class CfgMagazines
 		displayName = "[7th Fleet] Atlas AA";
 		displayNameMFDFormat = "Atlas";
 		displayNameShort = "[7th Fleet] Atlas";
-		hardpoints[] = {};
 		mass = 1;
 		pylonWeapon = "7EF_Atlas_G2A_Weapon";
+	};
+	class 7EF_AI_AA_2Rnd: 4Rnd_Titan_long_missiles
+	{
+		ammo = "7EF_AI_AAMissiles";
+		count = 2;
+		descriptionShort = "Radar Guided Anti-Air Missile";
+		displayName = "[7th Fleet] AI AA Missile";
+		displayNameMFDFormat = "Atlas";
+		displayNameShort = "[7th Fleet] AI AA Missile";
+		mass = 1;
+		pylonWeapon = "7EF_AI_AA_Weapon";
 	};
 };
 class CfgWeapons
@@ -1278,15 +1459,15 @@ class CfgWeapons
 			maxRangeProbab = 0.05;
 		};
 	};
-	class 7EF_Guardian_Weapon: Twin_Cannon_20mm
+	class 7EF_Guardian_Weapon_HE: Twin_Cannon_20mm
 	{
 		cursor = "EmptyCursor";
 		cursorAim = "cannon";
-		displayname = "[7th Fleet] 57mm Guardian";
-		displayNameShort = "[7th Fleet] Guardian";
+		displayname = "[7th Fleet] 57mm Guardian HE";
+		displayNameShort = "[7th Fleet] Guardian HE";
 		magazines[]=
 		{
-			"7EF_Guardian_60Rnd"
+			"7EF_Guardian_60Rnd_HE"
 		};
 		magazineReloadTime=6;
 		dispersion = 0.004;
@@ -1395,6 +1576,15 @@ class CfgWeapons
 			maxRangeProbab = 0.05;
 		};
 	};
+	class 7EF_Guardian_Weapon_AP: 7EF_Guardian_Weapon_HE
+	{
+		displayname = "[7th Fleet] 57mm Guardian AP";
+		displayNameShort = "[7th Fleet] Guardian AP";
+		magazines[]=
+		{
+			"7EF_Guardian_60Rnd_AP"
+		};
+	};
 
 	//Ground Vics
 	class OPTRE_M503_30mm_Autocannon
@@ -1460,7 +1650,7 @@ class CfgWeapons
 		weaponLockDelay = 3;
 		magazineReloadTime=5;
 		canLock = 2;
-		cmImmunity = 1.0;
+		cmImmunity = 0.8;
 		lockAcquire = 1;
 	};
 	class autocannon_35mm;
@@ -1471,6 +1661,18 @@ class CfgWeapons
 		displayNameShort = "[7th Fleet] CBT-003";
 		magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Green"};
 		canLock = 2;
+	};
+
+	class 7EF_AI_AA_Weapon: missiles_titan_AA
+	{
+		displayname = "[7th Fleet] AI AA Launcher";
+		displayNameShort = "[7th Fleet] AI AA Launcher";
+		magazines[] = {"7EF_AI_AA_2Rnd"};
+		weaponLockDelay = 5;
+		magazineReloadTime=5;
+		canLock = 2;
+		cmImmunity = 0.8;
+		lockAcquire = 1;
 	};
 };
 

@@ -89,40 +89,35 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class transport_promet
-			{
-				magazine="30Rnd_65x39_caseless_msbs_mag_Tracer";
-				count=60;
-			};
 			class transport_pdw
 			{
 				magazine="KEF_45rnd_pdw_magTG";
-				count=60;
+				count=40;
 			};
 			class transport_arb
 			{
 				magazine="TKE_35rnd_62x35_magTG";
-				count=60;
+				count=40;
 			};
 			class transport_bullfrog
 			{
 				magazine="KEF_25rnd_762x51_magGT";
-				count=60;
+				count=40;
 			};
 			class transport_bpr
 			{
 				magazine="TKE_30rnd_575x45_magTG";
-				count=60;
+				count=40;
 			};
 			class transport_falcon
 			{
 				magazine="TKE_20rnd_969x51_magGTUCN";
-				count=60;
+				count=40;
 			};
 			class transport_ripper
 			{
 				magazine="TKE_150rnd_62x35_magGTUCN";
-				count=60;
+				count=40;
 			};
 			class transport_cerberus
 			{
@@ -137,37 +132,37 @@ class CfgVehicles
 			class transport_m14
 			{
 				magazine="10Rnd_Mk14_762x51_Mag";
-				count=60;
+				count=40;
 			};
 			class transport_pdwudt
 			{
 				magazine="TKE_SMGUDT_mag";
-				count=60;
+				count=40;
 			};
 			class transport_rhino
 			{
 				magazine="WRS_Shockgun_Magazine";
-				count=60;
+				count=40;
 			};
 			class transport_bullshark1
 			{
 				magazine="WRS_Shotgun_Magazine";
-				count=60;
+				count=40;
 			};
 			class transport_bullshark2
 			{
 				magazine="WRS_Shotgun_Magazine_Slug";
-				count=60;
+				count=40;
 			};
 			class transport_bullshark3
 			{
 				magazine="WRS_Shotgun_Magazine_NonLethal";
-				count=60;
+				count=40;
 			};
 			class transport_bullshark4
 			{
 				magazine="WRS_Shotgun_Magazine_DragonBreath";
-				count=60;
+				count=40;
 			};
 			class transport_boomslang
 			{
@@ -182,22 +177,72 @@ class CfgVehicles
 			class transport_cmbtpistol
 			{
 				magazine="TKE_UCNPistol_mag";
-				count=60;
+				count=20;
 			};
 			class transport_1911
 			{
 				magazine="TKE_1911_mag";
-				count=60;
+				count=20;
 			};
 			class transport_constrictor
 			{
 				magazine="WRS_Revolver_Magazine";
-				count=60;
+				count=20;
 			};
 			class transport_puma
 			{
 				magazine="WRS_Puma_Magazine";
-				count=60;
+				count=20;
+			};
+			class transport_jackal
+			{
+				magazine="TKE_20rnd_969x51_magUCN";
+				count=40;
+			};
+			class transport_hmg38
+			{
+				magazine="OPTRE_40Rnd_30x06_Mag";
+				count=40;
+			};
+			class transport_grot
+			{
+				magazine="30Rnd_65x39_caseless_msbs_mag";
+				count=40;
+			};
+			class transport_greyhound
+			{
+				magazine="WRS_Ar_Magazine";
+				count=40;
+			};
+			class transport_bulldog
+			{
+				magazine="WRS_Ar1_Magazine";
+				count=40;
+			};
+			class transport_raptor
+			{
+				magazine="WRS_Ar2_Magazine";
+				count=40;
+			};
+			class transport_1911plas
+			{
+				magazine="TKE_1911_mag_plastic";
+				count=10;
+			};
+			class transport_conplas
+			{
+				magazine="WRS_Revolver_Magazine_plastic";
+				count=10;
+			};
+			class transport_pumaplas
+			{
+				magazine="WRS_Puma_Magazine_plastic";
+				count=10;
+			};
+			class transport_CPplas
+			{
+				magazine="TKE_UCNPistol_mag_plastic";
+				count=10;
 			};
 		};
 		class TransportWeapons
@@ -321,11 +366,6 @@ class CfgVehicles
 				name="ACE_tourniquet";
 				count=30;
 			};
-			class transport_splint
-			{
-				name="ACE_splint";
-				count=30;
-			};
 			class transport_biofoam
 			{
 				name="OPTRE_Biofoam";
@@ -343,8 +383,78 @@ class CfgVehicles
 			};
 			class transport_morph
 			{
-				maganamezine="ACE_morphine";
+				maganamezine="7EF_Painkiller";
 				count=60;
+			};
+			class transport_16g
+			{
+				maganamezine="kat_IV_16";
+				count=60;
+			};
+			class transport_fastio
+			{
+				maganamezine="kat_IO_FAST";
+				count=40;
+			};
+			class transport_ammon
+			{
+				maganamezine="kat_Carbonate";
+				count=20;
+			};
+			class transport_eaca
+			{
+				maganamezine="kat_EACA";
+				count=20;
+			};
+			class transport_txa
+			{
+				maganamezine="kat_TXA";
+				count=20;
+			};
+			class transport_etom
+			{
+				maganamezine="kat_etomidate";
+				count=20;
+			};
+			class transport_fluma
+			{
+				maganamezine="kat_flumazenil";
+				count=20;
+			};
+			class transport_loraz
+			{
+				maganamezine="kat_lorazepam";
+				count=20;
+			};
+			class transport_clamp
+			{
+				maganamezine="kat_clamp";
+				count=20;
+			};
+			class transport_kinglt
+			{
+				maganamezine="kat_larynx";
+				count=20;
+			};
+			class transport_retract
+			{
+				maganamezine="kat_retractor";
+				count=20;
+			};
+			class transport_scalp
+			{
+				maganamezine="kat_scalpel";
+				count=20;
+			};
+			class transport_nalo
+			{
+				maganamezine="kat_naloxone";
+				count=20;
+			};
+			class transport_ches
+			{
+				maganamezine="kat_chestSeal";
+				count=40;
 			};
 		};
 	};
@@ -399,12 +509,12 @@ class CfgVehicles
 			class transport_uglhe
 			{
 				magazine="1Rnd_HE_Grenade_shell";
-				count=20;
+				count=40;
 			};
 			class transport_uglhex3
 			{
 				magazine="3Rnd_HE_Grenade_shell";
-				count=20;
+				count=10;
 			};
 			class transport_titanAP
 			{
@@ -424,6 +534,31 @@ class CfgVehicles
 			class transport_maawshe
 			{
 				magazine="MRAWS_HE_F";
+				count=10;
+			};
+			class transport_maawsheat
+			{
+				magazine="7thFleet_OPTRE_M41_Twin_HEAT";
+				count=10;
+			};
+			class transport_maawssaclos
+			{
+				magazine="7thFleet_OPTRE_M41_Twin_HEAT_SACLOS";
+				count=10;
+			};
+			class transport_maawsIR
+			{
+				magazine="7thFleet_OPTRE_M41_Twin_HEAT_G";
+				count=10;
+			};
+			class transport_smokew
+			{
+				magazine="7thFleet_OPTRE_M41_Twin_Smoke_W";
+				count=10;
+			};
+			class transport_smoker
+			{
+				magazine="7thFleet_OPTRE_M41_Twin_Smoke_R";
 				count=10;
 			};
 		};

@@ -563,6 +563,7 @@ class CfgVehicles
 			};
 		};
 	};
+
 	class O_APC_Tracked_02_AA_F
 	{
 		class Turrets
@@ -663,6 +664,84 @@ class CfgVehicles
 		textureList[] = {"124",1};
 		hiddenSelectionsTextures[] = {"\1MR_Vehicles\Textures\APC_Tracked_02_ext_01_124_AA_CO.paa","\1MR_Vehicles\Textures\APC_Tracked_02_ext_02_124_CO.paa","\1MR_Vehicles\Textures\APC_Tracked_01_AA_Tower_124_CO.paa","a3\armor_f\data\camonet_nato_green_co.paa"};
 	};
+	class O_KEF_MDTF_AAV_5: O_APC_Tracked_02_AA_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Red","7EF_AI_AA_2Rnd","7EF_AI_AA_2Rnd"};
+				weapons[] = {"autocannon_35mm","7EF_AI_AA_Weapon"};
+			};
+		};
+	};
+	class O_KEF_MDMC_AAV_5: O_APC_Tracked_02_AA_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Red","7EF_AI_AA_2Rnd","7EF_AI_AA_2Rnd"};
+				weapons[] = {"autocannon_35mm","7EF_AI_AA_Weapon"};
+			};
+		};
+	};
+	class O_KEF_MDMC_W_AAV_5: O_APC_Tracked_02_AA_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Red","7EF_AI_AA_2Rnd","7EF_AI_AA_2Rnd"};
+				weapons[] = {"autocannon_35mm","7EF_AI_AA_Weapon"};
+			};
+		};
+	};
+	class O_KEF_MDTF_C_AAV_5: O_APC_Tracked_02_AA_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Red","7EF_AI_AA_2Rnd","7EF_AI_AA_2Rnd"};
+				weapons[] = {"autocannon_35mm","7EF_AI_AA_Weapon"};
+			};
+		};
+	};
+	class O_KEF_MDTF_W_AAV_5: O_APC_Tracked_02_AA_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Red","7EF_AI_AA_2Rnd","7EF_AI_AA_2Rnd"};
+				weapons[] = {"autocannon_35mm","7EF_AI_AA_Weapon"};
+			};
+		};
+	};
+	class ER_JCG_AAV_5: O_APC_Tracked_02_AA_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Red","7EF_AI_AA_2Rnd","7EF_AI_AA_2Rnd"};
+				weapons[] = {"autocannon_35mm","7EF_AI_AA_Weapon"};
+			};
+		};
+	};
+	class ER_JSF_AAV_5: O_APC_Tracked_02_AA_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Red","7EF_AI_AA_2Rnd","7EF_AI_AA_2Rnd"};
+				weapons[] = {"autocannon_35mm","7EF_AI_AA_Weapon"};
+			};
+		};
+	};
+
 	class O_MRAP_02_F;
 	class 7thFleet_MRAP: O_MRAP_02_F
 	{
@@ -1550,7 +1629,7 @@ class CfgVehicles
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {3000,2000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
@@ -1586,7 +1665,7 @@ class CfgVehicles
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {3000,2000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
@@ -1740,7 +1819,7 @@ class CfgVehicles
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {3000,2000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
@@ -1776,7 +1855,7 @@ class CfgVehicles
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[] = {4000,2000,16000,8000};
+						range[] = {3000,2000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
@@ -1794,7 +1873,6 @@ class CfgVehicles
 		VTOLRollInfluence = 10.0;
 		VTOLYawInfluence = 6.0;
 		vtol = 4;
-		GLimit = 15;
 		thrustCoef[] = {1.8,1.8,1.8,1.9,2,2.3,2.5,2.3,2,2,2,1.8,0.8,0.8,1.0,1.2};
 		airBrakeFrictionCoef = 15;
 		receiveRemoteTargets = true;
@@ -2155,10 +2233,9 @@ class CfgVehicles
 		fuelCapacity = 2540;
 		maxSpeed = 650;
 		thrustCoef[] = { 2.0, 1.6, 1.3, 1.3, 1.2, 1.8, 1.8, 1.8, 1.5, 1.2, 1.3, 1.4, 1.6 };
-		envelope[] = {1.0, 1.8, 2.5, 3.2, 3.5, 3.3, 3.0, 2.5, 2.0, 1.4, 0.8};
+		envelope[] = {0,0.07,0.28,0.63,1.11,1.74,2.51,3.41,4.46,5.64,6.96,8.42,8.8,9.11,9.38,9.45,9.43,9,8,7,6};
 		aileronSensitivity = 1.2;
 		elevatorSensitivity = 0.9;
-		GLimit = 4;
 		angleOfIndicence = 0.065;
 		airFrictionCoef = 0.85;
 		flapsEffectiveness = 1.6;
